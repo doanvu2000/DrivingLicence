@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.fragment
+package com.example.drivinglicence.component.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -13,10 +13,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
-import com.example.drivinglicense.BuildConfig
-import com.example.drivinglicense.component.viewmodel.BaseViewModel
-import com.example.drivinglicense.component.widgets.loading.LoadingDialog
-import com.example.drivinglicense.pref.BindingReflex
+import com.example.drivinglicence.BuildConfig
+import com.example.drivinglicence.component.viewmodel.BaseViewModel
+import com.example.drivinglicence.component.widgets.loading.LoadingDialog
+import com.example.drivinglicence.pref.BindingReflex
 import java.lang.reflect.ParameterizedType
 
 abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(),

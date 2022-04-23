@@ -1,9 +1,9 @@
-package com.example.drivinglicense.component.widgets.loading
+package com.example.drivinglicence.component.widgets.loading
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import com.example.drivinglicense.component.dialog.BaseDialogFragment
-import com.example.drivinglicense.databinding.LoadingDialogBinding
+import com.example.drivinglicence.component.dialog.BaseDialogFragment
+import com.example.drivinglicence.databinding.LoadingDialogBinding
 
 class LoadingDialog : BaseDialogFragment<LoadingDialogBinding>() {
 

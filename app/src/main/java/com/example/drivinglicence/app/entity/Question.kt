@@ -1,4 +1,4 @@
-package com.example.drivinglicense.app.entity
+package com.example.drivinglicence.app.entity
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 

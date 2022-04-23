@@ -1,10 +1,9 @@
-package com.example.drivinglicense.utils
+package com.example.drivinglicence.utils
 
 import android.content.Context
-import android.content.res.Resources
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.entity.Answer
-import com.example.drivinglicense.app.entity.Question
+import com.example.drivinglicence.R
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.entity.Question
 
 /**-------------------------260 câu hỏi lý thuyết-------------------------*/
 

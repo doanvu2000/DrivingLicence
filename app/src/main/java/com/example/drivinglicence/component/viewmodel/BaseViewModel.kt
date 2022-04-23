@@ -1,18 +1,14 @@
-package com.example.drivinglicense.component.viewmodel
+package com.example.drivinglicence.component.viewmodel
 
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.google.gson.Gson
 import com.mobile.mbccs.base.component.activity.ActivityManager
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
-import retrofit2.HttpException
 import java.lang.Runnable
-import java.net.SocketTimeoutException
-import java.net.UnknownHostException
 import kotlin.coroutines.CoroutineContext
 
 abstract class BaseViewModel : ViewModel(), DefaultLifecycleObserver, CoroutineScope {

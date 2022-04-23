@@ -1,18 +1,20 @@
-package com.example.drivinglicense.app.activites
+package com.example.drivinglicence.app.activites
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.adapter.ViewPagerAdapter
-import com.example.drivinglicense.app.fragment.LessonFragment
-import com.example.drivinglicense.app.viewmodel.MapDataViewModel
-import com.example.drivinglicense.component.activity.BaseVMActivity
-import com.example.drivinglicense.databinding.ActivityTestViewPagerBinding
-import com.example.drivinglicense.utils.getListQuestionImportant
+import com.example.drivinglicence.R
+import com.example.drivinglicence.app.adapter.ViewPagerAdapter
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.entity.Question
+import com.example.drivinglicence.app.fragment.LessonFragment
+import com.example.drivinglicence.app.viewmodel.MapDataViewModel
+import com.example.drivinglicence.component.activity.BaseVMActivity
+import com.example.drivinglicence.databinding.ActivityTestViewPagerBinding
+import com.example.drivinglicence.utils.ANSWERS
+import com.example.drivinglicence.utils.QUESTION
 
 class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDataViewModel>() {
     private val viewpagerAdapter by lazy {
@@ -61,25 +63,21 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
         })
     }
 
+    private var listQuestion: MutableList<Question> = mutableListOf()
+    private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
     override fun initData() {
         //danh sach cau tra loi cua 3 cau hoi
-        val listQuestion = viewModel.getListQuestionImportant(this)
-        val listAnswer = mutableListOf(
-            viewModel.mapAnswer[1],
-            viewModel.mapAnswer[2],
-            viewModel.mapAnswer[3],
-            viewModel.mapAnswer[1],
-            viewModel.mapAnswer[2],
-            viewModel.mapAnswer[3],
-            viewModel.mapAnswer[1],
-            viewModel.mapAnswer[2],
-            viewModel.mapAnswer[3],
-            viewModel.mapAnswer[1]
-        )
+        listQuestion = viewModel.getListQuestionImportant(this)
+        viewModel.mapAnswer[1]?.let { listAnswer.add(it) }
+        viewModel.mapAnswer[2]?.let { listAnswer.add(it) }
+        viewModel.mapAnswer[3]?.let { listAnswer.add(it) }
         for (i in 1..3) {
-            mListFragment.add(LessonFragment(listQuestion[i - 1], listAnswer[i - 1]!!, i).apply {
+            val question = listQuestion[i - 1]
+            val answers = listAnswer[i - 1] as ArrayList<Answer>
+            mListFragment.add(LessonFragment().apply {
                 val bundle = Bundle()
-                bundle.putParcelable("question",listQuestion[i - 1])
+                bundle.putParcelable(QUESTION, question)
+                bundle.putParcelableArrayList(ANSWERS, answers)
                 arguments = bundle
             })
         }

@@ -1,16 +1,14 @@
-package com.example.drivinglicense.app.activites
+package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.adapter.ExamAdapter
-import com.example.drivinglicense.component.activity.BaseCoreActivity
-import com.example.drivinglicense.component.dialog.AlertMessageDialog
-import com.example.drivinglicense.component.widgets.recyclerview.RecyclerUtils
-import com.example.drivinglicense.databinding.ActivityTestLicenseBinding
-import com.example.drivinglicense.pref.showDevelopMessage
-import com.example.drivinglicense.pref.showMessage
+import com.example.drivinglicence.R
+import com.example.drivinglicence.app.adapter.ExamAdapter
+import com.example.drivinglicence.component.activity.BaseCoreActivity
+import com.example.drivinglicence.component.dialog.AlertMessageDialog
+import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
+import com.example.drivinglicence.databinding.ActivityTestLicenseBinding
+import com.example.drivinglicence.pref.showMessage
 
 class TestLicenseActivity : BaseCoreActivity<ActivityTestLicenseBinding>() {
     val examAdapter by lazy {

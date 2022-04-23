@@ -1,13 +1,12 @@
-package com.example.drivinglicense.app.adapter
+package com.example.drivinglicence.app.adapter
 
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.view.View
-import androidx.core.content.ContextCompat
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.entity.Answer
-import com.example.drivinglicense.component.adapter.BaseRecyclerViewAdapter
-import com.example.drivinglicense.databinding.ItemAnswerBinding
+import com.example.drivinglicence.R
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.component.adapter.BaseRecyclerViewAdapter
+import com.example.drivinglicence.databinding.ItemAnswerBinding
 
 class AnswerAdapter() : BaseRecyclerViewAdapter<Answer, ItemAnswerBinding>() {
 

@@ -1,4 +1,4 @@
-package com.example.drivinglicense.app.entity
+package com.example.drivinglicence.app.entity
 
 data class SubmitAnswer(
     val submitAnswerId: Int,

@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.widgets.loading
+package com.example.drivinglicence.component.widgets.loading
 
 import android.content.Context
 import android.util.AttributeSet

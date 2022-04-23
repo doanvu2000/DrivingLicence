@@ -1,12 +1,12 @@
-package com.example.drivinglicense.component.dialog
+package com.example.drivinglicence.component.dialog
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.Window
 import androidx.appcompat.app.AlertDialog
-import com.example.drivinglicense.R
-import com.example.drivinglicense.databinding.DialogAlertMessageAppBinding
+import com.example.drivinglicence.R
+import com.example.drivinglicence.databinding.DialogAlertMessageAppBinding
 
 class AlertMessageDialog(val context: Context) {
     private val binding by lazy {

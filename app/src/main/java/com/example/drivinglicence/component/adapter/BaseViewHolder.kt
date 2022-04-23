@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.adapter
+package com.example.drivinglicence.component.adapter
 
 import android.content.Context
 import android.util.SparseArray

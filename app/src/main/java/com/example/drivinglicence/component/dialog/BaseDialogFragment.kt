@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.dialog
+package com.example.drivinglicence.component.dialog
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -14,11 +14,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.viewbinding.ViewBinding
-import com.example.drivinglicense.R
-import com.example.drivinglicense.pref.BindingReflex
+import com.example.drivinglicence.pref.BindingReflex
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
-import java.lang.reflect.ParameterizedType
 
 abstract class BaseDialogFragment<VB : ViewBinding> : AppCompatDialogFragment(),
     View.OnClickListener, CoroutineScope by MainScope() {

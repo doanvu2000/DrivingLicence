@@ -1,4 +1,4 @@
-package com.example.drivinglicense.app.adapter
+package com.example.drivinglicence.app.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

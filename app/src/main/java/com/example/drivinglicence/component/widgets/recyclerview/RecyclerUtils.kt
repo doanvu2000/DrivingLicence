@@ -1,8 +1,7 @@
-package com.example.drivinglicense.component.widgets.recyclerview
+package com.example.drivinglicence.component.widgets.recyclerview
 
 import android.content.Context
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView

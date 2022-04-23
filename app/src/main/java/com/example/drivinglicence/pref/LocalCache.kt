@@ -1,4 +1,4 @@
-package com.example.drivinglicense.pref
+package com.example.drivinglicence.pref
 
 import android.content.Context
 import android.os.Parcelable

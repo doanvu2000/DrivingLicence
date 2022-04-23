@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.adapter
+package com.example.drivinglicence.component.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.annotation.NonNull
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.example.drivinglicense.pref.BindingReflex
+import com.example.drivinglicence.pref.BindingReflex
 
 
 abstract class BaseRecyclerViewAdapter<T, VB : ViewBinding>

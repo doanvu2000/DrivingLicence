@@ -1,10 +1,10 @@
-package com.example.drivinglicense.component.activity
+package com.example.drivinglicence.component.activity
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
-import com.example.drivinglicense.component.navigator.getGenericSuperclass
-import com.example.drivinglicense.component.viewmodel.BaseViewModel
+import com.example.drivinglicence.component.navigator.getGenericSuperclass
+import com.example.drivinglicence.component.viewmodel.BaseViewModel
 
 abstract class BaseVMActivity<VB : ViewBinding, VM : BaseViewModel> : BaseCoreActivity<VB>() {
 

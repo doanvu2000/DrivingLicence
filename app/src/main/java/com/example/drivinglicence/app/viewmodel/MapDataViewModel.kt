@@ -1,10 +1,10 @@
-package com.example.drivinglicense.app.viewmodel
+package com.example.drivinglicence.app.viewmodel
 
 import android.content.Context
-import com.example.drivinglicense.app.entity.Answer
-import com.example.drivinglicense.app.entity.Question
-import com.example.drivinglicense.component.viewmodel.BaseViewModel
-import com.example.drivinglicense.utils.listAnswer
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.entity.Question
+import com.example.drivinglicence.component.viewmodel.BaseViewModel
+import com.example.drivinglicence.utils.listAnswer
 
 class MapDataViewModel : BaseViewModel() {
 

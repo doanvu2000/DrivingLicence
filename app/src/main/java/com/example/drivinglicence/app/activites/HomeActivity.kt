@@ -1,4 +1,4 @@
-package com.example.drivinglicense.app.activites
+package com.example.drivinglicence.app.activites
 
 import android.graphics.drawable.ColorDrawable
 import android.view.Menu
@@ -6,17 +6,17 @@ import android.view.MenuItem
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.adapter.ActionAdapter
-import com.example.drivinglicense.app.entity.ItemAction
-import com.example.drivinglicense.component.activity.BaseCoreActivity
-import com.example.drivinglicense.component.navigator.openActivity
-import com.example.drivinglicense.component.widgets.recyclerview.RecyclerUtils
-import com.example.drivinglicense.databinding.ActivityMainBinding
-import com.example.drivinglicense.pref.showDevelopMessage
-import com.example.drivinglicense.pref.showMessage
-import com.example.drivinglicense.utils.getListQuestionImportant
-import com.example.drivinglicense.utils.initList
+import com.example.drivinglicence.R
+import com.example.drivinglicence.app.adapter.ActionAdapter
+import com.example.drivinglicence.app.entity.ItemAction
+import com.example.drivinglicence.component.activity.BaseCoreActivity
+import com.example.drivinglicence.component.navigator.openActivity
+import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
+import com.example.drivinglicence.databinding.ActivityMainBinding
+import com.example.drivinglicence.pref.showDevelopMessage
+import com.example.drivinglicence.pref.showMessage
+import com.example.drivinglicence.utils.getListQuestionImportant
+import com.example.drivinglicence.utils.initList
 
 class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
     private val actionAdapter by lazy {

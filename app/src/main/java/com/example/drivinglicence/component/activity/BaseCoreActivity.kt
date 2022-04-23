@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.activity
+package com.example.drivinglicence.component.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,12 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
-import com.example.drivinglicense.BuildConfig
-import com.example.drivinglicense.component.navigator.getCurrentFragment
-import com.example.drivinglicense.component.navigator.popFragment
-import com.example.drivinglicense.component.widgets.loading.LoadingDialog
-import com.example.drivinglicense.pref.BindingReflex
-import com.example.drivinglicense.pref.hideKeyboard
+import com.example.drivinglicence.BuildConfig
+import com.example.drivinglicence.component.navigator.getCurrentFragment
+import com.example.drivinglicence.component.navigator.popFragment
+import com.example.drivinglicence.component.widgets.loading.LoadingDialog
+import com.example.drivinglicence.pref.BindingReflex
+import com.example.drivinglicence.pref.hideKeyboard
 import com.mobile.mbccs.base.component.activity.ActivityManager
 import com.mobile.mbccs.base.component.activity.ActivityResultObservable
 import com.mobile.mbccs.base.component.activity.ActivityResultObserver

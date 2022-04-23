@@ -1,4 +1,4 @@
-package com.example.drivinglicense.app.entity
+package com.example.drivinglicence.app.entity
 
 data class Exam(
     val examId: Int,

@@ -6,10 +6,19 @@
     tools:context=".app.fragment.DemoFragment">
 
     <TextView
-        android:id="@+id/text_count"
+        android:id="@+id/text_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/hello_blank_fragment" />
+        android:text="id" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_id"
+        android:layout_centerInParent="true"
+        android:text="name" />
+
 
 </RelativeLayout>

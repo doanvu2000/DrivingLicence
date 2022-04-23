@@ -8,7 +8,7 @@
     android:paddingHorizontal="23dp"
     android:paddingVertical="13.44dp">
 
-    <com.example.drivinglicense.component.widgets.loading.LoadingAnimView
+    <com.example.drivinglicence.component.widgets.loading.LoadingAnimView
         android:id="@+id/loadingView"
         android:layout_width="40dp"
         android:layout_height="40dp" />

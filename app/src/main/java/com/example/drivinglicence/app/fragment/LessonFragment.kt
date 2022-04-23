@@ -1,56 +1,49 @@
-package com.example.drivinglicense.app.fragment
+package com.example.drivinglicence.app.fragment
 
 import android.annotation.SuppressLint
-import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.adapter.AnswerAdapter
-import com.example.drivinglicense.app.entity.Answer
-import com.example.drivinglicense.app.entity.Question
-import com.example.drivinglicense.app.viewmodel.MapDataViewModel
-import com.example.drivinglicense.component.fragment.BaseFragment
-import com.example.drivinglicense.component.widgets.recyclerview.RecyclerUtils
-import com.example.drivinglicense.databinding.FragmentLessonBinding
-import com.example.drivinglicense.databinding.LayoutQuestionAnswerBinding
-import com.example.drivinglicense.pref.showMessage
-import com.example.drivinglicense.utils.getListQuestionImportant
+import com.example.drivinglicence.app.adapter.AnswerAdapter
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.entity.Question
+import com.example.drivinglicence.app.viewmodel.DataViewModel
+import com.example.drivinglicence.component.fragment.BaseFragment
+import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
+import com.example.drivinglicence.databinding.FragmentLessonBinding
+import com.example.drivinglicence.databinding.LayoutQuestionAnswerBinding
+import com.example.drivinglicence.utils.ANSWERS
+import com.example.drivinglicence.utils.QUESTION
 
 class LessonFragment(
-    private val question: Question,
-    private val listAnswer: MutableList<Answer>,
-    val flag: Int
 ) :
-    BaseFragment<FragmentLessonBinding, MapDataViewModel>() {
+    BaseFragment<FragmentLessonBinding, DataViewModel>() {
 
-    private val bindingContent by lazy {
-        LayoutQuestionAnswerBinding.bind(binding.root)
-    }
+//    private val bindingContent by lazy {
+//        LayoutQuestionAnswerBinding.bind(binding.root)
+//    }
     private val answerAdapter by lazy {
         AnswerAdapter()
     }
+//    private var question: Question? = null
+//    private var listAnswer: MutableList<Answer>? = null
 
     override fun initView() {
-        bindingContent.textQuestionContent.text = question.content
-        RecyclerUtils.setGridManager(this, bindingContent.rcvAnswers, answerAdapter)
-        Log.d("TAG", "initView:  ${question.questionId}")
+        initData()
+        RecyclerUtils.setGridManager(this, binding.rcvAnswers, answerAdapter)
     }
 
     @SuppressLint("NotifyDataSetChanged")
     override fun initListener() {
         answerAdapter.setOnClickItemRecyclerView { answer, _ ->
             if (answer.isCorrect) {
-                bindingContent.layoutEx.visibility = View.VISIBLE
-                bindingContent.layoutExplainAnswer.visibility = View.VISIBLE
-                bindingContent.textExplainAnswer.text = answer.answerExplain
+                binding.layoutEx.visibility = View.VISIBLE
+                binding.layoutExplainAnswer.visibility = View.VISIBLE
+                binding.textExplainAnswer.text = answer.answerExplain
                 answerAdapter.dataList.map { it.flag = 1 }
                 answer.flag = 2
             } else {
-                bindingContent.layoutEx.visibility = View.GONE
-                bindingContent.layoutExplainAnswer.visibility = View.GONE
+                binding.layoutEx.visibility = View.GONE
+                binding.layoutExplainAnswer.visibility = View.GONE
                 answerAdapter.dataList.map { it.flag = 1 }
                 answer.flag = 3
             }
@@ -59,7 +52,11 @@ class LessonFragment(
     }
 
     override fun initData() {
-        answerAdapter.addData(listAnswer)
+        val question: Question? = arguments?.getParcelable(QUESTION)
+        val listAnswer: MutableList<Answer>? = arguments?.getParcelableArrayList(ANSWERS)
+        binding.textQuestionContent.text = question?.content
+        answerAdapter.addData(listAnswer ?: mutableListOf())
+        Log.d("TAG123", "initData: ${question?.questionId} - ${listAnswer?.size}")
     }
 
     override fun onSingleClick(v: View) {

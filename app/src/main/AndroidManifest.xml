@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.drivinglicense">
+    package="com.example.drivinglicence">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,28 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DrivingLicense">
         <activity
-            android:name=".app.activites.TestViewPagerActivity"
+            android:name="com.example.drivinglicence.app.activites.TestViewPagerActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.ExecuteActivity"
+            android:name="com.example.drivinglicence.app.activites.ExecuteActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.SearchLawActivity"
+            android:name="com.example.drivinglicence.app.activites.SearchLawActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.TipsActivity"
+            android:name="com.example.drivinglicence.app.activites.TipsActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.RoadTrafficSignsActivity"
+            android:name="com.example.drivinglicence.app.activites.RoadTrafficSignsActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.LearningTheoryActivity"
+            android:name="com.example.drivinglicence.app.activites.LearningTheoryActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.TestLicenseActivity"
+            android:name="com.example.drivinglicence.app.activites.TestLicenseActivity"
             android:exported="false" />
         <activity
-            android:name=".app.activites.HomeActivity"
+            android:name="com.example.drivinglicence.app.activites.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

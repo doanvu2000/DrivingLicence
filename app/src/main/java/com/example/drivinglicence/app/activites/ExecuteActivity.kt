@@ -1,18 +1,18 @@
-package com.example.drivinglicense.app.activites
+package com.example.drivinglicence.app.activites
 
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.view.View
 import androidx.core.content.ContextCompat
-import com.example.drivinglicense.R
-import com.example.drivinglicense.app.adapter.AnswerAdapter
-import com.example.drivinglicense.app.entity.Answer
-import com.example.drivinglicense.app.viewmodel.MapDataViewModel
-import com.example.drivinglicense.component.activity.BaseVMActivity
-import com.example.drivinglicense.component.widgets.recyclerview.RecyclerUtils
-import com.example.drivinglicense.databinding.ActivityExecuteBinding
-import com.example.drivinglicense.databinding.LayoutQuestionAnswerBinding
-import com.example.drivinglicense.utils.TITLE_TOOLBAR
+import com.example.drivinglicence.R
+import com.example.drivinglicence.app.adapter.AnswerAdapter
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.viewmodel.MapDataViewModel
+import com.example.drivinglicence.component.activity.BaseVMActivity
+import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
+import com.example.drivinglicence.databinding.ActivityExecuteBinding
+import com.example.drivinglicence.databinding.LayoutQuestionAnswerBinding
+import com.example.drivinglicence.utils.TITLE_TOOLBAR
 
 class ExecuteActivity : BaseVMActivity<ActivityExecuteBinding, MapDataViewModel>() {
 

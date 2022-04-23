@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app.activites.ExecuteActivity">
+    tools:context="com.example.drivinglicence.app.activites.ExecuteActivity">
 
-    <com.example.drivinglicense.component.toolbar.ToolBarApp
+    <com.example.drivinglicence.component.toolbar.ToolBarApp
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

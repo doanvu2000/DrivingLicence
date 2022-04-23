@@ -1,5 +1,9 @@
-package com.example.drivinglicense.app.entity
+package com.example.drivinglicence.app.entity
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Answer(
     val answerId: Int,
     val answerContent: String,
@@ -7,4 +11,4 @@ data class Answer(
     val questionId: Int,
     val answerExplain: String? = null,
     var flag: Int? = 1
-)
+) : Parcelable

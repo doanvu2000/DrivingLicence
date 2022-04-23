@@ -1,4 +1,4 @@
-package com.example.drivinglicense.component.navigator
+package com.example.drivinglicence.component.navigator
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -12,8 +12,8 @@ import android.os.Parcelable
 import android.provider.Settings
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.*
-import com.example.drivinglicense.component.activity.BaseVMActivity
-import com.example.drivinglicense.component.fragment.BaseFragment
+import com.example.drivinglicence.component.activity.BaseVMActivity
+import com.example.drivinglicence.component.fragment.BaseFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

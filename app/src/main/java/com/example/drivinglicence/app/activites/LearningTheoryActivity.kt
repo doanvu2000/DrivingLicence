@@ -1,14 +1,14 @@
-package com.example.drivinglicense.app.activites
+package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
-import com.example.drivinglicense.R
-import com.example.drivinglicense.component.activity.BaseCoreActivity
-import com.example.drivinglicense.component.navigator.openActivity
-import com.example.drivinglicense.databinding.ActivityLearningTheoryBinding
-import com.example.drivinglicense.utils.TITLE_TOOLBAR
+import com.example.drivinglicence.R
+import com.example.drivinglicence.component.activity.BaseCoreActivity
+import com.example.drivinglicence.component.navigator.openActivity
+import com.example.drivinglicence.databinding.ActivityLearningTheoryBinding
+import com.example.drivinglicence.utils.TITLE_TOOLBAR
 
 class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>() {
     override fun initView() {

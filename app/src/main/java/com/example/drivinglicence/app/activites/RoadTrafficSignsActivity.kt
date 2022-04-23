@@ -1,10 +1,10 @@
-package com.example.drivinglicense.app.activites
+package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
 import androidx.core.content.ContextCompat
-import com.example.drivinglicense.R
-import com.example.drivinglicense.component.activity.BaseCoreActivity
-import com.example.drivinglicense.databinding.ActivityRoadTrafficSignsBinding
+import com.example.drivinglicence.R
+import com.example.drivinglicence.component.activity.BaseCoreActivity
+import com.example.drivinglicence.databinding.ActivityRoadTrafficSignsBinding
 
 class RoadTrafficSignsActivity : BaseCoreActivity<ActivityRoadTrafficSignsBinding>() {
     override fun initView() {

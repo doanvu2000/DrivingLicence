@@ -1,12 +1,12 @@
-package com.example.drivinglicense.component.toolbar
+package com.example.drivinglicence.component.toolbar
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
-import com.example.drivinglicense.R
-import com.example.drivinglicense.databinding.ToolbarAppBinding
+import com.example.drivinglicence.R
+import com.example.drivinglicence.databinding.ToolbarAppBinding
 
 class ToolBarApp : LinearLayout {
     var onLeftClickListener: (() -> Unit)? = null
