@@ -1,3 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DrivingLicence</string>
+    <string name="app_name">Driving License</string>
+    <string name="license_a1">License A1</string>
+    <string name="license_a2">License A2</string>
+    <string name="text_chose_license_A1">You chose practice license A1</string>
+    <string name="text_chose_license_A2">You chose practice license A2</string>
+    <string name="text_exam">Driver\'s license test</string>
+    <string name="text_learning_theory">Learning theory</string>
+    <string name="text_road_signs">Road traffic signs</string>
+    <string name="text_tips">Tips for high results</string>
+    <string name="text_search_law">Law lookup</string>
+    <string name="text_create_random_exam">Create random exam</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_confirm">Confirm</string>
+    <string name="text_explain_answer">Explain the answer</string>
+
+    <!--Giải thích đáp án-->
+    <string name="text_explain_answer_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:
+         \nA fine of between VND 5,000,000 and 10,000,000 for one of the following violations:\n
+        a) Illegally drilling, digging, cutting roads and sidewalks;\n
+        b) Arbitrarily breaking the median strip, bridge mirror, works, traffic safety equipment on the road;\n
+        c) Arbitrarily removing, opening and damaging manhole covers, manhole covers of underground works, tunnel systems on roads;
+        d) Illegally blasting or exploiting soil, sand, gravel or stones, affecting road works.
+    </string>
+    <string name="text_explain_answer_2">
+        Acts of racing motor vehicles and special-use motorcycles that do not meet technical safety and environmental protection standards in road traffic are strictly prohibited.
+    </string>
+    <string name="text_explain_answer_3">
+       Sentences 1 and 2 are wrong because both are illegal racing acts. Illegal racing is a prohibited act specified in the Road Traffic Law. \nThe correct answer is 3.
+    </string>
+    <!--Câu hỏi điểm liệt (60)-->
+    <string name="question_important_1">Which of the following acts are prohibited?</string>
+    <string name="question_important_2">Is the act of racing motor vehicles and special-use motorcycles not up to the standards of technical safety and environmental protection in road traffic?</string>
+    <string name="question_important_3">When is the vehicle race only done?</string>
+    <string name="question_important_4">Is it prohibited to drive a road vehicle with drugs?</string>
+    <string name="question_important_5">After drinking alcohol, is it possible to drive motorcycles, cars, or tractors right after that?</string>
+    <string name="question_important_6">Is it prohibited to operate a car, motorcycle, or tractor on the road with alcohol in the blood or breath?</string>
+    <string name="question_important_7">Using alcohol while driving, if detected, how to handle?</string>
+    <string name="question_important_8">According to the Law on Prevention of Harmful Effects of Alcohol and Beer, which of the following subjects are prohibited from using alcohol while participating in traffic?</string>
+    <string name="question_important_9">Is the act of delivering motor vehicles or special-use motorcycles to people who are not eligible to drive vehicles in traffic?</string>
+    <string name="question_important_10">Is the act of driving a vehicle exceeding the prescribed speed, entering lanes, or overtaking carelessly?</string>
+    <string name="question_important_11">Confirm</string>
+    <string name="question_important_12">Confirm</string>
+    <string name="question_important_13">Confirm</string>
+    <string name="question_important_14">Confirm</string>
+    <string name="question_important_15">Confirm</string>
+    <string name="question_important_16">Confirm</string>
+    <string name="question_important_17">Confirm</string>
+    <string name="question_important_18">Confirm</string>
+    <string name="question_important_19">Confirm</string>
+    <string name="question_important_20">Confirm</string>
+
+    <!--Câu trả lời câu hỏi điểm liệt-->
+
+    <string name="answer_important_1_1">Parking on the street</string>
+    <string name="answer_important_1_2">Use the bike on the highway at high speed.</string>
+    <string name="answer_important_1_3">Damage (intentionally) target stake, spherical mirror, median line.</string>
+    <string name="answer_important_1_4">Use your horn and make a U-turn in a residential area.</string>
+    <string name="answer_important_2_1">Not strictly prohibited.</string>
+    <string name="answer_important_2_2">Prohibited.</string>
+    <string name="answer_important_2_3">Prohibited depending on the route.</string>
+    <string name="answer_important_2_4">Prohibited depending on vehicle type</string>
+    <string name="answer_important_3_1">Taking place on a street with no passersby.</string>
+    <string name="answer_important_3_2">Supported by the people.</string>
+    <string name="answer_important_3_3">Licensed by the competent authority.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

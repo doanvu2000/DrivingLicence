@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ôn thi giấy phép lái xe</string>
+    <string name="license_a1">Giấp phép lái xe hạng A1</string>
+    <string name="license_a2">Giấp phép lái xe hạng A2</string>
+    <string name="text_chose_license_A1">Bạn chọn ôn luyện giấy phép hạng A1</string>
+    <string name="text_chose_license_A2">Bạn chọn ôn luyện giấy phép hạng A2</string>
+    <string name="text_exam">Thi sát hạch</string>
+    <string name="text_learning_theory">Học lý thuyết</string>
+    <string name="text_road_signs">Biển báo đường bộ</string>
+    <string name="text_tips">Mẹo đạt kết quả cao</string>
+    <string name="text_search_law">Tra cứu luật</string>
+    <string name="text_create_random_exam">Tạo đề thi ngẫu nhiên</string>
+    <string name="text_cancel">Hủy</string>
+    <string name="text_confirm">Đồng ý</string>
+    <string name="text_explain_answer">Giải thích đáp án</string>
+
+    <!--Giải thích đáp án-->
+    <string name="text_explain_answer_1">Rõ ràng là đáp án 3 sai mà. Làm hỏng tài sản của nhà nước mà. Nếu vi phạm bạn sẽ bị phạt với 1 số tiền không nhỏ. Cụ thể:
+        \nPhạt tiền từ 5.000.000 đồng đến 10.000.000 đối với một trong các hành vi vi phạm sau đây:\n
+       a) Khoan, đào, xẻ đường, hè phố trái phép;\n
+       b) Tự ý phá dải phân cách, gương cầu, các công trình, thiết bị an toàn giao thông trên đường bộ;\n
+       c) Tự ý tháo, mở làm hư hỏng nắp cống, nắp ga các công trình ngầm, hệ thống tuy nen trên đường giao thông;\n
+       d) Nổ mìn hoặc khai thác đất, cát, sỏi, đá trái phép làm ảnh hưởng đến công trình đường bộ.
+    </string>
+    <string name="text_explain_answer_2">
+        Hành vi đua xe cơ giới, xe máy chuyên dùng không đảm bảo tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường vào tham gia giao thông đường bộ bị nghiêm cấm.
+    </string>
+    <string name="text_explain_answer_3">
+        Câu 1 và 2 sai vì đều là hành vi đua xe trái phép. Hành vi đua xe trái phép là hành vi nghiêm cấm được quy định trong Luật giao thông đường bộ. \nĐáp án đúng là 3.
+    </string>
+
+    <!--Câu hỏi điểm liệt (60)-->
+    <string name="question_important_1">Hành vi nào dưới đây bị nghiêm cấm</string>
+    <string name="question_important_2">Hành vi đua xe cơ giới, xe máy chuyên dùng không bảo đảm tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường vào tham gia giao thông đường bộ có bị nghiêm cấm hay không?</string>
+    <string name="question_important_3">Cuộc đua xe chỉ được thực hiện khi nào?</string>
+    <string name="question_important_4">Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy có bị nghiêm cấm hay không?</string>
+    <string name="question_important_5">Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?</string>
+    <string name="question_important_6">Người điều khiển xe ô tô, mô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?</string>
+    <string name="question_important_7">Sử dụng rượu, bia khi lái xe, nế bị phát hiện thì bị xử lý như thế nào?</string>
+    <string name="question_important_8">Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu, bia khi tham gia giao thông</string>
+    <string name="question_important_9">Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?</string>
+    <string name="question_important_10">Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?</string>
+    <string name="question_important_11">Confirm2</string>
+    <string name="question_important_12">Confirm3</string>
+    <string name="question_important_13">Confirm4</string>
+    <string name="question_important_14">Confirma</string>
+    <string name="question_important_15">Confirms</string>
+    <string name="question_important_16">Confirms</string>
+    <string name="question_important_17">Confirms</string>
+    <string name="question_important_18">Confirms</string>
+    <string name="question_important_19">Confirms</string>
+    <string name="question_important_20">Confirms</string>
+
+    <!--Câu trả lời câu hỏi điểm liệt-->
+
+    <string name="answer_important_1_1">Đỗ xe trên đường phố</string>
+    <string name="answer_important_1_2">Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.</string>
+    <string name="answer_important_1_3">Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.</string>
+    <string name="answer_important_1_4">Sử dụng còi và quay đầu xe trong khu dân cư.</string>
+    <string name="answer_important_2_1">Không nghiêm cấm.</string>
+    <string name="answer_important_2_2">Bị nghiêm cấm.</string>
+    <string name="answer_important_2_3">Bị nghiêm cấm tùy theo các tuyến đường.</string>
+    <string name="answer_important_2_4">Bị nghiêm cấm tùy theo loại xe</string>
+    <string name="answer_important_3_1">Diễn ra trên đường phố không có người qua lại.</string>
+    <string name="answer_important_3_2">Được người dân ủng hộ.</string>
+    <string name="answer_important_3_3">Được cơ quan có thẩm quyền cấp phép.</string>
+</resources>
