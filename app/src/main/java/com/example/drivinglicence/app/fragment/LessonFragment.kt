@@ -61,6 +61,7 @@ class LessonFragment(
             }
         }
         answerAdapter.addData(listAnswer ?: mutableListOf())
+        Log.d("TAG", "initData: $listAnswer")
     }
 
     override fun onSingleClick(v: View) {

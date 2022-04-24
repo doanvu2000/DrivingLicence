@@ -70,7 +70,7 @@ class ExecuteActivity : BaseVMActivity<ActivityExecuteBinding, MapDataViewModel>
     override fun initData() {
         bindingContent.textQuestionContent.text = getString(R.string.question_important_3)
         viewModel.getAnswerWithQuestionImportant()
-        val listAnswer = viewModel.mapAnswer[3]
+        val listAnswer = viewModel.mapAnswerImportant[3]
         if (listAnswer != null) {
             answerAdapter.addData(listAnswer)
         }

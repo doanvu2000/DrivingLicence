@@ -1,6 +1,7 @@
 package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
+import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.example.drivinglicence.R
@@ -10,6 +11,7 @@ import com.example.drivinglicence.component.activity.BaseCoreActivity
 import com.example.drivinglicence.component.navigator.openActivity
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.example.drivinglicence.databinding.ActivityLearningTheoryBinding
+import com.example.drivinglicence.utils.FLAG
 
 class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>() {
     private val learningAdapter by lazy {
@@ -27,31 +29,42 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
         binding.toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.primary))
         binding.toolbar.setTitleColor(Color.WHITE)
         binding.toolbar.setIconLeft(R.drawable.icon_back_white)
-        binding.toolbar.setIconRight(R.drawable.icon_info)
     }
 
     override fun initListener() {
         binding.toolbar.onLeftClickListener = { onBackPressed() }
         learningAdapter.setOnClickItemRecyclerView { _, position ->
+            val bundle = Bundle()
             when (position) {
                 0 -> {
                     /**60 câu hỏi điểm liệt*/
-                    openActivity(TestViewPagerActivity::class.java, false)
+                    bundle.putInt(FLAG,1)
+                    openActivity(TestViewPagerActivity::class.java, bundle)
                 }
                 1 -> {
                     /**Khái niệm và quy tắc*/
+                    bundle.putInt(FLAG,2)
+                    openActivity(TestViewPagerActivity::class.java, bundle)
                 }
                 2 -> {
                     /**Văn hóa và đạo đức lái xe*/
+                    bundle.putInt(FLAG,3)
+                    openActivity(TestViewPagerActivity::class.java, bundle)
                 }
                 3 -> {
                     /**Kĩ thuật lái xe*/
+                    bundle.putInt(FLAG,4)
+                    openActivity(TestViewPagerActivity::class.java, bundle)
                 }
                 4 -> {
                     /**Biển báo đường bộ*/
+                    bundle.putInt(FLAG,5)
+                    openActivity(TestViewPagerActivity::class.java, bundle)
                 }
                 5 -> {
                     /**Sa hình*/
+                    bundle.putInt(FLAG,6)
+                    openActivity(TestViewPagerActivity::class.java, bundle)
                 }
             }
         }

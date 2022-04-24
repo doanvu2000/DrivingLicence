@@ -25,23 +25,38 @@
     <string name="text_driving_technique">Kỹ thuật lái xe</string>
     <string name="text_about_12">Gồm 12 câu hỏi (2 câu điểm liệt)</string>
     <string name="text_sat_figure">Sa hình</string>
+    <string name="text_exam_number">Đề số</string>
 
-    <!--Giải thích đáp án-->
-    <string name="text_explain_answer_1">Rõ ràng là đáp án 3 sai mà. Làm hỏng tài sản của nhà nước mà. Nếu vi phạm bạn sẽ bị phạt với 1 số tiền không nhỏ. Cụ thể:
+    <!-- ======================================== Giải thích đáp án ========================================-->
+    <!-- 60 câu điểm liệt-->
+    <string name="text_explain_answer_important_1">Rõ ràng là đáp án 3 sai mà. Làm hỏng tài sản của nhà nước mà. Nếu vi phạm bạn sẽ bị phạt với 1 số tiền không nhỏ. Cụ thể:
         \nPhạt tiền từ 5.000.000 đồng đến 10.000.000 đối với một trong các hành vi vi phạm sau đây:\n
        a) Khoan, đào, xẻ đường, hè phố trái phép;\n
        b) Tự ý phá dải phân cách, gương cầu, các công trình, thiết bị an toàn giao thông trên đường bộ;\n
        c) Tự ý tháo, mở làm hư hỏng nắp cống, nắp ga các công trình ngầm, hệ thống tuy nen trên đường giao thông;\n
        d) Nổ mìn hoặc khai thác đất, cát, sỏi, đá trái phép làm ảnh hưởng đến công trình đường bộ.
     </string>
-    <string name="text_explain_answer_2">
+    <string name="text_explain_answer_important_2">
         Hành vi đua xe cơ giới, xe máy chuyên dùng không đảm bảo tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường vào tham gia giao thông đường bộ bị nghiêm cấm.
     </string>
-    <string name="text_explain_answer_3">
+    <string name="text_explain_answer_important_3">
         Câu 1 và 2 sai vì đều là hành vi đua xe trái phép. Hành vi đua xe trái phép là hành vi nghiêm cấm được quy định trong Luật giao thông đường bộ. \nĐáp án đúng là 3.
     </string>
+    <!--83 câu khái niệm và quy tắc-->
+    <string name="text_explain_answer_concept_and_rule_1">Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \n
+        Câu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \n
+        Câu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ...)\n
+        Mẹo: Có bề rộng đủ cho xe chạy an toàn.
+    </string>
 
-    <!--Câu hỏi điểm liệt (60)-->
+    <string name="text_explain_answer_concept_and_rule_2">Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\nĐáp án đúng: 3.
+    </string>
+
+
+    <!--======================================== End giải thích đáp án ========================================-->
+
+    <!-- ========================================Câu hỏi điểm liệt (60) ========================================-->
+
     <string name="question_important_1">Hành vi nào dưới đây bị nghiêm cấm</string>
     <string name="question_important_2">Hành vi đua xe cơ giới, xe máy chuyên dùng không bảo đảm tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường vào tham gia giao thông đường bộ có bị nghiêm cấm hay không?</string>
     <string name="question_important_3">Cuộc đua xe chỉ được thực hiện khi nào?</string>
@@ -63,7 +78,7 @@
     <string name="question_important_19">Confirms</string>
     <string name="question_important_20">Confirms</string>
 
-    <!--Câu trả lời câu hỏi điểm liệt-->
+    <!-- ========================================Câu trả lời câu hỏi điểm liệt ========================================-->
 
     <string name="answer_important_1_1">Đỗ xe trên đường phố</string>
     <string name="answer_important_1_2">Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.</string>
@@ -76,4 +91,19 @@
     <string name="answer_important_3_1">Diễn ra trên đường phố không có người qua lại.</string>
     <string name="answer_important_3_2">Được người dân ủng hộ.</string>
     <string name="answer_important_3_3">Được cơ quan có thẩm quyền cấp phép.</string>
+
+    <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
+
+    <string name="question_concepts_and_rules_1">Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì</string>
+    <string name="question_concepts_and_rules_2">"Làn đường" là gì</string>
+
+    <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
+
+    <string name="answer_concepts_and_rules_1_1">Phần mặt đường và lề đường.</string>
+    <string name="answer_concepts_and_rules_1_2">Phần đường xe chạy.</string>
+    <string name="answer_concepts_and_rules_1_3">Phần đường xe cơ giới.</string>
+    <string name="answer_concepts_and_rules_2_1">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.</string>
+    <string name="answer_concepts_and_rules_2_2">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.</string>
+    <string name="answer_concepts_and_rules_2_3">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.</string>
+
 </resources>

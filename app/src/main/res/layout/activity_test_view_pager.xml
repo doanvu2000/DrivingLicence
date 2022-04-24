@@ -24,10 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/green"
+        android:background="@color/primary"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="5dp">
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/text_back"
@@ -37,7 +37,7 @@
             android:layout_marginEnd="5dp"
             android:text="Back"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:visibility="gone" />
 
@@ -49,7 +49,7 @@
             android:layout_marginEnd="5dp"
             android:text="1"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:text="/"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -68,7 +68,7 @@
             android:layout_marginEnd="5dp"
             android:text="25"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -79,7 +79,7 @@
             android:layout_marginEnd="5dp"
             android:text="Next"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
     </LinearLayout>

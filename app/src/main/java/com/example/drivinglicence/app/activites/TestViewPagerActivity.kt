@@ -14,6 +14,7 @@ import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.databinding.ActivityTestViewPagerBinding
 import com.example.drivinglicence.utils.ANSWERS
+import com.example.drivinglicence.utils.FLAG
 import com.example.drivinglicence.utils.QUESTION
 
 class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDataViewModel>() {
@@ -65,20 +66,51 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
     private var listQuestion: MutableList<Question> = mutableListOf()
     private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
     override fun initData() {
+        val flag = intent.extras?.getInt(FLAG) ?: 1
+        /**
+         * 1: 60 Câu hỏi điểm liệt
+         * 2: 83 Câu hỏi khái niệm và quy tắc
+         * 3: 5 câu hỏi văn hóa và đạo đức lái xe
+         * 4: 12 câu hỏi kĩ thuật lái xe
+         * 5: 65 câu hỏi biển báo đường bộ
+         * 6: 35 câu hỏi sa hình
+         * */
         //danh sach cau tra loi cua 3 cau hoi
-        listQuestion = viewModel.getListQuestionImportant(this)
-        viewModel.mapAnswer[1]?.let { listAnswer.add(it) }
-        viewModel.mapAnswer[2]?.let { listAnswer.add(it) }
-        viewModel.mapAnswer[3]?.let { listAnswer.add(it) }
-        for (i in 1..3) {
-            val question = listQuestion[i - 1]
-            val answers = listAnswer[i - 1] as ArrayList<Answer>
-            mListFragment.add(LessonFragment().apply {
-                val bundle = Bundle()
-                bundle.putParcelable(QUESTION, question)
-                bundle.putParcelableArrayList(ANSWERS, answers)
-                arguments = bundle
-            })
+        when (flag) {
+            1 -> {
+                /**60 Câu hỏi điểm liệt*/
+                listQuestion = viewModel.getListQuestionImportant(this)
+                viewModel.mapAnswerImportant[1]?.let { listAnswer.add(it) }
+                viewModel.mapAnswerImportant[2]?.let { listAnswer.add(it) }
+                viewModel.mapAnswerImportant[3]?.let { listAnswer.add(it) }
+                for (i in 1..3) {
+                    val question = listQuestion[i - 1]
+                    val answers = listAnswer[i - 1] as ArrayList<Answer>
+                    mListFragment.add(LessonFragment().apply {
+                        val bundle = Bundle()
+                        bundle.putParcelable(QUESTION, question)
+                        bundle.putParcelableArrayList(ANSWERS, answers)
+                        arguments = bundle
+                    })
+                }
+            }
+            2 -> {
+                /**83 Câu hỏi khái niệm và quy tắc*/
+                listQuestion = viewModel.getListQuestionConceptsAndRules(this)
+                for (i in 1..2) {
+                    listAnswer.add(viewModel.mapAnswerConceptsAndRules[i] ?: mutableListOf())
+                }
+                for (i in 1..2) {
+                    val question = listQuestion[i - 1]
+                    val answers = listAnswer[i - 1] as ArrayList<Answer>
+                    mListFragment.add(LessonFragment().apply {
+                        val bundle = Bundle()
+                        bundle.putParcelable(QUESTION, question)
+                        bundle.putParcelableArrayList(ANSWERS, answers)
+                        arguments = bundle
+                    })
+                }
+            }
         }
         viewpagerAdapter.addFragment(mListFragment)
         binding.viewPager.adapter = viewpagerAdapter

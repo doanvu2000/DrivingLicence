@@ -25,22 +25,38 @@
     <string name="text_driving_technique">Driving technique</string>
     <string name="text_about_12">Includes 12 questions (2 questions important)</string>
     <string name="text_sat_figure">Sat figure</string>
+    <string name="text_exam_number">Exam question </string>
 
-    <!--Giải thích đáp án-->
-    <string name="text_explain_answer_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:
+    <!-- ======================================== Giải thích đáp án ========================================-->
+    <!-- 60 câu điểm liệt-->
+    <string name="text_explain_answer_important_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:
          \nA fine of between VND 5,000,000 and 10,000,000 for one of the following violations:\n
         a) Illegally drilling, digging, cutting roads and sidewalks;\n
         b) Arbitrarily breaking the median strip, bridge mirror, works, traffic safety equipment on the road;\n
         c) Arbitrarily removing, opening and damaging manhole covers, manhole covers of underground works, tunnel systems on roads;
         d) Illegally blasting or exploiting soil, sand, gravel or stones, affecting road works.
     </string>
-    <string name="text_explain_answer_2">
+    <string name="text_explain_answer_important_2">
         Acts of racing motor vehicles and special-use motorcycles that do not meet technical safety and environmental protection standards in road traffic are strictly prohibited.
     </string>
-    <string name="text_explain_answer_3">
+    <string name="text_explain_answer_important_3">
        Sentences 1 and 2 are wrong because both are illegal racing acts. Illegal racing is a prohibited act specified in the Road Traffic Law. \nThe correct answer is 3.
     </string>
-    <!--Câu hỏi điểm liệt (60)-->
+    <!--83 câu khái niệm và quy tắc-->
+    <string name="text_explain_answer_concept_and_rule_1">
+        Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \n
+        Câu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \n
+        Câu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ...)\n
+        Mẹo: Có bề rộng đủ cho xe chạy an toàn.
+    </string>
+
+    <string name="text_explain_answer_concept_and_rule_2">
+        Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\n
+        Đáp án đúng: 3.
+    </string>
+    <!--======================================== End giải thích đáp án ========================================-->
+
+    <!-- ========================================Câu hỏi điểm liệt (60) ========================================-->
     <string name="question_important_1">Which of the following acts are prohibited?</string>
     <string name="question_important_2">Is the act of racing motor vehicles and special-use motorcycles not up to the standards of technical safety and environmental protection in road traffic?</string>
     <string name="question_important_3">When is the vehicle race only done?</string>
@@ -62,7 +78,7 @@
     <string name="question_important_19">Confirm</string>
     <string name="question_important_20">Confirm</string>
 
-    <!--Câu trả lời câu hỏi điểm liệt-->
+    <!-- ========================================Câu trả lời câu hỏi điểm liệt ========================================-->
 
     <string name="answer_important_1_1">Parking on the street</string>
     <string name="answer_important_1_2">Use the bike on the highway at high speed.</string>
@@ -75,6 +91,19 @@
     <string name="answer_important_3_1">Taking place on a street with no passersby.</string>
     <string name="answer_important_3_2">Supported by the people.</string>
     <string name="answer_important_3_3">Licensed by the competent authority.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
+
+    <string name="question_concepts_and_rules_1">Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì</string>
+    <string name="question_concepts_and_rules_2">"Làn đường" là gì</string>
+
+    <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
+
+    <string name="answer_concepts_and_rules_1_1">Phần mặt đường và lề đường.</string>
+    <string name="answer_concepts_and_rules_1_2" translatable="false">Phần đường xe chạy.</string>
+    <string name="answer_concepts_and_rules_1_3">Phần đường xe cơ giới.</string>
+    <string name="answer_concepts_and_rules_2_1">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.</string>
+    <string name="answer_concepts_and_rules_2_2">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.</string>
+    <string name="answer_concepts_and_rules_2_3">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.</string>
+
 </resources>

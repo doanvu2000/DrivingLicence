@@ -22,46 +22,74 @@ fun getListQuestionImportant(context: Context): MutableList<Question> {
     return list
 }
 
-var listAnswer = mutableListOf<MutableList<Answer>>()
-var list1 = mutableListOf<Answer>()
-var list2 = mutableListOf<Answer>()
-var list3 = mutableListOf<Answer>()
-var list4 = mutableListOf<Answer>()
+var listAnswerImportant = mutableListOf<MutableList<Answer>>()
+var listImportant1 = mutableListOf<Answer>()
+var listImportant2 = mutableListOf<Answer>()
+var listImportant3 = mutableListOf<Answer>()
+var listImportant4 = mutableListOf<Answer>()
 fun initList(context: Context) {
-    list1 = mutableListOf(
+    /**60 câu hỏi điểm liệt*/
+    listImportant1 = mutableListOf(
         Answer(1, context.getString(R.string.answer_important_1_1), false, 1),
         Answer(2, context.getString(R.string.answer_important_1_2), false, 1),
         Answer(
             3, context.getString(R.string.answer_important_1_3), true,
-            1, context.getString(R.string.text_explain_answer_1)
+            1, context.getString(R.string.text_explain_answer_important_1)
         ),
         Answer(4, context.getString(R.string.answer_important_1_4), false, 1)
     )
-    list2 = mutableListOf(
+    listImportant2 = mutableListOf(
         Answer(1, context.getString(R.string.answer_important_2_1), false, 2),
         Answer(
             2,
             answerContent = context.getString(R.string.answer_important_2_2),
             true,
             2,
-            answerExplain = context.getString(R.string.text_explain_answer_2)
+            answerExplain = context.getString(R.string.text_explain_answer_important_2)
         ),
         Answer(3, context.getString(R.string.answer_important_2_3), false, 2),
         Answer(4, context.getString(R.string.answer_important_2_4), false, 2)
     )
 
-    list3 = mutableListOf(
+    listImportant3 = mutableListOf(
         Answer(1, context.getString(R.string.answer_important_1_1), false, 1),
         Answer(2, context.getString(R.string.answer_important_1_2), false, 1),
         Answer(
             3, context.getString(R.string.answer_important_1_3), true,
-            1, context.getString(R.string.text_explain_answer_3)
+            1, context.getString(R.string.text_explain_answer_important_3)
         ),
     )
-    listAnswer = mutableListOf(list1, list2, list3)
+    listAnswerImportant = mutableListOf(listImportant1, listImportant2, listImportant3)
+
+    /**83 câu khái niệm và quy tắc*/
+    listConceptAndRule1 = mutableListOf(
+        Answer(1, context.getString(R.string.answer_concepts_and_rules_1_1), false, 1),
+        Answer(
+            2, context.getString(R.string.answer_concepts_and_rules_1_2), true, 1,
+            answerExplain = context.getString(R.string.text_explain_answer_concept_and_rule_1)
+        ),
+        Answer(
+            3, context.getString(R.string.answer_concepts_and_rules_1_3), false,
+            1,
+        ),
+    )
+    listConceptAndRule2 = mutableListOf(
+        Answer(1, context.getString(R.string.answer_concepts_and_rules_2_1), false, 2),
+        Answer(2, context.getString(R.string.answer_concepts_and_rules_2_2), false, 2),
+        Answer(
+            3, context.getString(R.string.answer_concepts_and_rules_2_3), true, 2,
+            answerExplain = context.getString(R.string.text_explain_answer_concept_and_rule_2)
+        ),
+    )
+    listAnswerConceptAndRule = mutableListOf(listConceptAndRule1, listConceptAndRule2)
 }
 
 /**Khái niệm và quy tắc*/ //83
+var listAnswerConceptAndRule = mutableListOf<MutableList<Answer>>()
+var listConceptAndRule1 = mutableListOf<Answer>()
+var listConceptAndRule2 = mutableListOf<Answer>()
+var listConceptAndRule3 = mutableListOf<Answer>()
+var listConceptAndRule4 = mutableListOf<Answer>()
 
 /**Văn hóa và đạo đức lái xe*/ //5
 
