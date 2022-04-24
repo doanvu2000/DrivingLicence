@@ -23,8 +23,7 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
     private val mListFragment: MutableList<Fragment> = mutableListOf()
 
     override fun initView() {
-        binding.toolbar.setIconLeft(R.drawable.icon_back_left)
-
+        binding.toolbar.setIconLeft(R.drawable.icon_back_white)
     }
 
     override fun initListener() {

@@ -3,6 +3,7 @@ package com.example.drivinglicence.app.fragment
 import android.annotation.SuppressLint
 import android.util.Log
 import android.view.View
+import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.AnswerAdapter
 import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.Question
@@ -18,14 +19,10 @@ class LessonFragment(
 ) :
     BaseFragment<FragmentLessonBinding, DataViewModel>() {
 
-//    private val bindingContent by lazy {
-//        LayoutQuestionAnswerBinding.bind(binding.root)
-//    }
+
     private val answerAdapter by lazy {
         AnswerAdapter()
     }
-//    private var question: Question? = null
-//    private var listAnswer: MutableList<Answer>? = null
 
     override fun initView() {
         initData()
@@ -51,12 +48,19 @@ class LessonFragment(
         }
     }
 
+    @SuppressLint("SetTextI18n")
     override fun initData() {
         val question: Question? = arguments?.getParcelable(QUESTION)
         val listAnswer: MutableList<Answer>? = arguments?.getParcelableArrayList(ANSWERS)
-        binding.textQuestionContent.text = question?.content
+        question?.let {
+            if (it.isImportant) {
+                binding.textQuestionContent.text =
+                    question.content + " " + getString(R.string.text_question_important)
+            } else {
+                binding.textQuestionContent.text = question.content
+            }
+        }
         answerAdapter.addData(listAnswer ?: mutableListOf())
-        Log.d("TAG123", "initData: ${question?.questionId} - ${listAnswer?.size}")
     }
 
     override fun onSingleClick(v: View) {

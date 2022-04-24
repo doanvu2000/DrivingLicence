@@ -8,7 +8,7 @@ import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.component.adapter.BaseRecyclerViewAdapter
 import com.example.drivinglicence.databinding.ItemAnswerBinding
 
-class AnswerAdapter() : BaseRecyclerViewAdapter<Answer, ItemAnswerBinding>() {
+class AnswerAdapter : BaseRecyclerViewAdapter<Answer, ItemAnswerBinding>() {
 
     @SuppressLint("SetTextI18n")
     override fun bindData(binding: ItemAnswerBinding, item: Answer, position: Int) {

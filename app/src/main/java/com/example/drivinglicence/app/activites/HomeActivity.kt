@@ -96,8 +96,8 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
                 }
                 getString(R.string.text_search_law) -> {
                     /**Tra cứu luật*/
-//                    openActivity(SearchLawActivity::class.java, false)
-                    openActivity(TestViewPagerActivity::class.java, false)
+                    openActivity(SearchLawActivity::class.java, false)
+//                    openActivity(TestViewPagerActivity::class.java, false)
                 }
                 else -> {
                     showDevelopMessage()

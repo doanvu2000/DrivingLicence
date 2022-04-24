@@ -14,6 +14,17 @@
     <string name="text_cancel">Hủy</string>
     <string name="text_confirm">Đồng ý</string>
     <string name="text_explain_answer">Giải thích đáp án</string>
+    <string name="text_question_important">Câu điểm liệt</string>
+    <string name="text_60_question_important">60 câu hỏi điểm liệt</string>
+    <string name="text_concepts_and_rules">Khái niệm và quy tắc</string>
+    <string name="text_about_83">Gồm 83 câu hỏi (18 câu điểm liệt)</string>
+    <string name="text_culture_and_ethic">Văn hóa và đạo đức lái xe</string>
+    <string name="text_about_5">Gồm 5 câu hỏi</string>
+    <string name="text_about_65">Gồm 65 câu hỏi</string>
+    <string name="text_about_35">Gồm 35 câu hỏi</string>
+    <string name="text_driving_technique">Kỹ thuật lái xe</string>
+    <string name="text_about_12">Gồm 12 câu hỏi (2 câu điểm liệt)</string>
+    <string name="text_sat_figure">Sa hình</string>
 
     <!--Giải thích đáp án-->
     <string name="text_explain_answer_1">Rõ ràng là đáp án 3 sai mà. Làm hỏng tài sản của nhà nước mà. Nếu vi phạm bạn sẽ bị phạt với 1 số tiền không nhỏ. Cụ thể:

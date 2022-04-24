@@ -14,6 +14,17 @@
     <string name="text_cancel">Cancel</string>
     <string name="text_confirm">Confirm</string>
     <string name="text_explain_answer">Explain the answer</string>
+    <string name="text_question_important">Important question</string>
+    <string name="text_60_question_important">60 questions important</string>
+    <string name="text_concepts_and_rules">Concepts and rules</string>
+    <string name="text_about_83">Includes 83 questions (18 questions important)</string>
+    <string name="text_culture_and_ethic">Driving culture and ethics</string>
+    <string name="text_about_5">Includes 5 questions</string>
+    <string name="text_about_65">Includes 65 questions</string>
+    <string name="text_about_35">Includes 35 questions</string>
+    <string name="text_driving_technique">Driving technique</string>
+    <string name="text_about_12">Includes 12 questions (2 questions important)</string>
+    <string name="text_sat_figure">Sat figure</string>
 
     <!--Giải thích đáp án-->
     <string name="text_explain_answer_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:
