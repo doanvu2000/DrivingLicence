@@ -26,6 +26,13 @@
     <string name="text_about_12">Gồm 12 câu hỏi (2 câu điểm liệt)</string>
     <string name="text_sat_figure">Sa hình</string>
     <string name="text_exam_number">Đề số</string>
+    <string name="text_start_exam">Bắt đầu làm bài</string>
+    <string name="text_content_information_A1_license">
+        Đề thi bằng lái hạng A1 gồm 25 câu hỏi làm bài trong thời gian 19 phút.\n\nĐể vượt qua bài thi, bạn cần trả lời đúng 21/25 câu hỏi và không sai câu điểm liệt nào.
+    </string>
+    <string name="text_content_information_A2_license">
+        Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
+    </string>
 
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 60 câu điểm liệt-->
@@ -48,10 +55,14 @@
         Câu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ...)\n
         Mẹo: Có bề rộng đủ cho xe chạy an toàn.
     </string>
-
     <string name="text_explain_answer_concept_and_rule_2">Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\nĐáp án đúng: 3.
     </string>
-
+    <!--5 câu hỏi Văn hóa và đạo đức lái xe-->
+    <string name="text_explain_answer_culture_and_ethic_5">Tất cả các hành vi trên đều thể hiện sự thiếu văn hóa khi tham gia giao thông.\nĐáp án đúng: 4.</string>
+    <string name="text_explain_answer_culture_and_ethic_1">Văn hóa giao thông được hiểu tất cả các ý trên\nĐáp án đúng: 1 và 2.</string>
+    <string name="text_explain_answer_culture_and_ethic_2">Đáp án 2 và 3 sai vì phải điều khiển xe đúng làn đường qui định chứ không phải đi làn nào ít phương tiện giao thông và bắt buộc phải đội mũ bảo hiểm khi tham gia giao thông ở bất kỳ tuyến đường nào.\nĐáp án đúng: 1.</string>
+    <string name="text_explain_answer_culture_and_ethic_4">Đáp án 2 sai vì phải giữ nguyên hiện trường để đảm bảo tốt nhất quá trình thu thập chứng cứ\nĐáp án đúng: 1</string>
+    <string name="text_explain_answer_culture_and_ethic_3">Đáp án 2 và 3 sai vì phải điều khiển xe đúng làn đường quy định chứ không phải đi làn nào ít phương tiện giao thông và phải dừng, đỗ xe ở nơi quy định chứ không phải để thuận lợi cho việc giao nhận khách và hàng hóa\nĐáp án đúng: 1</string>
 
     <!--======================================== End giải thích đáp án ========================================-->
 
@@ -105,5 +116,31 @@
     <string name="answer_concepts_and_rules_2_1">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.</string>
     <string name="answer_concepts_and_rules_2_2">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.</string>
     <string name="answer_concepts_and_rules_2_3">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.</string>
+
+    <!-- ========================================Câu hỏi Văn hóa và đạo đức lái xe ========================================-->
+
+    <string name="question_culture_and_ethics_1">Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng</string>
+    <string name="question_culture_and_ethics_2">Trong các hành vi dưới đây, người lái xe mô tô có văn hóa giao thông phải ứng xử như thế nào?</string>
+    <string name="question_culture_and_ethics_3">Trong các hành vi dưới đây, người lái xe ô tô có văn hóa giao thông phải ứng xử như thế nào?</string>
+    <string name="question_culture_and_ethics_4">Khi xảy ra tai nạn giao thông, có người bị thương nghiêm trọng, người lái xe và người có mặt tại hiện trường vụ tai nạn phải thực hiện các công việc gì?</string>
+    <string name="question_culture_and_ethics_5">Trên đường đang xảy ra ùn tắc, những hành vi nào sau đây là thiếu văn hóa khi tham gia giao thông?</string>
+
+    <!-- ========================================Câu trả lời Văn hóa và đạo đức lái xe ========================================-->
+    <string name="answer_culture_and_ethics_1_1">Là sự hiểu biết và chấp hành nghiêm chỉnh pháp luật về giao thông; là ý thức trách nhiệm với cộng đồng khi tham gia giao thông.</string>
+    <string name="answer_culture_and_ethics_1_2">Là ứng xử có văn hóa, có tình yêu thương con người trong các tình huống không may xảy ra khi tham gia giao thông.</string>
+    <string name="answer_culture_and_ethics_1_3">Cả ý 1 và 2.</string>
+    <string name="answer_culture_and_ethics_2_1">Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; đội mũ bảo hiểm đạt chuẩn, cài quai đúng cách.</string>
+    <string name="answer_culture_and_ethics_2_2">Điều khiển xe đi trên phần đường, làn đường có ít phương tiện tham gia giao thông</string>
+    <string name="answer_culture_and_ethics_2_3">Đội mũ bảo hiểm ở nơi có biển báo bắt buộc đội mũ bảo hiểm</string>
+    <string name="answer_culture_and_ethics_3_1">Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; dừng, đỗ xe đúng nơi quy định; đã uống rượu bia thì không lái xe.</string>
+    <string name="answer_culture_and_ethics_3_2">Điều khiển xe đi trên phần đường, làn đường có ít phương tiện giao thông; dừng xe, đỗ xe ở nơi thuận tiện hoặc theo yêu cầu của hành khách, của người thân.</string>
+    <string name="answer_culture_and_ethics_3_3">Dừng và đỗ xe ở nơi thuận tiện cho việc giao nhận hành khách và hàng hóa; sử dụng ít rượu, bia thì có thể lái xe.</string>
+    <string name="answer_culture_and_ethics_4_1">Thực hiện sơ cứu ban đầu trong trường hợp khẩn cấp; thông báo vụ tai nạn đến cơ quan thi hành pháp luật.</string>
+    <string name="answer_culture_and_ethics_4_2">Nhanh chóng lái xe gây tại nạn hoặc đi nhờ xe khác ra khỏi hiện trường vụ tai nạn.</string>
+    <string name="answer_culture_and_ethics_4_3">Cả ý 1 và ý 2.</string>
+    <string name="answer_culture_and_ethics_5_1">Bấm còi liên tục thúc giục các phương tiện phía trước nhường đường.</string>
+    <string name="answer_culture_and_ethics_5_2">Đi lên vỉa hè, tận dụng mọi khoảng trống để nhanh chóng thoát khỏi nơi ùn tắc.</string>
+    <string name="answer_culture_and_ethics_5_3">Lấn sang làn đường bên trái cố gắng vượt lên xe khác.</string>
+    <string name="answer_culture_and_ethics_5_4">Tất cả các ý kiến nêu trên.</string>
 
 </resources>

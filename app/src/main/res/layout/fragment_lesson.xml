@@ -76,6 +76,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:lineSpacingMultiplier="1.2"
                 android:id="@+id/text_explain_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

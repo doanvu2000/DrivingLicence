@@ -11,7 +11,6 @@ import com.example.drivinglicence.app.viewmodel.DataViewModel
 import com.example.drivinglicence.component.fragment.BaseFragment
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.example.drivinglicence.databinding.FragmentLessonBinding
-import com.example.drivinglicence.databinding.LayoutQuestionAnswerBinding
 import com.example.drivinglicence.utils.ANSWERS
 import com.example.drivinglicence.utils.QUESTION
 

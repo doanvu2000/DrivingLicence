@@ -13,6 +13,7 @@ import com.example.drivinglicence.component.activity.BaseCoreActivity
 import com.example.drivinglicence.component.navigator.openActivity
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.example.drivinglicence.databinding.ActivityMainBinding
+import com.example.drivinglicence.pref.LocalCache
 import com.example.drivinglicence.pref.showDevelopMessage
 import com.example.drivinglicence.pref.showMessage
 import com.example.drivinglicence.utils.getListQuestionImportant
@@ -26,6 +27,7 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
     private lateinit var listAction: MutableList<ItemAction>
 
     override fun initView() {
+        LocalCache.initialize(this)
         supportActionBar?.setBackgroundDrawable(
             ColorDrawable(
                 ContextCompat.getColor(

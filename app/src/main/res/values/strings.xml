@@ -26,6 +26,14 @@
     <string name="text_about_12">Includes 12 questions (2 questions important)</string>
     <string name="text_sat_figure">Sat figure</string>
     <string name="text_exam_number">Exam question </string>
+    <string name="text_start_exam">Start taking the test</string>
+    <string name="text_content_information_A1_license">
+        Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
+    </string>
+    <string name="text_content_information_A2_license">
+        Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
+    </string>
+
 
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 60 câu điểm liệt-->
@@ -43,17 +51,21 @@
        Sentences 1 and 2 are wrong because both are illegal racing acts. Illegal racing is a prohibited act specified in the Road Traffic Law. \nThe correct answer is 3.
     </string>
     <!--83 câu khái niệm và quy tắc-->
-    <string name="text_explain_answer_concept_and_rule_1">
-        Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \n
+    <string name="text_explain_answer_concept_and_rule_1">Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \n
         Câu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \n
         Câu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ...)\n
         Mẹo: Có bề rộng đủ cho xe chạy an toàn.
     </string>
-
     <string name="text_explain_answer_concept_and_rule_2">
         Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\n
         Đáp án đúng: 3.
     </string>
+    <!--5 câu hỏi Văn hóa và đạo đức lái xe-->
+    <string name="text_explain_answer_culture_and_ethic_5">All of the above behaviors show a lack of culture when participating in traffic.\nCorrect answer: 4.</string>
+    <string name="text_explain_answer_culture_and_ethic_1">Traffic culture understands all the above ideas\nCorrect answers: 1 and 2.</string>
+    <string name="text_explain_answer_culture_and_ethic_2">Answers 2 and 3 are incorrect because the vehicle must be driven in the correct lane, not in any lane with few vehicles and it is mandatory to wear a helmet when participating in traffic on any route.\nAnswer correct: 1.</string>
+    <string name="text_explain_answer_culture_and_ethic_4">Answer 2 is wrong because the scene must be kept to ensure the best evidence collection process\nCorrect answer: 1</string>
+    <string name="text_explain_answer_culture_and_ethic_3">Answers 2 and 3 are wrong because the vehicle must be driven in the correct lane, not in any lane with few vehicles and must stop and park at the specified place, not to facilitate the delivery of passengers and goods. chemistry\nCorrect answer: 1</string>
     <!--======================================== End giải thích đáp án ========================================-->
 
     <!-- ========================================Câu hỏi điểm liệt (60) ========================================-->
@@ -94,16 +106,43 @@
 
     <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
 
-    <string name="question_concepts_and_rules_1">Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì</string>
-    <string name="question_concepts_and_rules_2">"Làn đường" là gì</string>
+    <string name="question_concepts_and_rules_1">What is the portion of the roadway used for vehicular traffic?</string>
+    <string name="question_concepts_and_rules_2">What is a lane?</string>
 
     <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
 
-    <string name="answer_concepts_and_rules_1_1">Phần mặt đường và lề đường.</string>
-    <string name="answer_concepts_and_rules_1_2" translatable="false">Phần đường xe chạy.</string>
-    <string name="answer_concepts_and_rules_1_3">Phần đường xe cơ giới.</string>
-    <string name="answer_concepts_and_rules_2_1">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.</string>
-    <string name="answer_concepts_and_rules_2_2">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.</string>
-    <string name="answer_concepts_and_rules_2_3">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.</string>
+    <string name="answer_concepts_and_rules_1_1">Sidewalks and curbs.</string>
+    <string name="answer_concepts_and_rules_1_2">Part of the driveway.</string>
+    <string name="answer_concepts_and_rules_1_3">Motor vehicle section.</string>
+    <string name="answer_concepts_and_rules_2_1">As part of the longitudinally divided portion of the roadway, used for vehicle traffic.</string>
+    <string name="answer_concepts_and_rules_2_2">Part of a longitudinally divided portion of the roadway, having a width sufficient for safe driving.</string>
+    <string name="answer_concepts_and_rules_2_3">As part of a longitudinally divided roadway, there is enough width for cars to run safely.</string>
+
+    <!-- ========================================Câu hỏi Văn hóa và đạo đức lái xe ========================================-->
+
+    <string name="question_culture_and_ethics_1">How is the correct concept of traffic culture understood?</string>
+    <string name="question_culture_and_ethics_2">In the following behaviors, how should motorists with traffic culture behave?</string>
+    <string name="question_culture_and_ethics_3">In the behaviors below, how should a car driver with traffic culture behave?</string>
+    <string name="question_culture_and_ethics_4">When a traffic accident occurs and someone is seriously injured, what should the driver and people present at the scene of the accident do?</string>
+    <string name="question_culture_and_ethics_5">On the road there is a traffic jam, which of the following behaviors is a lack of culture when participating in traffic?</string>
+
+    <!-- ========================================Câu trả lời Văn hóa và đạo đức lái xe ========================================-->
+    <string name="answer_culture_and_ethics_1_1">Being the understanding and strict observance of traffic laws; sense of responsibility to the community when participating in traffic.</string>
+    <string name="answer_culture_and_ethics_1_2">Là ứng xử có văn hóa, có tình yêu thương con người trong các tình huống không may xảy ra khi tham gia giao thông.</string>
+    <string name="answer_culture_and_ethics_1_3">Both points 1 and 2.</string>
+    <string name="answer_culture_and_ethics_2_1">Control the vehicle to go on the right in the direction you go; go in the right part of the road and lane; Wear a standard helmet, properly fastened the straps.</string>
+    <string name="answer_culture_and_ethics_2_2">Driving the vehicle on the part of the road or lane with few vehicles participating in traffic</string>
+    <string name="answer_culture_and_ethics_2_3">Wear a helmet where there are signs that require helmets</string>
+    <string name="answer_culture_and_ethics_3_1">Control the vehicle to go on the right in the direction you go; go in the right part of the road and lane; stop and park the vehicle at the specified place; If you\'ve been drinking, don\'t drive.</string>
+    <string name="answer_culture_and_ethics_3_2">Driving the vehicle on the part of the road or lane with little traffic; stopping or parking at a convenient place or at the request of passengers or relatives.</string>
+    <string name="answer_culture_and_ethics_3_3">Stop and park the vehicle at a convenient place for the delivery of passengers and goods; If you use less alcohol, you can drive.</string>
+    <string name="answer_culture_and_ethics_4_1">Perform first aid in an emergency; Report the accident to law enforcement.</string>
+    <string name="answer_culture_and_ethics_4_2">Quickly drive the accident vehicle or hitchhike away from the scene of the accident.</string>
+    <string name="answer_culture_and_ethics_4_3">Both points 1 and 2.</string>
+    <string name="answer_culture_and_ethics_5_1">Continuously honk the horn to urge the vehicles ahead to give way.</string>
+    <string name="answer_culture_and_ethics_5_2">Walk up the sidewalk, make use of every space to quickly get out of the traffic jam.</string>
+    <string name="answer_culture_and_ethics_5_3">Cross into the left lane and try to overtake another vehicle.</string>
+    <string name="answer_culture_and_ethics_5_4">All of the above comments.</string>
+
 
 </resources>

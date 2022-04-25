@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DrivingLicense">
         <activity
-            android:name="com.example.drivinglicence.app.activites.TestViewPagerActivity"
+            android:name="com.example.drivinglicence.app.activites.LessonViewPagerActivity"
             android:exported="false" />
         <activity
             android:name="com.example.drivinglicence.app.activites.ExecuteActivity"

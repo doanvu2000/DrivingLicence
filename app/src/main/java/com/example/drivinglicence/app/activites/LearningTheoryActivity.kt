@@ -39,32 +39,32 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
                 0 -> {
                     /**60 câu hỏi điểm liệt*/
                     bundle.putInt(FLAG,1)
-                    openActivity(TestViewPagerActivity::class.java, bundle)
+                    openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
                 1 -> {
                     /**Khái niệm và quy tắc*/
                     bundle.putInt(FLAG,2)
-                    openActivity(TestViewPagerActivity::class.java, bundle)
+                    openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
                 2 -> {
                     /**Văn hóa và đạo đức lái xe*/
                     bundle.putInt(FLAG,3)
-                    openActivity(TestViewPagerActivity::class.java, bundle)
+                    openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
                 3 -> {
                     /**Kĩ thuật lái xe*/
                     bundle.putInt(FLAG,4)
-                    openActivity(TestViewPagerActivity::class.java, bundle)
+                    openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
                 4 -> {
                     /**Biển báo đường bộ*/
                     bundle.putInt(FLAG,5)
-                    openActivity(TestViewPagerActivity::class.java, bundle)
+                    openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
                 5 -> {
                     /**Sa hình*/
                     bundle.putInt(FLAG,6)
-                    openActivity(TestViewPagerActivity::class.java, bundle)
+                    openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
             }
         }

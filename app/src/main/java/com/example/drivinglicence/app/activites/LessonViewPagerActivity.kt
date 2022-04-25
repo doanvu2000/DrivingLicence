@@ -12,12 +12,13 @@ import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.app.fragment.LessonFragment
 import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
-import com.example.drivinglicence.databinding.ActivityTestViewPagerBinding
+import com.example.drivinglicence.component.dialog.InformationLessonBottomSheet
+import com.example.drivinglicence.databinding.ActivityLessonViewPagerBinding
 import com.example.drivinglicence.utils.ANSWERS
 import com.example.drivinglicence.utils.FLAG
 import com.example.drivinglicence.utils.QUESTION
 
-class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDataViewModel>() {
+class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, MapDataViewModel>() {
     private val viewpagerAdapter by lazy {
         ViewPagerAdapter(supportFragmentManager)
     }
@@ -29,8 +30,8 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
 
     override fun initListener() {
         binding.toolbar.onLeftClickListener = { onBackPressed() }
-        binding.textBack.setOnClickListener(this)
-        binding.textNextQuestion.setOnClickListener(this)
+        binding.btnBackQuestion.setOnClickListener(this)
+        binding.btnForwardQuestion.setOnClickListener(this)
         binding.viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
                 position: Int,
@@ -44,15 +45,15 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
             override fun onPageSelected(position: Int) {
                 when (position) {
                     0 -> {
-                        binding.textBack.visibility = View.GONE
+                        binding.btnBackQuestion.visibility = View.GONE
                     }
                     mListFragment.size - 1 -> {
-                        binding.textBack.visibility = View.VISIBLE
-                        binding.textNextQuestion.visibility = View.GONE
+                        binding.btnBackQuestion.visibility = View.VISIBLE
+                        binding.btnForwardQuestion.visibility = View.GONE
                     }
                     else -> {
-                        binding.textBack.visibility = View.VISIBLE
-                        binding.textNextQuestion.visibility = View.VISIBLE
+                        binding.btnBackQuestion.visibility = View.VISIBLE
+                        binding.btnForwardQuestion.visibility = View.VISIBLE
                     }
                 }
                 binding.textCurrentQuestion.text = "${position + 1}"
@@ -78,6 +79,7 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
         //danh sach cau tra loi cua 3 cau hoi
         when (flag) {
             1 -> {
+                binding.toolbar.setTitle(getString(R.string.text_60_question_important))
                 /**60 Câu hỏi điểm liệt*/
                 listQuestion = viewModel.getListQuestionImportant(this)
                 viewModel.mapAnswerImportant[1]?.let { listAnswer.add(it) }
@@ -95,6 +97,7 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
                 }
             }
             2 -> {
+                binding.toolbar.setTitle(getString(R.string.text_concepts_and_rules))
                 /**83 Câu hỏi khái niệm và quy tắc*/
                 listQuestion = viewModel.getListQuestionConceptsAndRules(this)
                 for (i in 1..2) {
@@ -111,6 +114,33 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
                     })
                 }
             }
+            3 -> {
+                binding.toolbar.setTitle(getString(R.string.text_culture_and_ethic))
+                /**5 câu Văn hóa và đạo đức lái xe*/
+                listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
+                for (i in 1..5) {
+                    listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
+                }
+                for (i in 1..5) {
+                    val question = listQuestion[i - 1]
+                    val answers = listAnswer[i - 1] as ArrayList<Answer>
+                    mListFragment.add(LessonFragment().apply {
+                        val bundle = Bundle()
+                        bundle.putParcelable(QUESTION, question)
+                        bundle.putParcelableArrayList(ANSWERS, answers)
+                        arguments = bundle
+                    })
+                }
+            }
+            4 -> {
+                binding.toolbar.setTitle(getString(R.string.text_driving_technique))
+            }
+            5 -> {
+                binding.toolbar.setTitle(getString(R.string.text_road_signs))
+            }
+            6 -> {
+                binding.toolbar.setTitle(getString(R.string.text_sat_figure))
+            }
         }
         viewpagerAdapter.addFragment(mListFragment)
         binding.viewPager.adapter = viewpagerAdapter
@@ -118,11 +148,12 @@ class TestViewPagerActivity : BaseVMActivity<ActivityTestViewPagerBinding, MapDa
     }
 
     override fun onSingleClick(v: View) {
+
         when (v.id) {
-            R.id.text_back -> {
+            R.id.btnBackQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem - 1
             }
-            R.id.text_next_question -> {
+            R.id.btnForwardQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem + 1
             }
         }
