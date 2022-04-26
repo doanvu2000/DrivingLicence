@@ -1,6 +1,10 @@
 package com.example.drivinglicence.utils
 
 import android.content.Context
+import androidx.annotation.DrawableRes
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.RecyclerView
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.Question
@@ -177,3 +181,18 @@ var listCultureAndEthic5 = mutableListOf<Answer>()
 /**Biển báo đường bộ*/ //65
 
 /**Sa hình*/ //35
+
+fun RecyclerView.setDivider(@DrawableRes drawableRes: Int) {
+    val divider = DividerItemDecoration(
+        this.context,
+        DividerItemDecoration.VERTICAL
+    )
+    val drawable = ContextCompat.getDrawable(
+        this.context,
+        drawableRes
+    )
+    drawable?.let {
+        divider.setDrawable(it)
+        addItemDecoration(divider)
+    }
+}
