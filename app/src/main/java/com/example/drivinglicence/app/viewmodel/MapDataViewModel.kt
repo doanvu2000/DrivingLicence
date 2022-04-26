@@ -42,14 +42,14 @@ class MapDataViewModel : BaseViewModel() {
 
     /** 83 question  concepts and rules 1 -> 83 */
     private fun getAnswerWithQuestionConcepts() {
-        for (i in 1..2) {
+        for (i in 1..3) {
             mapAnswerConceptsAndRules[i] = listAnswerConceptAndRule[i - 1]
         }
     }
 
     fun getListQuestionConceptsAndRules(context: Context): MutableList<Question> {
         val list = mutableListOf<Question>()
-        for (i in 1..2) {
+        for (i in 1..3) {
             val id =
                 context.resources.getIdentifier(
                     "question_concepts_and_rules_$i",

@@ -38,10 +38,16 @@ object RecyclerUtils {
         rlv.layoutManager = manager
     }
 
-    fun setGridManagerH(m: Context, rlv: RecyclerView) {
-        val manager = GridLayoutManager(m, 1)
-        manager.orientation = GridLayoutManager.HORIZONTAL
+    fun setGridManagerV(
+        m: Context,
+        rlv: RecyclerView,
+        spanCount: Int,
+        adapter: RecyclerView.Adapter<*>
+    ) {
+        val manager = GridLayoutManager(m, spanCount)
+        manager.orientation = GridLayoutManager.VERTICAL
         rlv.layoutManager = manager
+        rlv.adapter = adapter
     }
 
     fun setGridManager(m: Context, rlv: RecyclerView, adapter: RecyclerView.Adapter<*>) {
@@ -74,7 +80,11 @@ object RecyclerUtils {
     }
 
 
-    fun setLinearLayoutManager(context: Context, rlv: RecyclerView, adapter: RecyclerView.Adapter<*>) {
+    fun setLinearLayoutManager(
+        context: Context,
+        rlv: RecyclerView,
+        adapter: RecyclerView.Adapter<*>
+    ) {
         val manager = LinearLayoutManager(context)
         manager.orientation = LinearLayoutManager.VERTICAL
         rlv.layoutManager = manager

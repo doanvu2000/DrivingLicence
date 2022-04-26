@@ -50,12 +50,10 @@
         Câu 1 và 2 sai vì đều là hành vi đua xe trái phép. Hành vi đua xe trái phép là hành vi nghiêm cấm được quy định trong Luật giao thông đường bộ. \nĐáp án đúng là 3.
     </string>
     <!--83 câu khái niệm và quy tắc-->
-    <string name="text_explain_answer_concept_and_rule_1">Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \n
-        Câu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \n
-        Câu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ...)\n
-        Mẹo: Có bề rộng đủ cho xe chạy an toàn.
+    <string name="text_explain_answer_concept_and_rule_1">Câu 1 sai vì lề đường được hiểu là phần mép phía hai bên đường. Lề đường có tác dụng bảo vệ mặt đường, phần đường này thường dành cho người. Không dành cho phương tiện giao thông qua lại.\nCâu 3 sai vì phần đường dành cho xe cơ giới là phần của đường bộ được sử dụng cho các phương tiện giao thông cơ giới đường bộ và xe máy chuyên dùng\nCâu 2 đúng vì phần đường xe chạy là phần của đường bộ được sử dụng cho tất cả các phương tiện giao thông qua lại.\nMẹo: Lề đường không sử dụng cho các phương tiện giao thông qua lạì</string>
+    <string name="text_explain_answer_concept_and_rule_2">Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \nCâu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \nCâu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ…)\nMẹo: Có bề rộng đủ cho xe chạy an toàn.
     </string>
-    <string name="text_explain_answer_concept_and_rule_2">Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\nĐáp án đúng: 3.
+    <string name="text_explain_answer_concept_and_rule_3">Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\nĐáp án đúng: 3.
     </string>
     <!--5 câu hỏi Văn hóa và đạo đức lái xe-->
     <string name="text_explain_answer_culture_and_ethic_5">Tất cả các hành vi trên đều thể hiện sự thiếu văn hóa khi tham gia giao thông.\nĐáp án đúng: 4.</string>
@@ -107,6 +105,7 @@
 
     <string name="question_concepts_and_rules_1">Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì</string>
     <string name="question_concepts_and_rules_2">"Làn đường" là gì</string>
+    <string name="question_concepts_and_rules_3">Trong các khái niệm dưới đây, \"dải phân cách\" được hiểu như thế nào là đúng?</string>
 
     <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
 
@@ -116,6 +115,9 @@
     <string name="answer_concepts_and_rules_2_1">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.</string>
     <string name="answer_concepts_and_rules_2_2">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.</string>
     <string name="answer_concepts_and_rules_2_3">Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.</string>
+    <string name="answer_concepts_and_rules_3_1">Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không được phép.</string>
+    <string name="answer_concepts_and_rules_3_2">Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn giao thông</string>
+    <string name="answer_concepts_and_rules_3_3">Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ.</string>
 
     <!-- ========================================Câu hỏi Văn hóa và đạo đức lái xe ========================================-->
 

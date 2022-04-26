@@ -75,13 +75,27 @@ fun initList(context: Context) {
     )
     listConceptAndRule2 = mutableListOf(
         Answer(1, context.getString(R.string.answer_concepts_and_rules_2_1), false, 2),
-        Answer(2, context.getString(R.string.answer_concepts_and_rules_2_2), false, 2),
         Answer(
-            3, context.getString(R.string.answer_concepts_and_rules_2_3), true, 2,
+            2, context.getString(R.string.answer_concepts_and_rules_2_2), true, 2,
             answerExplain = context.getString(R.string.text_explain_answer_concept_and_rule_2)
         ),
+        Answer(3, context.getString(R.string.answer_concepts_and_rules_2_3), false, 2),
     )
-    listAnswerConceptAndRule = mutableListOf(listConceptAndRule1, listConceptAndRule2)
+    listConceptAndRule3 = mutableListOf(
+        Answer(1, context.getString(R.string.answer_concepts_and_rules_3_1), false, 3),
+        Answer(
+            2, context.getString(R.string.answer_concepts_and_rules_3_2), false, 3
+        ),
+        Answer(
+            3, context.getString(R.string.answer_concepts_and_rules_3_3), true, 3,
+            answerExplain = context.getString(R.string.text_explain_answer_concept_and_rule_3)
+        )
+    )
+
+    listAnswerConceptAndRule = mutableListOf(
+        listConceptAndRule1, listConceptAndRule2,
+        listConceptAndRule3
+    )
 
     /**Văn hóa và đạo đức lái xe*/
 

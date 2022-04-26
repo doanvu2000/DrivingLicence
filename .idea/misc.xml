@@ -5,16 +5,23 @@
       <map>
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_round_white_top_bottom.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_rounde_white_top_bottom.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/circle_button_grey.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/circle_button_orange.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/layout_round.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button_green_light.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button_grey.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button_primary.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_learning_theory.xml" value="0.302536231884058" />
-        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_lesson_view_pager.xml" value="0.302536231884058" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_lesson_view_pager.xml" value="0.25" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_test_view_pager.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/fragment_demo.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/fragment_lesson.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/information_lesson_bottom_sheet.xml" value="0.33" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_learning.xml" value="0.25" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_list_question_bottom.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/layout_question_answer.xml" value="0.302536231884058" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/list_question_bottom_dialog.xml" value="0.302536231884058" />
       </map>
     </option>
   </component>

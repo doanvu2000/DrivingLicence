@@ -51,18 +51,12 @@
        Sentences 1 and 2 are wrong because both are illegal racing acts. Illegal racing is a prohibited act specified in the Road Traffic Law. \nThe correct answer is 3.
     </string>
     <!--83 câu khái niệm và quy tắc-->
-    <string name="text_explain_answer_concept_and_rule_1">Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \n
-        Câu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \n
-        Câu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ...)\n
-        Mẹo: Có bề rộng đủ cho xe chạy an toàn.
-    </string>
-    <string name="text_explain_answer_concept_and_rule_2">
-        Dải phân cách dùng "phân chia mặt đường" hoặc "phân chia phần đường" thành các làn đường.\n
-        Đáp án đúng: 3.
-    </string>
+    <string name="text_explain_answer_concept_and_rule_1">Sentence 1 is wrong because the curb is understood as the edge on both sides of the road. The roadside has the effect of protecting the road surface, this part of the road is usually for people. Not for traffic.\nQuestion 3 is incorrect because the part of the road for motor vehicles is the part of the road used for road motor vehicles and special-use motorcycles\nQuestion 2 is correct because the driveway is the portion of the roadway used for all vehicular traffic.\nTip: The curb is not intended for vehicular traffic.</string>
+    <string name="text_explain_answer_concept_and_rule_2">A lane is a part of a longitudinally divided portion of the roadway, which is wide enough for a vehicle to run safely. Sentence 2 is correct.</string>
+    <string name="text_explain_answer_concept_and_rule_3">Sentence 1 is incorrect because it is divided vertically but lacks enough width for the car to run safely</string>
     <!--5 câu hỏi Văn hóa và đạo đức lái xe-->
     <string name="text_explain_answer_culture_and_ethic_5">All of the above behaviors show a lack of culture when participating in traffic.\nCorrect answer: 4.</string>
-    <string name="text_explain_answer_culture_and_ethic_1">Traffic culture understands all the above ideas\nCorrect answers: 1 and 2.</string>
+    <string name="text_explain_answer_culture_and_ethic_1">Tip: Have enough width for the vehicle to run safely.</string>
     <string name="text_explain_answer_culture_and_ethic_2">Answers 2 and 3 are incorrect because the vehicle must be driven in the correct lane, not in any lane with few vehicles and it is mandatory to wear a helmet when participating in traffic on any route.\nAnswer correct: 1.</string>
     <string name="text_explain_answer_culture_and_ethic_4">Answer 2 is wrong because the scene must be kept to ensure the best evidence collection process\nCorrect answer: 1</string>
     <string name="text_explain_answer_culture_and_ethic_3">Answers 2 and 3 are wrong because the vehicle must be driven in the correct lane, not in any lane with few vehicles and must stop and park at the specified place, not to facilitate the delivery of passengers and goods. chemistry\nCorrect answer: 1</string>
@@ -108,6 +102,7 @@
 
     <string name="question_concepts_and_rules_1">What is the portion of the roadway used for vehicular traffic?</string>
     <string name="question_concepts_and_rules_2">What is a lane?</string>
+    <string name="question_concepts_and_rules_3">In the concepts below, how is \"separator\" understood correctly?</string>
 
     <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
 
@@ -117,7 +112,9 @@
     <string name="answer_concepts_and_rules_2_1">As part of the longitudinally divided portion of the roadway, used for vehicle traffic.</string>
     <string name="answer_concepts_and_rules_2_2">Part of a longitudinally divided portion of the roadway, having a width sufficient for safe driving.</string>
     <string name="answer_concepts_and_rules_2_3">As part of a longitudinally divided roadway, there is enough width for cars to run safely.</string>
-
+    <string name="answer_concepts_and_rules_3_1">Part of the road to separate vehicles from entering unauthorized places.</string>
+    <string name="answer_concepts_and_rules_3_2">Is a part of the road to separate the roadway and traffic safety corridor</string>
+    <string name="answer_concepts_and_rules_3_3">Part of a road used to divide the road surface into two separate lanes or to divide the road part of motor vehicles and rudimentary vehicles.</string>
     <!-- ========================================Câu hỏi Văn hóa và đạo đức lái xe ========================================-->
 
     <string name="question_culture_and_ethics_1">How is the correct concept of traffic culture understood?</string>
@@ -128,7 +125,7 @@
 
     <!-- ========================================Câu trả lời Văn hóa và đạo đức lái xe ========================================-->
     <string name="answer_culture_and_ethics_1_1">Being the understanding and strict observance of traffic laws; sense of responsibility to the community when participating in traffic.</string>
-    <string name="answer_culture_and_ethics_1_2">Là ứng xử có văn hóa, có tình yêu thương con người trong các tình huống không may xảy ra khi tham gia giao thông.</string>
+    <string name="answer_culture_and_ethics_1_2">Is a cultured behavior, with love for people in unfortunate situations when participating in traffic.</string>
     <string name="answer_culture_and_ethics_1_3">Both points 1 and 2.</string>
     <string name="answer_culture_and_ethics_2_1">Control the vehicle to go on the right in the direction you go; go in the right part of the road and lane; Wear a standard helmet, properly fastened the straps.</string>
     <string name="answer_culture_and_ethics_2_2">Driving the vehicle on the part of the road or lane with few vehicles participating in traffic</string>
@@ -143,6 +140,5 @@
     <string name="answer_culture_and_ethics_5_2">Walk up the sidewalk, make use of every space to quickly get out of the traffic jam.</string>
     <string name="answer_culture_and_ethics_5_3">Cross into the left lane and try to overtake another vehicle.</string>
     <string name="answer_culture_and_ethics_5_4">All of the above comments.</string>
-
 
 </resources>

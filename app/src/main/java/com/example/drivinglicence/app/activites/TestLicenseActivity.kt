@@ -23,7 +23,6 @@ class TestLicenseActivity : BaseCoreActivity<ActivityTestLicenseBinding>() {
         setupToolBar()
         RecyclerUtils.setGridManager(this, binding.rcvExams, examAdapter)
         val isSecond = LocalCache.getInstance().getBoolean(IS_SECOND) ?: false
-        Log.d("TAG", "initView: $isSecond")
         if (!isSecond) {
             showAlertMessage()
         }

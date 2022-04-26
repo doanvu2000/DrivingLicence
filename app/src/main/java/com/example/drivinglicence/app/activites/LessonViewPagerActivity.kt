@@ -2,6 +2,7 @@ package com.example.drivinglicence.app.activites
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
@@ -13,10 +14,12 @@ import com.example.drivinglicence.app.fragment.LessonFragment
 import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.component.dialog.InformationLessonBottomSheet
+import com.example.drivinglicence.component.dialog.ListQuestionBottomDialog
 import com.example.drivinglicence.databinding.ActivityLessonViewPagerBinding
 import com.example.drivinglicence.utils.ANSWERS
 import com.example.drivinglicence.utils.FLAG
 import com.example.drivinglicence.utils.QUESTION
+import com.example.drivinglicence.utils.QUESTIONS
 
 class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, MapDataViewModel>() {
     private val viewpagerAdapter by lazy {
@@ -32,6 +35,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
         binding.toolbar.onLeftClickListener = { onBackPressed() }
         binding.btnBackQuestion.setOnClickListener(this)
         binding.btnForwardQuestion.setOnClickListener(this)
+        binding.btnViewBottom.setOnClickListener(this)
         binding.viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
                 position: Int,
@@ -100,10 +104,10 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                 binding.toolbar.setTitle(getString(R.string.text_concepts_and_rules))
                 /**83 Câu hỏi khái niệm và quy tắc*/
                 listQuestion = viewModel.getListQuestionConceptsAndRules(this)
-                for (i in 1..2) {
+                for (i in 1..3) {
                     listAnswer.add(viewModel.mapAnswerConceptsAndRules[i] ?: mutableListOf())
                 }
-                for (i in 1..2) {
+                for (i in 1..3) {
                     val question = listQuestion[i - 1]
                     val answers = listAnswer[i - 1] as ArrayList<Answer>
                     mListFragment.add(LessonFragment().apply {
@@ -156,6 +160,19 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
             R.id.btnForwardQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem + 1
             }
+            R.id.btn_view_bottom -> {
+                showBottomDialog()
+            }
+        }
+    }
+
+    private fun showBottomDialog() {
+        Log.d("TAG", "showBottomDialog: ")
+        val bundle = Bundle()
+        bundle.putParcelableArrayList(QUESTIONS, listQuestion as ArrayList)
+        ListQuestionBottomDialog().also { dialog ->
+            dialog.arguments = bundle
+            dialog.show(supportFragmentManager, "")
         }
     }
 }
