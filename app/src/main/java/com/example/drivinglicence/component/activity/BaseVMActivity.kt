@@ -1,6 +1,7 @@
 package com.example.drivinglicence.component.activity
 
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 import com.example.drivinglicence.component.navigator.getGenericSuperclass
@@ -14,6 +15,7 @@ abstract class BaseVMActivity<VB : ViewBinding, VM : BaseViewModel> : BaseCoreAc
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         lifecycle.addObserver(viewModel)
         handleLoading()
     }

@@ -5,9 +5,12 @@ import com.example.drivinglicence.app.adapter.ListQuestionBottomAdapter
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.example.drivinglicence.databinding.ListQuestionBottomDialogBinding
+import com.example.drivinglicence.utils.POSITION
 import com.example.drivinglicence.utils.QUESTIONS
 
 class ListQuestionBottomDialog : BaseBottomSheetDialog<ListQuestionBottomDialogBinding>() {
+
+    var onClickItem: ((Int) -> Unit)? = null
 
     var listQuestion: MutableList<Question> = mutableListOf()
     private val listQuestionAdapter by lazy {
@@ -18,7 +21,7 @@ class ListQuestionBottomDialog : BaseBottomSheetDialog<ListQuestionBottomDialogB
         RecyclerUtils.setGridManagerV(
             requireContext(),
             binding.rcvListQuestionBottom,
-            7,
+            5,
             listQuestionAdapter
         )
     }
@@ -26,6 +29,16 @@ class ListQuestionBottomDialog : BaseBottomSheetDialog<ListQuestionBottomDialogB
     override fun initData() {
         listQuestion = arguments?.getParcelableArrayList(QUESTIONS) ?: mutableListOf()
         Log.d("TAG", "initData: ${listQuestion.size}")
+        arguments?.getInt(POSITION)?.let {
+            listQuestionAdapter.currentPos = it
+        }
         listQuestionAdapter.addData(listQuestion)
+        initListener()
+    }
+
+    fun initListener() {
+        listQuestionAdapter.setOnClickItemRecyclerView { _, position ->
+            onClickItem?.invoke(position)
+        }
     }
 }

@@ -11,6 +11,7 @@ import com.example.drivinglicence.databinding.ToolbarAppBinding
 class ToolBarApp : LinearLayout {
     var onLeftClickListener: (() -> Unit)? = null
     var onRightClickListener: (() -> Unit)? = null
+    var onActionClickListener: (() -> Unit)? = null
 
     private val binding =
         ToolbarAppBinding.inflate(LayoutInflater.from(context), this)
@@ -30,10 +31,15 @@ class ToolBarApp : LinearLayout {
         attrs?.let {
             val obtain = context.obtainStyledAttributes(attrs, R.styleable.ToolBarApp)
             val title = obtain.getString(R.styleable.ToolBarApp_title)
+            val action = obtain.getString(R.styleable.ToolBarApp_action)
             val iconLeft = obtain.getDrawable(R.styleable.ToolBarApp_drawable_start)
             val iconRight = obtain.getDrawable(R.styleable.ToolBarApp_drawable_end)
             val titleColor = obtain.getColor(R.styleable.ToolBarApp_title_color, 0)
             setTitle(title)
+            setAction(action)
+            binding.textAction.setOnClickListener {
+                onActionClickListener?.invoke()
+            }
             if (iconLeft != null) {
                 binding.imageLeft.visibility = View.VISIBLE
                 binding.imageLeft.setImageDrawable(iconLeft)
@@ -71,6 +77,15 @@ class ToolBarApp : LinearLayout {
         }
     }
 
+    fun setAction(action: String?) {
+        if (action.isNullOrEmpty()) {
+            binding.textAction.visibility = View.GONE
+        } else {
+            binding.textAction.visibility = View.VISIBLE
+            binding.textAction.text = action
+        }
+    }
+
     fun setIconLeft(id: Int) {
         if (id < 0) {
             binding.imageLeft.visibility = View.INVISIBLE
@@ -95,6 +110,11 @@ class ToolBarApp : LinearLayout {
     fun setTitleColor(color: Int) {
         if (color != 0) {
             binding.textTitle.setTextColor(color)
+        }
+    }
+    fun setActionColor(color: Int) {
+        if (color != 0) {
+            binding.textAction.setTextColor(color)
         }
     }
 }

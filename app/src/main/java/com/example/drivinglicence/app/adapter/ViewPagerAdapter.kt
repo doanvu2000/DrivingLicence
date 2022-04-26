@@ -21,7 +21,6 @@ class ViewPagerAdapter(fragmentManager: FragmentManager) :
     }
 
     override fun getItem(position: Int): Fragment {
-
         return fragments[position]
     }
 

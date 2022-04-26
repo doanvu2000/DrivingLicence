@@ -1,6 +1,7 @@
 package com.example.drivinglicence.app.activites
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,17 +10,17 @@ import androidx.viewpager.widget.ViewPager
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.ViewPagerAdapter
 import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.entity.ListAnswers
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.app.fragment.LessonFragment
 import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
-import com.example.drivinglicence.component.dialog.InformationLessonBottomSheet
 import com.example.drivinglicence.component.dialog.ListQuestionBottomDialog
 import com.example.drivinglicence.databinding.ActivityLessonViewPagerBinding
-import com.example.drivinglicence.pref.showMessage
+import com.example.drivinglicence.pref.showDevelopMessage
 import com.example.drivinglicence.utils.*
 
-class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, MapDataViewModel>() {
+class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, MapDataViewModel>() {
     private val viewpagerAdapter by lazy {
         ViewPagerAdapter(supportFragmentManager)
     }
@@ -27,10 +28,15 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
 
     override fun initView() {
         binding.toolbar.setIconLeft(R.drawable.icon_back_white)
+        binding.toolbar.setAction(getString(R.string.text_end))
+        binding.toolbar.setActionColor(Color.WHITE)
     }
 
     override fun initListener() {
         binding.toolbar.onLeftClickListener = { onBackPressed() }
+        binding.toolbar.onActionClickListener ={
+            showDevelopMessage()
+        }
         binding.btnBackQuestion.setOnClickListener(this)
         binding.btnForwardQuestion.setOnClickListener(this)
         binding.btnViewBottom.setOnClickListener(this)
@@ -70,80 +76,19 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
     private var listQuestion: MutableList<Question> = mutableListOf()
     private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
     override fun initData() {
-        val flag = intent.extras?.getInt(FLAG) ?: 1
-        /**
-         * 1: 60 Câu hỏi điểm liệt
-         * 2: 83 Câu hỏi khái niệm và quy tắc
-         * 3: 5 câu hỏi văn hóa và đạo đức lái xe
-         * 4: 12 câu hỏi kĩ thuật lái xe
-         * 5: 65 câu hỏi biển báo đường bộ
-         * 6: 35 câu hỏi sa hình
-         * */
-        //danh sach cau tra loi cua 3 cau hoi
-        when (flag) {
-            1 -> {
-                binding.toolbar.setTitle(getString(R.string.text_60_question_important))
-                /**60 Câu hỏi điểm liệt*/
-                listQuestion = viewModel.getListQuestionImportant(this)
-                viewModel.mapAnswerImportant[1]?.let { listAnswer.add(it) }
-                viewModel.mapAnswerImportant[2]?.let { listAnswer.add(it) }
-                viewModel.mapAnswerImportant[3]?.let { listAnswer.add(it) }
-                for (i in 1..3) {
-                    val question = listQuestion[i - 1]
-                    val answers = listAnswer[i - 1] as ArrayList<Answer>
-                    mListFragment.add(LessonFragment().apply {
-                        val bundle = Bundle()
-                        bundle.putParcelable(QUESTION, question)
-                        bundle.putParcelableArrayList(ANSWERS, answers)
-                        arguments = bundle
-                    })
-                }
-            }
-            2 -> {
-                binding.toolbar.setTitle(getString(R.string.text_concepts_and_rules))
-                /**83 Câu hỏi khái niệm và quy tắc*/
-                listQuestion = viewModel.getListQuestionConceptsAndRules(this)
-                for (i in 1..3) {
-                    listAnswer.add(viewModel.mapAnswerConceptsAndRules[i] ?: mutableListOf())
-                }
-                for (i in 1..3) {
-                    val question = listQuestion[i - 1]
-                    val answers = listAnswer[i - 1] as ArrayList<Answer>
-                    mListFragment.add(LessonFragment().apply {
-                        val bundle = Bundle()
-                        bundle.putParcelable(QUESTION, question)
-                        bundle.putParcelableArrayList(ANSWERS, answers)
-                        arguments = bundle
-                    })
-                }
-            }
-            3 -> {
-                binding.toolbar.setTitle(getString(R.string.text_culture_and_ethic))
-                /**5 câu Văn hóa và đạo đức lái xe*/
-                listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
-                for (i in 1..5) {
-                    listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
-                }
-                for (i in 1..5) {
-                    val question = listQuestion[i - 1]
-                    val answers = listAnswer[i - 1] as ArrayList<Answer>
-                    mListFragment.add(LessonFragment().apply {
-                        val bundle = Bundle()
-                        bundle.putParcelable(QUESTION, question)
-                        bundle.putParcelableArrayList(ANSWERS, answers)
-                        arguments = bundle
-                    })
-                }
-            }
-            4 -> {
-                binding.toolbar.setTitle(getString(R.string.text_driving_technique))
-            }
-            5 -> {
-                binding.toolbar.setTitle(getString(R.string.text_road_signs))
-            }
-            6 -> {
-                binding.toolbar.setTitle(getString(R.string.text_sat_figure))
-            }
+//        binding.toolbar.setTitle(getString(R.string.text_60_question_important))
+        listQuestion = intent.extras?.getParcelableArrayList(QUESTIONS) ?: mutableListOf()
+        listAnswer =
+            intent.extras?.getParcelable<ListAnswers>(LIST_ANSWERS)?.listAnswers ?: mutableListOf()
+        for (i in 1..listAnswer.size) {
+            val question = listQuestion[i - 1]
+            val answers = listAnswer[i - 1] as ArrayList<Answer>
+            mListFragment.add(LessonFragment().apply {
+                val bundle = Bundle()
+                bundle.putParcelable(QUESTION, question)
+                bundle.putParcelableArrayList(ANSWERS, answers)
+                arguments = bundle
+            })
         }
         viewpagerAdapter.addFragment(mListFragment)
         binding.viewPager.adapter = viewpagerAdapter

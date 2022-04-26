@@ -9,6 +9,14 @@ import com.example.drivinglicence.R
 import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.Question
 
+fun getQuestionTest(context: Context, position: Int): MutableList<Question> {
+    return mutableListOf()
+}
+
+fun getAnswerTest(context: Context, position: Int): MutableList<MutableList<Answer>> {
+    return mutableListOf()
+}
+
 /**-------------------------260 câu hỏi lý thuyết-------------------------*/
 
 /**Câu hỏi điểm liệt*/ //60
@@ -182,17 +190,3 @@ var listCultureAndEthic5 = mutableListOf<Answer>()
 
 /**Sa hình*/ //35
 
-fun RecyclerView.setDivider(@DrawableRes drawableRes: Int) {
-    val divider = DividerItemDecoration(
-        this.context,
-        DividerItemDecoration.VERTICAL
-    )
-    val drawable = ContextCompat.getDrawable(
-        this.context,
-        drawableRes
-    )
-    drawable?.let {
-        divider.setDrawable(it)
-        addItemDecoration(divider)
-    }
-}

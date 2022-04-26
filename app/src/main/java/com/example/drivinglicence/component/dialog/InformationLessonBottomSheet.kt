@@ -5,6 +5,9 @@ import com.example.drivinglicence.databinding.InformationLessonBottomSheetBindin
 import com.example.drivinglicence.utils.LICENSE
 
 class InformationLessonBottomSheet : BaseBottomSheetDialog<InformationLessonBottomSheetBinding>() {
+
+    var startTestClickListener: (() -> Unit)? = null
+
     override fun initView() {
         initData()
     }
@@ -19,6 +22,14 @@ class InformationLessonBottomSheet : BaseBottomSheetDialog<InformationLessonBott
                 binding.textContentBottomSheet.text =
                     getString(R.string.text_content_information_A2_license)
             }
+        }
+        initListener()
+    }
+
+    private fun initListener() {
+        binding.textStartTest.setOnClickListener {
+            dismiss()
+            startTestClickListener?.invoke()
         }
     }
 

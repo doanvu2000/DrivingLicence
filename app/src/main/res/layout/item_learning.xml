@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:background="@drawable/layout_round"
+    android:layout_marginTop="10dp"
     android:orientation="vertical"
     android:padding="10dp">
 
@@ -33,6 +34,7 @@
                 android:layout_weight="4"
                 android:padding="5dp"
                 android:textAllCaps="true"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 tools:text="60 câu hỏi điểm liệt" />
@@ -48,10 +50,11 @@
 
         </LinearLayout>
     </LinearLayout>
-    <View
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/grey" />
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:background="@color/grey" />-->
 
 </LinearLayout>

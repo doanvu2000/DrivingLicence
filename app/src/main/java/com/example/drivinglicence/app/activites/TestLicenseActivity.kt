@@ -1,23 +1,34 @@
 package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
+import android.os.Bundle
+import android.os.Parcelable
 import android.util.Log
 import androidx.core.content.ContextCompat
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.ExamAdapter
+import com.example.drivinglicence.app.entity.Answer
+import com.example.drivinglicence.app.entity.ListAnswers
+import com.example.drivinglicence.app.entity.Question
+import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseCoreActivity
+import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.component.dialog.AlertMessageDialog
 import com.example.drivinglicence.component.dialog.InformationLessonBottomSheet
+import com.example.drivinglicence.component.navigator.openActivity
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.example.drivinglicence.databinding.ActivityTestLicenseBinding
 import com.example.drivinglicence.pref.LocalCache
 import com.example.drivinglicence.pref.showMessage
-import com.example.drivinglicence.utils.IS_SECOND
+import com.example.drivinglicence.utils.*
+import java.util.ArrayList
 
-class TestLicenseActivity : BaseCoreActivity<ActivityTestLicenseBinding>() {
+class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataViewModel>() {
     val examAdapter by lazy {
         ExamAdapter()
     }
+    private var listQuestion: MutableList<Question> = mutableListOf()
+    private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
 
     override fun initView() {
         setupToolBar()
@@ -42,13 +53,28 @@ class TestLicenseActivity : BaseCoreActivity<ActivityTestLicenseBinding>() {
             showAlertMessage()
         }
         examAdapter.setOnClickItemRecyclerView { position, _ ->
-            showMessage(this, "open exam $position")
+
+            listQuestion = getQuestionTest(this, position)
+            listAnswer = getAnswerTest(this, position)
+
+            /**Fake data*/
+            listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
+            for (i in 1..5) {
+                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
+            }
             showInformationLicense()
         }
     }
+
     private fun showInformationLicense() {
         InformationLessonBottomSheet().also { dialog ->
-            dialog.show(supportFragmentManager,"")
+            dialog.show(supportFragmentManager, "")
+            dialog.startTestClickListener = {
+                val bundle = Bundle()
+                bundle.putParcelableArrayList(QUESTIONS, listQuestion as ArrayList)
+                bundle.putParcelable(LIST_ANSWERS, ListAnswers(listAnswer))
+                openActivity(CountDownTestActivity::class.java, bundle)
+            }
         }
     }
 

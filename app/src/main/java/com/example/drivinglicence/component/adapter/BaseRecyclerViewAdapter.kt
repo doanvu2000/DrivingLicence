@@ -74,7 +74,7 @@ abstract class BaseRecyclerViewAdapter<T, VB : ViewBinding>
     }
 
     private fun reflexViewBinding(parent: ViewGroup): VB {
-        return BindingReflex.reflexViewBinding(javaClass, LayoutInflater.from(parent.context))
+        return BindingReflex.reflexViewBinding(javaClass, LayoutInflater.from(parent.context), parent, false)
     }
 
     fun getLayoutInflater(context: Context): LayoutInflater {

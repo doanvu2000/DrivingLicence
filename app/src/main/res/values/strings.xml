@@ -33,7 +33,7 @@
     <string name="text_content_information_A2_license">
         Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
     </string>
-
+    <string name="text_end">End test</string>
 
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 60 câu điểm liệt-->
