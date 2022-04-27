@@ -18,8 +18,6 @@ class AlertMessageDialog(val context: Context) {
             .create()
     }
 
-    var reloadWithFlag: ((flag: Int) -> Unit)? = null
-
     init {
 //        binding.btnSubmit.setOnClickListener {
 //            dialog.dismiss()
@@ -118,5 +116,9 @@ class AlertMessageDialog(val context: Context) {
         if (layout != 0) {
             binding.btnSubmit.setBackgroundResource(layout)
         }
+    }
+
+    fun setColorTitle(color: Int) {
+        binding.dialogTitle.setTextColor(color)
     }
 }

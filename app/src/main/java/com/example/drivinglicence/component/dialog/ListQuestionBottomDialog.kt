@@ -1,6 +1,7 @@
 package com.example.drivinglicence.component.dialog
 
 import android.util.Log
+import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.ListQuestionBottomAdapter
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
@@ -26,9 +27,10 @@ class ListQuestionBottomDialog : BaseBottomSheetDialog<ListQuestionBottomDialogB
         )
     }
 
+    override fun getTheme(): Int = R.style.BaseBottomSheetDialog
+
     override fun initData() {
         listQuestion = arguments?.getParcelableArrayList(QUESTIONS) ?: mutableListOf()
-        Log.d("TAG", "initData: ${listQuestion.size}")
         arguments?.getInt(POSITION)?.let {
             listQuestionAdapter.currentPos = it
         }
@@ -39,6 +41,9 @@ class ListQuestionBottomDialog : BaseBottomSheetDialog<ListQuestionBottomDialogB
     fun initListener() {
         listQuestionAdapter.setOnClickItemRecyclerView { _, position ->
             onClickItem?.invoke(position)
+        }
+        binding.iconDown.setOnClickListener {
+            onDestroyView()
         }
     }
 }

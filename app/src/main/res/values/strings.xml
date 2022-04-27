@@ -34,6 +34,8 @@
         Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
     </string>
     <string name="text_end">End test</string>
+    <string name="text_pass_exam">Congratulations on passing this test!</string>
+    <string name="text_failed_exam">Sorry you didn\'t pass!</string>
 
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 60 câu điểm liệt-->
@@ -50,6 +52,10 @@
     <string name="text_explain_answer_important_3">
        Sentences 1 and 2 are wrong because both are illegal racing acts. Illegal racing is a prohibited act specified in the Road Traffic Law. \nThe correct answer is 3.
     </string>
+    <string name="text_explain_answer_important_4">It is forbidden to operate a road vehicle with narcotics in the body.</string>
+    <string name="text_explain_answer_important_5">Pursuant to Decree 100/2019/ND-CP stipulating penalties when participating in traffic with alcohol concentration, choose answer 1.</string>
+    <string name="text_explain_answer_important_6">Pursuant to Decree 100/2019/ND-CP stipulating penalties when participating in traffic with alcohol concentration, choose answer 1.</string>
+
     <!--83 câu khái niệm và quy tắc-->
     <string name="text_explain_answer_concept_and_rule_1">Sentence 1 is wrong because the curb is understood as the edge on both sides of the road. The roadside has the effect of protecting the road surface, this part of the road is usually for people. Not for traffic.\nQuestion 3 is incorrect because the part of the road for motor vehicles is the part of the road used for road motor vehicles and special-use motorcycles\nQuestion 2 is correct because the driveway is the portion of the roadway used for all vehicular traffic.\nTip: The curb is not intended for vehicular traffic.</string>
     <string name="text_explain_answer_concept_and_rule_2">A lane is a part of a longitudinally divided portion of the roadway, which is wide enough for a vehicle to run safely. Sentence 2 is correct.</string>
@@ -97,6 +103,15 @@
     <string name="answer_important_3_1">Taking place on a street with no passersby.</string>
     <string name="answer_important_3_2">Supported by the people.</string>
     <string name="answer_important_3_3">Licensed by the competent authority.</string>
+    <string name="answer_important_4_1">Prohibited.</string>
+    <string name="answer_important_4_2">Not strictly prohibited.</string>
+    <string name="answer_important_4_3">Not strictly prohibited, if there is a light drug, you can drive a vehicle in traffic.</string>
+    <string name="answer_important_5_1">Unauthorized.</string>
+    <string name="answer_important_5_2">Only drive at slow speeds and for short distances.</string>
+    <string name="answer_important_5_3">Only drive if you have a low alcohol level in your body.</string>
+    <string name="answer_important_6_1">Prohibited</string>
+    <string name="answer_important_6_2">Not strictly prohibited.</string>
+    <string name="answer_important_6_3">It is not strictly prohibited, if the blood alcohol concentration is at a low level, it is possible to drive a vehicle in traffic.</string>
 
     <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
 

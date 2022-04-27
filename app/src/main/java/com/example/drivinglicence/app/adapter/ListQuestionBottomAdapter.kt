@@ -1,19 +1,19 @@
 package com.example.drivinglicence.app.adapter
 
+import android.view.View
 import com.example.drivinglicence.R
-import com.example.drivinglicence.app.entity.ItemAction
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.component.adapter.BaseRecyclerViewAdapter
-import com.example.drivinglicence.databinding.ItemActionHomeBinding
 import com.example.drivinglicence.databinding.ItemListQuestionBottomBinding
-import com.squareup.picasso.Picasso
-import java.lang.Exception
 
 class ListQuestionBottomAdapter :
     BaseRecyclerViewAdapter<Question, ItemListQuestionBottomBinding>() {
     var currentPos: Int = 0
     override fun bindData(binding: ItemListQuestionBottomBinding, item: Question, position: Int) {
         binding.textCount.text = "${item.questionId}"
+        if (item.isChooseAnswer == true) {
+            binding.imageChoose.visibility = View.VISIBLE
+        }
         if (position != currentPos) {
             if (item.isImportant) {
                 binding.textCount.setBackgroundResource(R.drawable.circle_button_orange)
@@ -22,15 +22,11 @@ class ListQuestionBottomAdapter :
             }
         } else {
             if (item.isImportant) {
-                binding.textCount.setBackgroundResource(R.drawable.circle_button_grey_border)
+                binding.textCount.setBackgroundResource(R.drawable.circle_button_orange_border)
             } else {
                 binding.textCount.setBackgroundResource(R.drawable.circle_button_grey_border)
             }
         }
-
     }
 
-    fun setLayoutCurrentItem(pos: Int) {
-
-    }
 }

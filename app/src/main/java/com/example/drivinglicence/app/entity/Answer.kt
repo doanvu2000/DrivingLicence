@@ -10,5 +10,6 @@ data class Answer(
     val isCorrect: Boolean,
     val questionId: Int,
     val answerExplain: String? = null,
-    var flag: Int? = 1
+    var flag: Int? = 1,
+    var isChoose: Boolean? = false
 ) : Parcelable

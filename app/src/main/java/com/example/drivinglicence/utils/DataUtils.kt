@@ -51,24 +51,24 @@ fun initList(context: Context) {
         Answer(4, context.getString(R.string.answer_important_1_4), false, 1)
     )
     listImportant2 = mutableListOf(
-        Answer(1, context.getString(R.string.answer_important_2_1), false, 2),
+        Answer(5, context.getString(R.string.answer_important_2_1), false, 2),
         Answer(
-            2,
+            6,
             answerContent = context.getString(R.string.answer_important_2_2),
             true,
             2,
             answerExplain = context.getString(R.string.text_explain_answer_important_2)
         ),
-        Answer(3, context.getString(R.string.answer_important_2_3), false, 2),
-        Answer(4, context.getString(R.string.answer_important_2_4), false, 2)
+        Answer(7, context.getString(R.string.answer_important_2_3), false, 2),
+        Answer(8, context.getString(R.string.answer_important_2_4), false, 2)
     )
 
     listImportant3 = mutableListOf(
-        Answer(1, context.getString(R.string.answer_important_1_1), false, 1),
-        Answer(2, context.getString(R.string.answer_important_1_2), false, 1),
+        Answer(9, context.getString(R.string.answer_important_3_1), false, 3),
+        Answer(10, context.getString(R.string.answer_important_3_2), false, 3),
         Answer(
-            3, context.getString(R.string.answer_important_1_3), true,
-            1, context.getString(R.string.text_explain_answer_important_3)
+            11, context.getString(R.string.answer_important_3_3), true,
+            3, context.getString(R.string.text_explain_answer_important_3)
         ),
     )
     listAnswerImportant = mutableListOf(listImportant1, listImportant2, listImportant3)
@@ -86,20 +86,20 @@ fun initList(context: Context) {
         ),
     )
     listConceptAndRule2 = mutableListOf(
-        Answer(1, context.getString(R.string.answer_concepts_and_rules_2_1), false, 2),
+        Answer(4, context.getString(R.string.answer_concepts_and_rules_2_1), false, 2),
         Answer(
-            2, context.getString(R.string.answer_concepts_and_rules_2_2), true, 2,
+            5, context.getString(R.string.answer_concepts_and_rules_2_2), true, 2,
             answerExplain = context.getString(R.string.text_explain_answer_concept_and_rule_2)
         ),
-        Answer(3, context.getString(R.string.answer_concepts_and_rules_2_3), false, 2),
+        Answer(6, context.getString(R.string.answer_concepts_and_rules_2_3), false, 2),
     )
     listConceptAndRule3 = mutableListOf(
-        Answer(1, context.getString(R.string.answer_concepts_and_rules_3_1), false, 3),
+        Answer(7, context.getString(R.string.answer_concepts_and_rules_3_1), false, 3),
         Answer(
-            2, context.getString(R.string.answer_concepts_and_rules_3_2), false, 3
+            8, context.getString(R.string.answer_concepts_and_rules_3_2), false, 3
         ),
         Answer(
-            3, context.getString(R.string.answer_concepts_and_rules_3_3), true, 3,
+            9, context.getString(R.string.answer_concepts_and_rules_3_3), true, 3,
             answerExplain = context.getString(R.string.text_explain_answer_concept_and_rule_3)
         )
     )
@@ -123,39 +123,39 @@ fun initList(context: Context) {
     )
     listCultureAndEthic2 = mutableListOf(
         Answer(
-            1, context.getString(R.string.answer_culture_and_ethics_2_1), true,
+            4, context.getString(R.string.answer_culture_and_ethics_2_1), true,
             2,
             answerExplain = context.getString(R.string.text_explain_answer_culture_and_ethic_2)
         ),
-        Answer(2, context.getString(R.string.answer_culture_and_ethics_2_2), false, 2),
-        Answer(3, context.getString(R.string.answer_culture_and_ethics_2_3), false, 2)
+        Answer(5, context.getString(R.string.answer_culture_and_ethics_2_2), false, 2),
+        Answer(6, context.getString(R.string.answer_culture_and_ethics_2_3), false, 2)
     )
     listCultureAndEthic3 = mutableListOf(
         Answer(
-            1, context.getString(R.string.answer_culture_and_ethics_3_1), true,
+            7, context.getString(R.string.answer_culture_and_ethics_3_1), true,
             3,
             answerExplain = context.getString(R.string.text_explain_answer_culture_and_ethic_3)
         ),
-        Answer(2, context.getString(R.string.answer_culture_and_ethics_3_2), false, 3),
-        Answer(3, context.getString(R.string.answer_culture_and_ethics_3_3), false, 3)
+        Answer(8, context.getString(R.string.answer_culture_and_ethics_3_2), false, 3),
+        Answer(9, context.getString(R.string.answer_culture_and_ethics_3_3), false, 3)
     )
     listCultureAndEthic4 = mutableListOf(
         Answer(
-            1, context.getString(R.string.answer_culture_and_ethics_4_1), true,
+            10, context.getString(R.string.answer_culture_and_ethics_4_1), true,
             4,
             answerExplain = context.getString(R.string.text_explain_answer_culture_and_ethic_4)
         ),
-        Answer(2, context.getString(R.string.answer_culture_and_ethics_4_2), false, 4),
-        Answer(3, context.getString(R.string.answer_culture_and_ethics_4_3), false, 4)
+        Answer(11, context.getString(R.string.answer_culture_and_ethics_4_2), false, 4),
+        Answer(12, context.getString(R.string.answer_culture_and_ethics_4_3), false, 4)
     )
     listCultureAndEthic5 = mutableListOf(
         Answer(
-            1, context.getString(R.string.answer_culture_and_ethics_5_1), false, 5
+            13, context.getString(R.string.answer_culture_and_ethics_5_1), false, 5
         ),
-        Answer(2, context.getString(R.string.answer_culture_and_ethics_5_2), false, 5),
-        Answer(3, context.getString(R.string.answer_culture_and_ethics_5_3), false, 5),
+        Answer(14, context.getString(R.string.answer_culture_and_ethics_5_2), false, 5),
+        Answer(15, context.getString(R.string.answer_culture_and_ethics_5_3), false, 5),
         Answer(
-            3, context.getString(R.string.answer_culture_and_ethics_5_3), true, 5,
+            16, context.getString(R.string.answer_culture_and_ethics_5_3), true, 5,
             answerExplain = context.getString(R.string.text_explain_answer_culture_and_ethic_5)
         )
     )

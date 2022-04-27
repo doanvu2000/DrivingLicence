@@ -1,4 +1,5 @@
 package com.example.drivinglicence.app.entity
+
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
@@ -8,5 +9,6 @@ data class Question(
     val examId: Int?,
     val content: String,
     val image: String?,
-    val isImportant: Boolean //câu điểm liệt (sai => trượt)
+    val isImportant: Boolean, //câu điểm liệt (sai => trượt)
+    var isChooseAnswer: Boolean? = false
 ) : Parcelable

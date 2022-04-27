@@ -34,6 +34,8 @@
         Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
     </string>
     <string name="text_end">Kết thúc</string>
+    <string name="text_pass_exam">Chúc mừng bạn đã vượt qua đề thi này!</string>
+    <string name="text_failed_exam">Rất tiếc bạn chưa đỗ!</string>
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 60 câu điểm liệt-->
     <string name="text_explain_answer_important_1">Rõ ràng là đáp án 3 sai mà. Làm hỏng tài sản của nhà nước mà. Nếu vi phạm bạn sẽ bị phạt với 1 số tiền không nhỏ. Cụ thể:
@@ -49,6 +51,10 @@
     <string name="text_explain_answer_important_3">
         Câu 1 và 2 sai vì đều là hành vi đua xe trái phép. Hành vi đua xe trái phép là hành vi nghiêm cấm được quy định trong Luật giao thông đường bộ. \nĐáp án đúng là 3.
     </string>
+    <string name="text_explain_answer_important_4">Cấm điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy.</string>
+    <string name="text_explain_answer_important_5">Căn cứ nghị định 100/2019/NĐ-CP quy định về xử phạt khi tham gia giao thông có nồng độ cồn thì chọn đáp án 1.</string>
+    <string name="text_explain_answer_important_6">Căn cứ nghị định 100/2019/NĐ-CP quy định về xử phạt khi tham gia giao thông có nồng độ cồn thì chọn đáp án 1.</string>
+
     <!--83 câu khái niệm và quy tắc-->
     <string name="text_explain_answer_concept_and_rule_1">Câu 1 sai vì lề đường được hiểu là phần mép phía hai bên đường. Lề đường có tác dụng bảo vệ mặt đường, phần đường này thường dành cho người. Không dành cho phương tiện giao thông qua lại.\nCâu 3 sai vì phần đường dành cho xe cơ giới là phần của đường bộ được sử dụng cho các phương tiện giao thông cơ giới đường bộ và xe máy chuyên dùng\nCâu 2 đúng vì phần đường xe chạy là phần của đường bộ được sử dụng cho tất cả các phương tiện giao thông qua lại.\nMẹo: Lề đường không sử dụng cho các phương tiện giao thông qua lạì</string>
     <string name="text_explain_answer_concept_and_rule_2">Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe chạy an toàn. Câu 2 đúng. \nCâu 1 sai vì chia theo chiều dọc nhưng thiếu "đủ bề rộng cho xe chạy an toàn" \nCâu 3 sai vì làn đường có thể sử dụng cho các loại phương tiện khác nhau chứ không chỉ riêng ô tô (làn đường dành cho người đi xe máy, xe thô sơ…)\nMẹo: Có bề rộng đủ cho xe chạy an toàn.
@@ -100,6 +106,15 @@
     <string name="answer_important_3_1">Diễn ra trên đường phố không có người qua lại.</string>
     <string name="answer_important_3_2">Được người dân ủng hộ.</string>
     <string name="answer_important_3_3">Được cơ quan có thẩm quyền cấp phép.</string>
+    <string name="answer_important_4_1">Bị nghiêm cấm.</string>
+    <string name="answer_important_4_2">Không bị nghiêm cấm.</string>
+    <string name="answer_important_4_3">Không bị nghiêm cấm, nếu có chất ma túy ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.</string>
+    <string name="answer_important_5_1">Không được phép.</string>
+    <string name="answer_important_5_2">Chỉ được lái ở tốc độ chậm và quãng đường ngắn.</string>
+    <string name="answer_important_5_3">Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp.</string>
+    <string name="answer_important_6_1">Bị nghiêm cấm.</string>
+    <string name="answer_important_6_3">Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.</string>
+    <string name="answer_important_6_2">Không bị nghiêm cấm.</string>
 
     <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
 

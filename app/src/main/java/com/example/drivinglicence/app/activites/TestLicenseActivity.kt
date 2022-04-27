@@ -58,9 +58,13 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
             listAnswer = getAnswerTest(this, position)
 
             /**Fake data*/
-            listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
-            for (i in 1..5) {
-                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
+//            listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
+//            for (i in 1..5) {
+//                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
+//            }
+            listQuestion = viewModel.getListQuestionImportant(this)
+            for (i in 1..3) {
+                listAnswer.add(viewModel.mapAnswerImportant[i] ?: mutableListOf())
             }
             showInformationLicense()
         }
@@ -95,7 +99,6 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
                     putIsFirst()
                 }
             )
-//                alert.setBackgroundButtonSubmit(R.drawable.guide_line_green)
             alert.hideCancelButton()
         }
     }

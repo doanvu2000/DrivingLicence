@@ -1,14 +1,23 @@
 package com.example.drivinglicence.app.viewmodel
 
 import android.content.Context
+import android.util.Log
 import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.component.viewmodel.BaseViewModel
 import com.example.drivinglicence.utils.listAnswerConceptAndRule
 import com.example.drivinglicence.utils.listAnswerCultureAndEthic
 import com.example.drivinglicence.utils.listAnswerImportant
+import kotlinx.coroutines.*
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
+import java.util.concurrent.Flow
 
 class MapDataViewModel : BaseViewModel() {
+
+    val mapResult = mutableMapOf<Int, Boolean>()
+    var listQuestion: MutableList<Question> = mutableListOf()
+    var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
 
     var mapAnswerImportant = HashMap<Int, MutableList<Answer>>()
     var mapAnswerConceptsAndRules = HashMap<Int, MutableList<Answer>>()
@@ -23,7 +32,7 @@ class MapDataViewModel : BaseViewModel() {
 
     fun getListQuestionImportant(context: Context): MutableList<Question> {
         val list = mutableListOf<Question>()
-        for (i in 1..10) {
+        for (i in 1..3) {
             val id =
                 context.resources.getIdentifier(
                     "question_important_$i",
