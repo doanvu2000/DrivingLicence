@@ -25,14 +25,14 @@ class MapDataViewModel : BaseViewModel() {
 
     /** 60 question important 1 -> 60 */
     fun getAnswerWithQuestionImportant() {
-        for (i in 1..3) {
+        for (i in 1..6) {
             mapAnswerImportant[i] = listAnswerImportant[i - 1]
         }
     }
 
     fun getListQuestionImportant(context: Context): MutableList<Question> {
         val list = mutableListOf<Question>()
-        for (i in 1..3) {
+        for (i in 1..6) {
             val id =
                 context.resources.getIdentifier(
                     "question_important_$i",

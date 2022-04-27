@@ -134,9 +134,10 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 isPass = false
             }
         }
-//        if (count < 21) {
-//            isPass = false
-//        }
+        //count < 21
+        if (count < listQuestion.size - 2) {
+            isPass = false
+        }
         AlertMessageDialog(this).also { alert ->
             val buttonText = getString(R.string.text_confirm)
             var title = ""

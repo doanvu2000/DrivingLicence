@@ -88,6 +88,9 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                 viewModel.mapAnswerImportant[1]?.let { listAnswer.add(it) }
                 viewModel.mapAnswerImportant[2]?.let { listAnswer.add(it) }
                 viewModel.mapAnswerImportant[3]?.let { listAnswer.add(it) }
+                viewModel.mapAnswerImportant[4]?.let { listAnswer.add(it) }
+                viewModel.mapAnswerImportant[5]?.let { listAnswer.add(it) }
+                viewModel.mapAnswerImportant[6]?.let { listAnswer.add(it) }
                 for (i in 1..3) {
                     val question = listQuestion[i - 1]
                     val answers = listAnswer[i - 1] as ArrayList<Answer>
