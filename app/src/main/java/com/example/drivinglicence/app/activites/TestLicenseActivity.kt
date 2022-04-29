@@ -58,14 +58,14 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
             listAnswer = getAnswerTest(this, position)
 
             /**Fake data*/
-            listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
-            for (i in 1..5) {
-                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
-            }
-//            listQuestion = viewModel.getListQuestionImportant(this)
-//            for (i in 1..6) {
-//                listAnswer.add(viewModel.mapAnswerImportant[i] ?: mutableListOf())
+//            listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
+//            for (i in 1..5) {
+//                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
 //            }
+            listQuestion = viewModel.getListQuestionImportant(this)
+            for (i in 1..6) {
+                listAnswer.add(viewModel.mapAnswerImportant[i] ?: mutableListOf())
+            }
             showInformationLicense()
         }
     }

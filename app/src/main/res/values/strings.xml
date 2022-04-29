@@ -14,7 +14,7 @@
     <string name="text_cancel">Cancel</string>
     <string name="text_confirm">Confirm</string>
     <string name="text_explain_answer">Explain the answer</string>
-    <string name="text_question_important">Important question</string>
+    <string name="text_question_important"><![CDATA[<font color="#FFA900"> (Important question)</font>]]></string>
     <string name="text_60_question_important">60 questions important</string>
     <string name="text_concepts_and_rules">Concepts and rules</string>
     <string name="text_about_83">Includes 83 questions (18 questions important)</string>
@@ -155,5 +155,52 @@
     <string name="answer_culture_and_ethics_5_2">Walk up the sidewalk, make use of every space to quickly get out of the traffic jam.</string>
     <string name="answer_culture_and_ethics_5_3">Cross into the left lane and try to overtake another vehicle.</string>
     <string name="answer_culture_and_ethics_5_4">All of the above comments.</string>
+
+
+    <!-- ========================================Mẹo thi lý thuyết ========================================-->
+
+    <string name="text_tip_1">Licensing</string>
+    <string name="text_tip_2">Alcohol concentration</string>
+    <string name="text_tip_3">Minimum safe distance</string>
+    <string name="text_tip_4">Ask about age (T)</string>
+    <string name="text_tip_5">On highways, in tunnels, roundabouts, ramps, where visibility is limited</string>
+    <string name="text_tip_6">There is no signal at the intersection</string>
+    <string name="text_tip_7">Prohibition sign</string>
+    <string name="text_tip_8">First, second, best, three ways, four directions</string>
+    <string name="text_tip_9">Order of priority with priority vehicles: Fire - Su - An - Thuong</string>
+    <string name="text_tip_10">Driving license classes</string>
+    <string name="text_tip_11">Signage subgroups: including</string>
+    <string name="text_tip_12">Top speed in densely populated areas</string>
+    <string name="text_tip_13">Maximum speed outside of densely populated areas (except highways)</string>
+    <string name="text_tip_14">Increase number, decrease number</string>
+    <string name="text_tip_15">Road transport</string>
+    <string name="text_tip_16">Vehicles participating in road traffic</string>
+    <string name="text_tip_17">Specialized motorbikes</string>
+    <string name="text_tip_18">Traffic controller\'s signal</string>
+    <string name="text_tip_20">Transport service</string>
+    <string name="text_tip_21">Driving technique</string>
+    <string name="text_tip_22">Other shading rules</string>
+    <!--=====================================-->
+    <string name="text_tip_content_1">- Roads prohibited from stopping, parking and banning are issued by the Provincial People\'s Committee</string>
+    <string name="text_tip_content_2">Drivers of motorcycles, cars, or tractors on the road with alcohol in their blood or breath: Prohibited</string>
+    <string name="text_tip_content_3">- 35m if circulating speed(V) = 60(km/h)\n- 55m if V:60 - 80\n- 70m if V:80 - 100\n- 100m if V: 100 - 120\n- Below 60km/h: Be proactive and ensure the distance.</string>
+    <string name="text_tip_content_4">- Motorcycle: 16 years old (under 50 cm3)\n- Motorcycle + B1 + B2: 18 years old</string>
+    <string name="text_tip_content_5">- Do not turn, do not reverse, do not overtake\n- Do not cross a narrow bridge with only one lane.\n- No U-turn is allowed in the pedestrian crossing.\n- Prohibited Backing up in no-stop areas and where roads intersect.</string>
+    <string name="text_tip_content_6">- There is a roundabout: Yield to the left\n- There is no roundabout to give way to the right</string>
+    <string name="text_tip_content_7">Prohibit cars (Including: 3-wheel motorcycles, Lam cars, passenger cars) -> Prohibit trucks -> Prohibit tractors -> Prohibit trailers, semi-trailers</string>
+    <string name="text_tip_content_8">- First place: the car that gets to the line first will go first.\n- Second place: the priority vehicle gets to go first. Order of priority vehicles: Fire-Suffering-Injury (Fire - Military - Police - Ambulance - Dike protection - Convoy of hearses).\n- Three roads: vehicles on main road, priority road.\ n- Four directions: order of direction: empty right - turn right - go straight - turn left.</string>
+    <string name="text_tip_content_9">- Fire: Fire truck\n- Incident: Military vehicle\n- Security: Police vehicle\n- Injury: Ambulance\n- Dike protection vehicle, vehicle for emergency duty\n- Convoy of hearses</string>
+    <string name="text_tip_content_10">- A1 motorcycles under 175 cm3 and 3-wheeled vehicles of the disabled\n- A2 motorcycles 175 cm3 or more</string>
+    <string name="text_tip_content_11">- Danger sign (yellow triangle)\n- Forbidden sign (red circle)\n- Command sign (blue circle)\n- Directional sign (blue square or rectangle)\n- Additional sign (square, black and white rectangle): The effect is on the auxiliary sign when there is an auxiliary sign</string>
+    <string name="text_tip_content_12">- 60km/h: For double or one-way roads with 2 or more motor vehicle lanes\n- 50km/h: For 2-way or 1-way roads with 1 motor vehicle lane</string>
+    <string name="text_tip_content_13">- Special-use motorcycles, mopeds (including electric motorcycles) and similar vehicles on roads (except highways): 40km/h\n- Motor vehicles and special-use motorbikes on highways must comply with the maximum speed, the minimum speed and not exceed: 120km/h</string>
+    <string name="text_tip_content_14">- Increase 1 decrease 2 (decrease the number of choices with the word throttle)</string>
+    <string name="text_tip_content_15">- Including road motorized vehicles and rudimentary road vehicles.</string>
+    <string name="text_tip_content_16">Including road vehicles and special-use motorbikes</string>
+    <string name="text_tip_content_17">Including construction motorcycles, agricultural and forestry motorcycles and other special vehicles used for national defense and security purposes and participating in road traffic.</string>
+    <string name="text_tip_content_18">- Raise your hand vertically: All stop, except for vehicles already in the intersection where you are allowed to go\n- Cross your arms: Left and right; front and back stop\n- Right hand raised first: After, right stop, first turn right, left go in all directions, pedestrians cross the road behind the operator.</string>
+    <string name="text_tip_content_20">- Do not drive continuously for more than 4 hours.\n- Do not work for more than 10 hours a day for a driver.\n- Transport dealers are not allowed to change their pick-up and drop-off locations on their own.\n- Transport Dangerous goods must be licensed.</string>
+    <string name="text_tip_content_21">- Motorcycles going down a long slope need to use both the front and rear brakes to slow down.\n- Make a low speed turn.</string>
+    <string name="text_tip_content_22">- Order of priority without roundabout: Vehicles enter the fork, first intersection - priority vehicle - priority road - road of the same level in the order of empty right - turn right - go straight - turn left.\n- Intersection Roundabouts of the same level: If you have not entered the roundabout, the right vehicle shall be given priority; has entered the roundabout to give priority to vehicles coming from the left.\n- Vehicles going downhill must give way to vehicles going uphill</string>
 
 </resources>

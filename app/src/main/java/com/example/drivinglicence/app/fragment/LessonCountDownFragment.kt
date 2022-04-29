@@ -1,6 +1,7 @@
 package com.example.drivinglicence.app.fragment
 
 import android.annotation.SuppressLint
+import android.text.Html
 import android.util.Log
 import android.view.View
 import androidx.fragment.app.viewModels
@@ -69,7 +70,7 @@ class LessonCountDownFragment(
         question?.let {
             if (it.isImportant) {
                 binding.textQuestionContent.text =
-                    question.content + " " + getString(R.string.text_question_important)
+                    Html.fromHtml(question.content + getString(R.string.text_question_important))
             } else {
                 binding.textQuestionContent.text = question.content
             }

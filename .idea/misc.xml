@@ -3,36 +3,51 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_loading_dialog.xml" value="0.1395" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_round_white_top_bottom.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_rounde_white_top_bottom.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_tab_layout.xml" value="0.163" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/bg_tab_selected.xml" value="0.163" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/circle_button_grey.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/circle_button_grey_border.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/circle_button_orange.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/circle_button_orange_border.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/icon_down.xml" value="0.1395" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/icon_down_blue.xml" value="0.106" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/icon_up.xml" value="0.1175" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/icon_up_blue.xml" value="0.106" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/item_divider.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/layout_round.xml" value="0.1655" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/layout_round_10.xml" value="0.111" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button_green_light.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button_grey.xml" value="0.1655" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/round_button_primary.xml" value="0.1655" />
-        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_learning_theory.xml" value="0.302536231884058" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/drawable/tab_color_selector.xml" value="0.163" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_learning_theory.xml" value="0.25" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_lesson_count_down.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_lesson_view_pager.xml" value="0.25" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_main.xml" value="0.302536231884058" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_road_traffic_signs.xml" value="0.29528985507246375" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_test_recycler_view.xml" value="0.25" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_test_view_pager.xml" value="0.302536231884058" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/activity_tips.xml" value="0.21" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/fragment_demo.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/fragment_lesson.xml" value="0.302536231884058" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/fragment_road_traffic_ban.xml" value="0.29528985507246375" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/information_lesson_bottom_sheet.xml" value="0.33" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_action_home.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_answer.xml" value="0.302536231884058" />
-        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_exam.xml" value="0.33" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_exam.xml" value="0.25" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_learning.xml" value="0.25" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_list_question_bottom.xml" value="0.5" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_road_traffic.xml" value="0.28940217391304346" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/item_tips.xml" value="0.33" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/layout_margin_10dp.xml" value="0.1546875" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/layout_question_answer.xml" value="0.302536231884058" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/list_question_bottom_dialog.xml" value="0.25" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/loading_dialog.xml" value="0.16044399596367306" />
+        <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/tab_color_selector.xml" value="0.29528985507246375" />
         <entry key="..\:/test/DrivingLicence/app/src/main/res/layout/toolbar_app.xml" value="0.302536231884058" />
       </map>
     </option>
