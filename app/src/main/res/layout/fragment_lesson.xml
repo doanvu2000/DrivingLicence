@@ -87,10 +87,11 @@
                 app:layout_constraintTop_toBottomOf="@id/layout_ex">
 
                 <TextView
+                    android:textColor="@color/black"
                     android:id="@+id/text_explain_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/round_button_green_light"
+                    android:background="@drawable/round_button_yellow_light"
                     android:lineSpacingMultiplier="1.2"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"

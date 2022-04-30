@@ -6,10 +6,8 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
 import android.view.View
-import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.ViewPagerAdapter
@@ -22,7 +20,6 @@ import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.component.dialog.AlertMessageDialog
 import com.example.drivinglicence.component.dialog.ListQuestionBottomDialog
 import com.example.drivinglicence.databinding.ActivityLessonViewPagerBinding
-import com.example.drivinglicence.pref.showDevelopMessage
 import com.example.drivinglicence.utils.*
 import kotlin.math.roundToInt
 
@@ -35,7 +32,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
 
     var timeCount: Long = 0
     var isFinish = false
-    private var timer = object : CountDownTimer(1000 * 10 * 60, 1000) {
+    var timer = object : CountDownTimer(1000 * 10 * 60, 1000) {
         override fun onTick(millisUntilFinished: Long) {
             val ms = millisUntilFinished / 1000
             timeCount = ms
@@ -70,10 +67,25 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             timer.cancel()
         }
         binding.toolbar.onActionClickListener = {
-            showDevelopMessage()
-            isFinish = true
-            timer.cancel()
-            handlerFinish()
+            var notChoose = listQuestion.size
+            listQuestion.map { item -> if (item.isChooseAnswer == true) notChoose-- }
+            AlertMessageDialog(this).also { dialog ->
+                timer.cancel()
+                dialog.setBackgroundButtonSubmit(R.drawable.round_button_yellow_light)
+                dialog.show(
+                    "Bạn có chắc chắn muốn kết thúc đề thi hiện tại?",
+                    "Thời gian còn lại: ${formatTime(timeCount)},\n Số câu chưa làm: $notChoose",
+                    onClickSubmit = {
+                        isFinish = true
+                        timer.cancel()
+                        handlerFinish()
+                    },
+                    onClickCancel = {
+                        setTimer(timeCount)
+                    },
+                    cancelAble = false
+                )
+            }
         }
         binding.btnBackQuestion.setOnClickListener(this)
         binding.btnForwardQuestion.setOnClickListener(this)
@@ -111,6 +123,23 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
         })
     }
 
+    private fun setTimer(time: Long) {
+        timer = object : CountDownTimer(time * 1000, 1000L) {
+            override fun onTick(millisUntilFinished: Long) {
+                val ms = millisUntilFinished / 1000
+                timeCount = ms
+                binding.toolbar.setTitle(formatTime(ms))
+            }
+
+            override fun onFinish() {
+                //end test exam
+                isFinish = true
+                handlerFinish()
+            }
+        }
+        timer.start()
+    }
+
     private fun handlerFinish() {
         /**Thống kê câu sai và đúng, kiểm tra trượt hay đỗ*/
         var isPass = true
@@ -120,9 +149,6 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 answer.apply {
                     if (isChoose == true && isCorrect) {
                         count++
-//                        viewModel.mapResult[answer.questionId] = true
-                    } else {
-//                        viewModel.mapResult[answer.questionId] = false
                     }
                 }
             }
@@ -231,5 +257,20 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 binding.viewPager.currentItem = pos
             }
         }
+    }
+
+    override fun onBackPressed() {
+        if (timeCount == 0L || isFinish) {
+            super.onBackPressed()
+        } else {
+            AlertMessageDialog(this).also { alert ->
+                alert.show("Bạn có chắc muốn thoát khỏi đề đang làm?",
+                    "Thời gian còn lại: ${formatTime(timeCount)}",
+                    onClickSubmit = {
+                        super.onBackPressed()
+                    })
+            }
+        }
+
     }
 }

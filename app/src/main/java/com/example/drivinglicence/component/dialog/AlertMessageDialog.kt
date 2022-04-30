@@ -1,6 +1,7 @@
 package com.example.drivinglicence.component.dialog
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.Window
@@ -115,7 +116,11 @@ class AlertMessageDialog(val context: Context) {
     fun setBackgroundButtonSubmit(layout: Int) {
         if (layout != 0) {
             binding.btnSubmit.setBackgroundResource(layout)
+            if (layout == R.drawable.round_button_yellow_light) {
+                binding.btnSubmit.setTextColor(Color.BLACK)
+            }
         }
+
     }
 
     fun setColorTitle(color: Int) {

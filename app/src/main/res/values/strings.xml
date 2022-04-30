@@ -15,7 +15,7 @@
     <string name="text_confirm">Confirm</string>
     <string name="text_explain_answer">Explain the answer</string>
     <string name="text_question_important"><![CDATA[<font color="#FFA900"> (Important question)</font>]]></string>
-    <string name="text_60_question_important">60 questions important</string>
+    <string name="text_35_question_important">35 questions important</string>
     <string name="text_concepts_and_rules">Concepts and rules</string>
     <string name="text_about_83">Includes 83 questions (18 questions important)</string>
     <string name="text_culture_and_ethic">Driving culture and ethics</string>
@@ -38,7 +38,7 @@
     <string name="text_failed_exam">Sorry you didn\'t pass!</string>
 
     <!-- ======================================== Giải thích đáp án ========================================-->
-    <!-- 60 câu điểm liệt-->
+    <!-- 35 câu điểm liệt-->
     <string name="text_explain_answer_important_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:
          \nA fine of between VND 5,000,000 and 10,000,000 for one of the following violations:\n
         a) Illegally drilling, digging, cutting roads and sidewalks;\n
@@ -55,20 +55,71 @@
     <string name="text_explain_answer_important_4">It is forbidden to operate a road vehicle with narcotics in the body.</string>
     <string name="text_explain_answer_important_5">Pursuant to Decree 100/2019/ND-CP stipulating penalties when participating in traffic with alcohol concentration, choose answer 1.</string>
     <string name="text_explain_answer_important_6">Pursuant to Decree 100/2019/ND-CP stipulating penalties when participating in traffic with alcohol concentration, choose answer 1.</string>
-
+    <string name="text_explain_answer_important_7">Pursuant to Decree 100/2019/ND-CP stipulating penalties when participating in traffic with alcohol concentration, choose answer 2</string>
+    <string name="text_explain_answer_important_8">Decree 100/2019, applied January 1, 2020, vehicle drivers participating in traffic of cars, motorbikes, and beautiful cars with alcohol content in their breath are strictly prohibited. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_9">The act of handing over motor vehicles or special-use motorbikes to people who are not qualified to drive vehicles in traffic is not allowed. Answer 2 is correct.</string>
+    <string name="text_explain_answer_important_10">Acts of operating a motor vehicle exceeding the prescribed speed, taking the road, or recklessly overtaking are strictly prohibited. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_11">When driving on the road, the driver needs to observe and ensure that the vehicle speed does not exceed the allowed speed. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_12">Road vehicles traveling at a slower speed must go to the right side of the road. Vehicles traveling at high speed should go on the left side of the road. Answer 2 is correct.</string>
+    <string name="text_explain_answer_important_13">Road vehicles traveling at a lower speed must move to the right side of the road. Vehicles traveling at high speed should go on the left side of the road. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_14">The act of passing a vehicle without fully observing the safety rules is strictly prohibited. Attempting to pass without observing the safety rules on distance… can easily cause traffic accidents. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_15">Self-installation, use of horns and lights not in accordance with the manufacturer\'s design for each type of motor vehicle is not allowed. Answer 2 is correct.</string>
+    <string name="text_explain_answer_important_16">How is the production, sale, and use of license plates for motor vehicles and special-use motorcycles regulated in the Law on Road Traffic?</string>
+    <string name="text_explain_answer_important_17">On the narrow bridge there is one lane; where the road intersects, the road intersects at the same level as the railway + weather or road conditions are not safe for overtaking; Priority vehicles that are sending priority signals on duty are not safe to overtake. Answer 1 is correct. Answers 2,3 are overtaken because there are 2 lanes or more.</string>
+    <string name="text_explain_answer_important_18">Not allowed, answer 2.</string>
+    <string name="text_explain_answer_important_19">Answer 2 is incorrect because at the crosswalk, on the bridge, at the bridgehead, on the highway, on the narrow road, on the ramp, at the place where the road intersects at the same level with the railway, the driver is not allowed to turn head. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_20">Answers 1 and 3 are wrong because it is forbidden to stop and park at the same time in any case. Answer 2 is correct.</string>
+    <string name="text_explain_answer_important_21">Drivers of two-wheeled, three-wheeled motorcycles and mopeds are prohibited from using the vehicle to pull or push other vehicles or objects when participating in traffic. Answer 4 is correct.</string>
+    <string name="text_explain_answer_important_22">It is forbidden for drivers of two-wheelers, three-wheelers or mopeds to let go of both hands; using the vehicle to pull or push another vehicle or object; Use the vehicle\'s kickstand to wipe the road while the vehicle is running. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_23">It is forbidden for drivers of two-wheelers, three-wheelers or mopeds to let go of both hands; using the vehicle to pull or push another vehicle or object; Use the vehicle\'s kickstand to wipe the road while the vehicle is running. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_24">Drivers of two-wheelers, three-wheelers and mopeds are prohibited from carrying or carrying bulky objects while participating in traffic. Answer 2 is correct.</string>
+    <string name="text_explain_answer_important_25">It is forbidden for people sitting on two-wheeled motorbikes, three-wheeled motorbikes or mopeds to join traffic when participating in traffic, not to cling to, pull or push other vehicles. Answer 4 is correct.</string>
+    <string name="text_explain_answer_important_26">It is forbidden for people sitting on two-wheeled motorbikes, three-wheeled motorbikes and mopeds to use umbrellas when participating in traffic to avoid endangering themselves and other vehicles. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_27">It is forbidden for people sitting on motorbikes to drag other vehicles. Answer 2 is correct.</string>
+    <string name="text_explain_answer_important_28">Drivers of two-wheeled motorcycles, three-wheeled motorcycles and mopeds are prohibited from using the vehicle to pull or push other vehicles or objects when participating in traffic. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_29">Drivers of two-wheelers, three-wheelers and mopeds are prohibited from carrying or carrying bulky objects while participating in traffic. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_30">Order of priority:\n- Signaling operator\n- Traffic lights\n- Signaling signs\n- Road markings.\nAnswer 1 is correct.</string>
+    <string name="text_explain_answer_important_31">It is forbidden to make U-turns at pedestrian crossings, on bridges, at bridgeheads, under overpasses, underground, in tunnels on footpaths, on highways, at intersections at the same level with railways, narrow roads, ramps, curve sections of visibility are obscured. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_32">Rail transport is always the first priority. Answer 3 is correct.</string>
+    <string name="text_explain_answer_important_33">Must give way to vehicles on the road. There must be a signal to get in and give way to vehicles running on the road. If there is an speeding lane, you must run in that lane first. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_34">People sitting on motorbikes and mopeds are required to wear helmets and straps when participating in traffic. Every time you sit on the car, you must wear a helmet even if you are close. There are many tragic accidents that happen due to subjectively not wearing a helmet due to close proximity, just leaving the house, the accident, you guys be careful. Answer 1 is correct.</string>
+    <string name="text_explain_answer_important_35">Drivers of two-wheeled motorbikes and mopeds are not allowed to ride in a horizontal line; ride on the roadway for pedestrians and other vehicles; use umbrellas, cell phones, audio devices (except hearing aids). Answer 2 is correct.</string>
     <!--83 câu khái niệm và quy tắc-->
     <string name="text_explain_answer_concept_and_rule_1">Sentence 1 is wrong because the curb is understood as the edge on both sides of the road. The roadside has the effect of protecting the road surface, this part of the road is usually for people. Not for traffic.\nQuestion 3 is incorrect because the part of the road for motor vehicles is the part of the road used for road motor vehicles and special-use motorcycles\nQuestion 2 is correct because the driveway is the portion of the roadway used for all vehicular traffic.\nTip: The curb is not intended for vehicular traffic.</string>
     <string name="text_explain_answer_concept_and_rule_2">A lane is a part of a longitudinally divided portion of the roadway, which is wide enough for a vehicle to run safely. Sentence 2 is correct.</string>
     <string name="text_explain_answer_concept_and_rule_3">Sentence 1 is incorrect because it is divided vertically but lacks enough width for the car to run safely</string>
+    <string name="text_explain_answer_concept_and_rule_4">National technical regulation QCVN 41:2016/BGTVT on road signals, according to which, medians are of two types: fixed medians and movable medians.\nDair fixed medians are medians have a fixed position on the portion of the roadway.\nMovable medians are medians that can be moved along the width of the road surface. The correct answer is answer 1.</string>
+    <string name="text_explain_answer_concept_and_rule_5">A driver is a person who controls motor vehicles such as motorbikes, cars…\nCorrect answer: 1</string>
+    <string name="text_explain_answer_concept_and_rule_6">Answer 4. You are on the priority road, so you should be given way by traffic coming from other directions when crossing the intersection, with priority road signs posted\nTip: Priority roads are given way .</string>
+    <string name="text_explain_answer_concept_and_rule_7">Motor vehicles include trailers or semi-trailers pulled by cars, tractors, electric motorcycles.\n Answer 1 is incorrect because there are special-use motorbikes. Specialized motorbikes are not means of road transport. Correct answer: 2.</string>
+    <string name="text_explain_answer_concept_and_rule_8">The rudimentary means of transportation are vehicles that use human or animal power to move, without cars, tractors… Answers 2 and 3 are incorrect because there are cars, tractors, motorbikes.\nCorrect answers: 1</string>
+    <string name="text_explain_answer_concept_and_rule_9">Vehicles participating in road traffic include road vehicles (motorized and rudimentary) and special-use motorbikes.\nCorrect answers: 3</string>
+    <string name="text_explain_answer_concept_and_rule_10">A person in road traffic is a person who drives, uses a vehicle, leads an animal, or a pedestrian.\nNo matter who walks or uses any vehicle, just participating in road traffic is a road users.\nCorrect answer: 3.</string>
+    <string name="text_explain_answer_concept_and_rule_11">The driver of a vehicle participating in traffic means a person operating any vehicle participating in road traffic (motor vehicles, rudimentary vehicles, special-use motorcycles). Correct answer: 3</string>
+    <string name="text_explain_answer_concept_and_rule_12">The traffic controller is the person who guides, controls, divides the flow, etc. to help the traffic flow smoothly and safely. Answer 2 is correct.</string>
+    <string name="text_explain_answer_concept_and_rule_13">To stop a vehicle is to stand still temporarily and for a necessary period of time. Correct answer: 2.</string>
+    <string name="text_explain_answer_concept_and_rule_14">Parking is stationary and has no time limit. Correct answer: 2.</string>
+
     <!--5 câu hỏi Văn hóa và đạo đức lái xe-->
     <string name="text_explain_answer_culture_and_ethic_5">All of the above behaviors show a lack of culture when participating in traffic.\nCorrect answer: 4.</string>
     <string name="text_explain_answer_culture_and_ethic_1">Tip: Have enough width for the vehicle to run safely.</string>
     <string name="text_explain_answer_culture_and_ethic_2">Answers 2 and 3 are incorrect because the vehicle must be driven in the correct lane, not in any lane with few vehicles and it is mandatory to wear a helmet when participating in traffic on any route.\nAnswer correct: 1.</string>
     <string name="text_explain_answer_culture_and_ethic_4">Answer 2 is wrong because the scene must be kept to ensure the best evidence collection process\nCorrect answer: 1</string>
     <string name="text_explain_answer_culture_and_ethic_3">Answers 2 and 3 are wrong because the vehicle must be driven in the correct lane, not in any lane with few vehicles and must stop and park at the specified place, not to facilitate the delivery of passengers and goods. chemistry\nCorrect answer: 1</string>
+    <!--12 câu hỏi kỹ thuật lái xe-->
+    <string name="text_explain_answer_driving_unique_1">Always bring the front end of the vehicle to a dangerous place for better visibility. Answer 2 is wrong because \"putting the rear of the car in a dangerous direction\". The correct answer is: 1.</string>
+    <string name="text_explain_answer_driving_unique_2">Answer 3 is wrong because avoiding each other at night must not open the headlights, dazzling the opposite person. Answer 4 is correct.</string>
+    <string name="text_explain_answer_driving_unique_3">Must slow down and downshift. Answer 2 is wrong because it is accelerating and not in low gear. Correct answer: 1</string>
+    <string name="text_explain_answer_driving_unique_4">Answer 3 is correct. Using only the front or rear brakes is an unsafe behavior that can easily cause a dangerous accident.</string>
+    <string name="text_explain_answer_driving_unique_5">Answer 3 is correct. Using only the front or rear brakes is an unsafe behavior that can easily cause a dangerous accident.</string>
+    <string name="text_explain_answer_driving_unique_6">To ensure safety, all of the above must be applied, correct answer: 4.</string>
+    <string name="text_explain_answer_driving_unique_7">The throttle on a motorcycle does not have the effect of controlling the vehicle in reverse. To control the car moving forward, control the engine power from there so that we can go as fast and slow as we want. Answer 4 is correct.</string>
+    <string name="text_explain_answer_driving_unique_8">The rearview mirror is used to safely see behind both the left and right sides before changing direction. Always remember to look in the rearview mirror before turning to ensure your safety. Answer 3 is correct.</string>
+    <string name="text_explain_answer_driving_unique_9">Accelerate slowly to ensure you keep the speed of the motorcycle within your control. Reduce throttle quickly to ensure stopping when encountering obstacles or need to brake to ensure safety. Answer 3 is correct.</string>
+    <string name="text_explain_answer_driving_unique_10">When traveling on rough and bumpy roads, if the driver sits still on the car to go as usual, the car bouncing due to the bumpy road can make the driver tired quickly and it is very difficult to control the vehicle. Answer 1 is correct.</string>
     <!--======================================== End giải thích đáp án ========================================-->
 
-    <!-- ========================================Câu hỏi điểm liệt (60) ========================================-->
+    <!-- ========================================Câu hỏi điểm liệt (35) ========================================-->
     <string name="question_important_1">Which of the following acts are prohibited?</string>
     <string name="question_important_2">Is the act of racing motor vehicles and special-use motorcycles not up to the standards of technical safety and environmental protection in road traffic?</string>
     <string name="question_important_3">When is the vehicle race only done?</string>
@@ -79,27 +130,43 @@
     <string name="question_important_8">According to the Law on Prevention of Harmful Effects of Alcohol and Beer, which of the following subjects are prohibited from using alcohol while participating in traffic?</string>
     <string name="question_important_9">Is the act of delivering motor vehicles or special-use motorcycles to people who are not eligible to drive vehicles in traffic?</string>
     <string name="question_important_10">Is the act of driving a vehicle exceeding the prescribed speed, entering lanes, or overtaking carelessly?</string>
-    <string name="question_important_11">Confirm</string>
-    <string name="question_important_12">Confirm</string>
-    <string name="question_important_13">Confirm</string>
-    <string name="question_important_14">Confirm</string>
-    <string name="question_important_15">Confirm</string>
-    <string name="question_important_16">Confirm</string>
-    <string name="question_important_17">Confirm</string>
-    <string name="question_important_18">Confirm</string>
-    <string name="question_important_19">Confirm</string>
-    <string name="question_important_20">Confirm</string>
+    <string name="question_important_11">When driving on the road, how should the driver observe and ensure the speed of the vehicle?</string>
+    <string name="question_important_12">How should road vehicles traveling at lower speeds go?</string>
+    <string name="question_important_13">On a road with many lanes, when driving a vehicle at a slow speed, which lane should you go in?</string>
+    <string name="question_important_14">Is overtaking behavior at locations with limited visibility, roundabouts, or steep slopes prohibited?</string>
+    <string name="question_important_15">Is the act of installing and using horns and lights not in accordance with the manufacturer\'s design for each type of motor vehicle?</string>
+    <string name="question_important_16">How is the production, sale, and use of license plates for motor vehicles and special-use motorcycles regulated in the Law on Road Traffic?</string>
+    <string name="question_important_17">Drivers are not allowed to pass other vehicles when they encounter any of the following situations?</string>
+    <string name="question_important_18">At the crosswalk, on bridges, bridgeheads, highways, narrow roads, ramps, at the place where the road intersects at the same level with the railway, is it possible to make a U-turn?</string>
+    <string name="question_important_19">In which of the following cases is the driver not allowed to make a U-turn?</string>
+    <string name="question_important_20">Can drivers of vehicles on the street stop or park their cars on the mouth of the sewer, the tunnel of the telephone line, high voltage electricity, or a place reserved for fire trucks to collect water?</string>
+    <string name="question_important_21">Are drivers of two-wheelers, three-wheelers or mopeds allowed to use the vehicle to pull or push other vehicles when participating in traffic?</string>
+    <string name="question_important_22">When operating a two-wheeler, three-wheeler or moped, the act of letting go of both hands; using the vehicle to pull or push another vehicle or object; Is it allowed to use the vehicle\'s stand on the road while the vehicle is running?</string>
+    <string name="question_important_23">When operating a two-wheeler, three-wheeler or moped, what behaviors are not allowed?</string>
+    <string name="question_important_24">Can people sitting on two-wheelers, three-wheelers, or mopeds when participating in traffic be able to carry bulky objects or not?</string>
+    <string name="question_important_25">Can people sitting on two-wheeled, three-wheeled motorcycles or mopeds when participating in traffic be allowed to cling to, pull or push other vehicles?</string>
+    <string name="question_important_26">Can people on two-wheelers, three-wheelers or mopeds when participating in traffic use umbrellas when it rains?</string>
+    <string name="question_important_27">When going uphill, is the person sitting on the motorcycle allowed to drag the person operating the bicycle?</string>
+    <string name="question_important_28">Is the act of using a motorbike to pull or push another motorbike that has run out of gas to the petrol station to buy it?</string>
+    <string name="question_important_29">Is the act of transporting bulky objects by motorbikes or mopeds allowed in traffic?</string>
+    <string name="question_important_30">On a traffic road, when a traffic conductor\'s signal is contrary to the signal of a light or sign, which signal must traffic participants obey?</string>
+    <string name="question_important_31">What should a driver do when making a U-turn on a bridge, underpass or a road crossing at the same level as a railway?</string>
+    <string name="question_important_32">On a road section that intersects at the same level with a railway, a road bridge and a railway, which type of vehicle has the right to go first?</string>
+    <string name="question_important_33">What should a driver do when driving on a highway?</string>
+    <string name="question_important_34">When must people on two-wheeled motorbikes or mopeds wear properly fitted helmets?</string>
+    <string name="question_important_35">Drivers of two-wheeled motorcycles and mopeds may ride in a horizontal line; ride on the roadway for pedestrians and other vehicles; use umbrellas, cell phones, audio devices (except hearing aids)?</string>
+
 
     <!-- ========================================Câu trả lời câu hỏi điểm liệt ========================================-->
 
-    <string name="answer_important_1_1">Parking on the street</string>
+    <string name="answer_important_1_1">Parking on the street.</string>
     <string name="answer_important_1_2">Use the bike on the highway at high speed.</string>
     <string name="answer_important_1_3">Damage (intentionally) target stake, spherical mirror, median line.</string>
     <string name="answer_important_1_4">Use your horn and make a U-turn in a residential area.</string>
     <string name="answer_important_2_1">Not strictly prohibited.</string>
     <string name="answer_important_2_2">Prohibited.</string>
     <string name="answer_important_2_3">Prohibited depending on the route.</string>
-    <string name="answer_important_2_4">Prohibited depending on vehicle type</string>
+    <string name="answer_important_2_4">Prohibited depending on vehicle type.</string>
     <string name="answer_important_3_1">Taking place on a street with no passersby.</string>
     <string name="answer_important_3_2">Supported by the people.</string>
     <string name="answer_important_3_3">Licensed by the competent authority.</string>
@@ -109,16 +176,122 @@
     <string name="answer_important_5_1">Unauthorized.</string>
     <string name="answer_important_5_2">Only drive at slow speeds and for short distances.</string>
     <string name="answer_important_5_3">Only drive if you have a low alcohol level in your body.</string>
-    <string name="answer_important_6_1">Prohibited</string>
+    <string name="answer_important_6_1">Prohibited.</string>
     <string name="answer_important_6_2">Not strictly prohibited.</string>
     <string name="answer_important_6_3">It is not strictly prohibited, if the blood alcohol concentration is at a low level, it is possible to drive a vehicle in traffic.</string>
-
+    <string name="answer_important_7_1">Just being reminded.</string>
+    <string name="answer_important_7_2">Be administratively sanctioned or criminally handled depending on the seriousness of the violation.</string>
+    <string name="answer_important_7_3">Not criminally prosecuted.</string>
+    <string name="answer_important_8_1">Drivers: Cars, motorbikes, bicycles, mopeds.</string>
+    <string name="answer_important_8_2">The person sitting behind the motor vehicle operator.</string>
+    <string name="answer_important_8_3">Walker.</string>
+    <string name="answer_important_8_4">Both point 1 and point 2.</string>
+    <string name="answer_important_9_1">Only performed if full instructions have been given.</string>
+    <string name="answer_important_9_2">Unauthorized.</string>
+    <string name="answer_important_9_3">Allowed on a case-by-case basis.</string>
+    <string name="answer_important_9_4">Only allowed with family members.</string>
+    <string name="answer_important_10_1">Prohibited on a case-by-case basis.</string>
+    <string name="answer_important_10_2">Not strictly prohibited.</string>
+    <string name="answer_important_10_3">Prohibited.</string>
+    <string name="answer_important_11_1">Only higher than the allowed maximum speed when the road is empty.</string>
+    <string name="answer_important_11_2">Only greater than the maximum speed allowed at night.</string>
+    <string name="answer_important_11_3">Do not exceed the allowed speed.</string>
+    <string name="answer_important_12_1">Go to the left.</string>
+    <string name="answer_important_12_2">Go to the right.</string>
+    <string name="answer_important_12_3">Go in the middle.</string>
+    <string name="answer_important_13_1">Go in the innermost right lane.</string>
+    <string name="answer_important_13_2">Go in the left lane.</string>
+    <string name="answer_important_13_3">Go in the middle lane.</string>
+    <string name="answer_important_13_4">Go in any lane but must press the hazard lights to signal other vehicles.</string>
+    <string name="answer_important_14_1">Not strictly prohibited.</string>
+    <string name="answer_important_14_2">Not strictly prohibited when in a hurry.</string>
+    <string name="answer_important_14_3">Prohibited.</string>
+    <string name="answer_important_14_4">Not strictly prohibited during emergency.</string>
+    <string name="answer_important_15_1">Licensed.</string>
+    <string name="answer_important_15_2">Unauthorized.</string>
+    <string name="answer_important_15_3">Allowed on a case-by-case basis.</string>
+    <string name="answer_important_16_1">Licensed to manufacture and use when the number plate is lost.</string>
+    <string name="answer_important_16_2">It is allowed to buy, sell and use when the number plate is lost.</string>
+    <string name="answer_important_16_3">Illegal production, sale, and use are strictly prohibited.</string>
+    <string name="answer_important_17_1">On the narrow bridge there is one lane. At the intersection, the road intersects at the same level as the railway; The vehicle with the right of way is sending a priority signal to go to work.</string>
+    <string name="answer_important_17_2">On the bridge there are 02 lanes or more; where roads intersect are not at the same level as railways; the vehicle with the right-of-way is going ahead but does not signal the priority.</string>
+    <string name="answer_important_17_3">On the road there are 2 lanes divided by dashed lines</string>
+    <string name="answer_important_18_1">Licensed.</string>
+    <string name="answer_important_18_2">Unauthorized.</string>
+    <string name="answer_important_18_3">Depending on the case.</string>
+    <string name="answer_important_19_1">At pedestrian crossings, on bridges, bridgeheads, expressways, narrow roads, ramps, where roads intersect at the same level as railways.</string>
+    <string name="answer_important_19_2">In front or behind of a pedestrian crossing, on a national highway, at a road intersection that is not at the same level as a railway.</string>
+    <string name="answer_important_19_3">Both point 1 and point 2.</string>
+    <string name="answer_important_20_1">To stop and park the car in case of necessity.</string>
+    <string name="answer_important_20_2">Do not stop or park the vehicle.</string>
+    <string name="answer_important_20_3">Parking is not allowed.</string>
+    <string name="answer_important_21_1">Licensed.</string>
+    <string name="answer_important_21_2">If the vehicle is towed, the push has less mass than its vehicle.</string>
+    <string name="answer_important_21_3">Depending on the case.</string>
+    <string name="answer_important_21_4">Unauthorized.</string>
+    <string name="answer_important_22_1">Licensed.</string>
+    <string name="answer_important_22_2">Depending on the case.</string>
+    <string name="answer_important_22_3">Unauthorized.</string>
+    <string name="answer_important_23_1">Let go of both hands; using the vehicle to pull or push another vehicle or object; Use the vehicle\'s kickstand to wipe the road while the vehicle is running.</string>
+    <string name="answer_important_23_2">Let go of one hand; use a vehicle to carry people or goods; Let your feet touch the ground when starting.</string>
+    <string name="answer_important_23_3">Wear helmet; drive at the prescribed speed and obey the road traffic rules.</string>
+    <string name="answer_important_23_4">Carrying rear seat passengers under 16 years old.</string>
+    <string name="answer_important_24_1">Carrying, carrying depending on specific cases.</string>
+    <string name="answer_important_24_2">Do not carry, carry.</string>
+    <string name="answer_important_24_3">Carrying, carrying but must ensure safety.</string>
+    <string name="answer_important_24_4">Be carried according to your own health.</string>
+    <string name="answer_important_25_1">Licensed</string>
+    <string name="answer_important_25_2">Get caught in case your vehicle breaks down.</string>
+    <string name="answer_important_25_3">To be pulled, pushed in case the vehicle breaks down.</string>
+    <string name="answer_important_25_4">Unauthorized</string>
+    <string name="answer_important_26_1">Used.</string>
+    <string name="answer_important_26_2">Only the back seat can be used.</string>
+    <string name="answer_important_26_3">Can not use; Out of order; It disfunction.</string>
+    <string name="answer_important_26_4">Used if a raincoat is not available.</string>
+    <string name="answer_important_27_1">Only allowed if both are wearing helmets.</string>
+    <string name="answer_important_27_2">Unauthorized.</string>
+    <string name="answer_important_27_3">Only allowed on empty roads.</string>
+    <string name="answer_important_27_4">Only allowed when the cyclist is too tired.</string>
+    <string name="answer_important_28_1">Towed only if gas station is visible.</string>
+    <string name="answer_important_28_2">Can only be done on an empty road with vehicles participating in traffic.</string>
+    <string name="answer_important_28_3">Unauthorized.</string>
+    <string name="answer_important_29_1">Not shipped.</string>
+    <string name="answer_important_29_2">Can only be shipped when properly tied.</string>
+    <string name="answer_important_29_3">Only transport bulky items on motorbikes if the distance to home is shorter than 2km</string>
+    <string name="answer_important_30_1">Traffic controller\'s signal.</string>
+    <string name="answer_important_30_2">Signals of traffic control lights.</string>
+    <string name="answer_important_30_3">Signals of road signs.</string>
+    <string name="answer_important_30_4">According to the decision of road users but must ensure safety.</string>
+    <string name="answer_important_31_1">Do not turn the vehicle around.</string>
+    <string name="answer_important_31_2">Take advantage of the large space and must have a signal behind the vehicle to ensure safety.</string>
+    <string name="answer_important_31_3">Take advantage of the large turnable space to make a safe turn.</string>
+    <string name="answer_important_32_1">The vehicle on the right is not entangled.</string>
+    <string name="answer_important_32_2">Which vehicle gives the signal to ask for the way first?</string>
+    <string name="answer_important_32_3">Rail transport.</string>
+    <string name="answer_important_33_1">Must have signal to enter and must give way to vehicles on the road; when it is safe for the vehicle to merge into the traffic in the lane adjacent to the outer edge; If there is an acceleration lane, the vehicle must be driven in that lane before entering the expressway lane.</string>
+    <string name="answer_important_33_2">There must be a signal to enter and must quickly pass vehicles on the road to merge with traffic in the lane adjacent to the outer edge; If there is an acceleration lane, the vehicle must pass through that lane to enter the lane of the expressway.</string>
+    <string name="answer_important_34_1">When participating in road traffic.</string>
+    <string name="answer_important_34_2">Only when traveling on dedicated roads; freeway.</string>
+    <string name="answer_important_34_3">When participating in traffic on provincial roads or national highways.</string>
+    <string name="answer_important_35_1">Allowed but must ensure safety.</string>
+    <string name="answer_important_35_2">Unauthorized.</string>
+    <string name="answer_important_35_3">Allowed depending on specific circumstances and conditions.</string>
     <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
 
     <string name="question_concepts_and_rules_1">What is the portion of the roadway used for vehicular traffic?</string>
     <string name="question_concepts_and_rules_2">What is a lane?</string>
     <string name="question_concepts_and_rules_3">In the concepts below, how is \"separator\" understood correctly?</string>
-
+    <string name="question_concepts_and_rules_4">What are the types of "separators" on the road?</string>
+    <string name="question_concepts_and_rules_5">How is the driver understood in the following concepts?</string>
+    <string name="question_concepts_and_rules_6">Roads on which vehicles participating in traffic are given way by vehicles coming from other directions when crossing the intersection, and marked with signs indicating what type of road the priority road is.</string>
+    <string name="question_concepts_and_rules_7">How is the concept of "road motor vehicle" understood?</string>
+    <string name="question_concepts_and_rules_8">How is the concept of "rude means of road transport" understood?</string>
+    <string name="question_concepts_and_rules_9">What types of "vehicles participating in road traffic" include?</string>
+    <string name="question_concepts_and_rules_10">"Road traffic participants" include who?</string>
+    <string name="question_concepts_and_rules_11">"Drivers of vehicles participating in road traffic" include which of the following subjects?</string>
+    <string name="question_concepts_and_rules_12">How does the concept of "traffic operator" read and understand?</string>
+    <string name="question_concepts_and_rules_13">In the following concepts, how is the concept of "stopping" understood correctly?</string>
+    <string name="question_concepts_and_rules_14">How is the concept of "parking" understood to be the correct traffic rules?</string>
     <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
 
     <string name="answer_concepts_and_rules_1_1">Sidewalks and curbs.</string>
@@ -130,6 +303,38 @@
     <string name="answer_concepts_and_rules_3_1">Part of the road to separate vehicles from entering unauthorized places.</string>
     <string name="answer_concepts_and_rules_3_2">Is a part of the road to separate the roadway and traffic safety corridor</string>
     <string name="answer_concepts_and_rules_3_3">Part of a road used to divide the road surface into two separate lanes or to divide the road part of motor vehicles and rudimentary vehicles.</string>
+    <string name="answer_concepts_and_rules_4_1">Separators include fixed type and movable type.</string>
+    <string name="answer_concepts_and_rules_4_2">Separators include noise walls, hard guardrails and soft guardrails.</string>
+    <string name="answer_concepts_and_rules_4_3">The divider includes the price of a long gate and a road sign.</string>
+    <string name="answer_concepts_and_rules_5_1">As a motor vehicle driver.</string>
+    <string name="answer_concepts_and_rules_5_2">Being a rudimentary car driver.</string>
+    <string name="answer_concepts_and_rules_5_3">As the operator of a vehicle with an animal towing.</string>
+    <string name="answer_concepts_and_rules_6_1">Non-priority road.</string>
+    <string name="answer_concepts_and_rules_6_2">Provincial road.</string>
+    <string name="answer_concepts_and_rules_6_3">Highway</string>
+    <string name="answer_concepts_and_rules_6_4">Priority line.</string>
+    <string name="answer_concepts_and_rules_7_1">Including cars; tractor; two-wheeled motorcycles; three-wheeled motorcycles; motorcycle; motor vehicles for the disabled and special-use motorcycles.</string>
+    <string name="answer_concepts_and_rules_7_2">Including cars; tractor; trailers or semi-trailers ddwoj towed by cars, tractors; two-wheeled motorcycles; tricycles, mopeds (including electric mopeds) and similar vehicles.</string>
+    <string name="answer_concepts_and_rules_8_1">Includes bicycles (including motorized bicycles and electric bicycles), cyclos, wheelchairs for the disabled, animal-drawn carts and similar vehicles.</string>
+    <string name="answer_concepts_and_rules_8_2">Including bicycles (including motorbikes and electric bicycles), mopeds, motor vehicles for the disabled and special-use motorcycles.</string>
+    <string name="answer_concepts_and_rules_8_3">Including cars, tractors, trailers or semi-trailers pulled by cars, tractors.</string>
+    <string name="answer_concepts_and_rules_9_1">Road motor vehicle.</string>
+    <string name="answer_concepts_and_rules_9_2">Rough road vehicles and special-use motorbikes.</string>
+    <string name="answer_concepts_and_rules_9_3">Both point 1 and point 2.</string>
+    <string name="answer_concepts_and_rules_10_1">Drivers and users of road vehicles.</string>
+    <string name="answer_concepts_and_rules_10_2">People who control and lead animals; pedestrians on the road.</string>
+    <string name="answer_concepts_and_rules_10_3">Cả ý 1 và ý 2.</string>
+    <string name="answer_concepts_and_rules_11_1">Motor vehicle drivers who make rudimentary vehicles.</string>
+    <string name="answer_concepts_and_rules_11_2">Drivers of special-use motorbikes participating in road traffic.</string>
+    <string name="answer_concepts_and_rules_11_3">Both point 1 and point 2.</string>
+    <string name="answer_concepts_and_rules_12_1">Being the driver of vehicles participating in traffic at construction sites, at traffic jams, at ferry terminals, at road bridges and railways.</string>
+    <string name="answer_concepts_and_rules_12_2">As a traffic policeman, the person assigned to guide traffic at construction sites, at traffic jams, at ferry terminals, at road bridges and railways.</string>
+    <string name="answer_concepts_and_rules_12_3">Being a participant in traffic at construction sites, at traffic jams, at ferry terminals, at road bridges and railways.</string>
+    <string name="answer_concepts_and_rules_13_1">A stationary state of a vehicle with no time limit to let people get on and off the vehicle, load or unload goods or perform other jobs.</string>
+    <string name="answer_concepts_and_rules_13_2">Means the temporary stationary state of a vehicle for a necessary period of time to allow people to get on and off the vehicle, load or unload goods or perform other work.</string>
+    <string name="answer_concepts_and_rules_13_3">Is the stationary state of a vehicle with no time limit to keep 02 times of transporting goods or passengers.</string>
+    <string name="answer_concepts_and_rules_14_1">A stationary state of a vehicle for a limited period of time necessary to allow people to get on and off that vehicle, load or unload goods or perform other work.</string>
+    <string name="answer_concepts_and_rules_14_2">Is the stationary state of the vehicle with no time limit.</string>
     <!-- ========================================Câu hỏi Văn hóa và đạo đức lái xe ========================================-->
 
     <string name="question_culture_and_ethics_1">How is the correct concept of traffic culture understood?</string>
@@ -168,52 +373,6 @@
     <string name="question_driving_unique_9">To ensure safety when participating in traffic, how should a two-wheeler motorcycle driver need to control the throttle in the following cases?</string>
     <string name="question_driving_unique_10">What is the basic technique to keep balance when driving a motorcycle on rough roads in the following cases?</string>
     <!-- ========================================Câu trả lời Kỹ thuật lái xe ========================================-->
-
-    <!-- ========================================Mẹo thi lý thuyết ========================================-->
-
-    <string name="text_tip_1">Licensing</string>
-    <string name="text_tip_2">Alcohol concentration</string>
-    <string name="text_tip_3">Minimum safe distance</string>
-    <string name="text_tip_4">Ask about age (T)</string>
-    <string name="text_tip_5">On highways, in tunnels, roundabouts, ramps, where visibility is limited</string>
-    <string name="text_tip_6">There is no signal at the intersection</string>
-    <string name="text_tip_7">Prohibition sign</string>
-    <string name="text_tip_8">First, second, best, three ways, four directions</string>
-    <string name="text_tip_9">Order of priority with priority vehicles: Fire - Su - An - Thuong</string>
-    <string name="text_tip_10">Driving license classes</string>
-    <string name="text_tip_11">Signage subgroups: including</string>
-    <string name="text_tip_12">Top speed in densely populated areas</string>
-    <string name="text_tip_13">Maximum speed outside of densely populated areas (except highways)</string>
-    <string name="text_tip_14">Increase number, decrease number</string>
-    <string name="text_tip_15">Road transport</string>
-    <string name="text_tip_16">Vehicles participating in road traffic</string>
-    <string name="text_tip_17">Specialized motorbikes</string>
-    <string name="text_tip_18">Traffic controller\'s signal</string>
-    <string name="text_tip_20">Transport service</string>
-    <string name="text_tip_21">Driving technique</string>
-    <string name="text_tip_22">Other shading rules</string>
-    <!--=====================================-->
-    <string name="text_tip_content_1">- Roads prohibited from stopping, parking and banning are issued by the Provincial People\'s Committee</string>
-    <string name="text_tip_content_2">Drivers of motorcycles, cars, or tractors on the road with alcohol in their blood or breath: Prohibited</string>
-    <string name="text_tip_content_3">- 35m if circulating speed(V) = 60(km/h)\n- 55m if V:60 - 80\n- 70m if V:80 - 100\n- 100m if V: 100 - 120\n- Below 60km/h: Be proactive and ensure the distance.</string>
-    <string name="text_tip_content_4">- Motorcycle: 16 years old (under 50 cm3)\n- Motorcycle + B1 + B2: 18 years old</string>
-    <string name="text_tip_content_5">- Do not turn, do not reverse, do not overtake\n- Do not cross a narrow bridge with only one lane.\n- No U-turn is allowed in the pedestrian crossing.\n- Prohibited Backing up in no-stop areas and where roads intersect.</string>
-    <string name="text_tip_content_6">- There is a roundabout: Yield to the left\n- There is no roundabout to give way to the right</string>
-    <string name="text_tip_content_7">Prohibit cars (Including: 3-wheel motorcycles, Lam cars, passenger cars) -> Prohibit trucks -> Prohibit tractors -> Prohibit trailers, semi-trailers</string>
-    <string name="text_tip_content_8">- First place: the car that gets to the line first will go first.\n- Second place: the priority vehicle gets to go first. Order of priority vehicles: Fire-Suffering-Injury (Fire - Military - Police - Ambulance - Dike protection - Convoy of hearses).\n- Three roads: vehicles on main road, priority road.\ n- Four directions: order of direction: empty right - turn right - go straight - turn left.</string>
-    <string name="text_tip_content_9">- Fire: Fire truck\n- Incident: Military vehicle\n- Security: Police vehicle\n- Injury: Ambulance\n- Dike protection vehicle, vehicle for emergency duty\n- Convoy of hearses</string>
-    <string name="text_tip_content_10">- A1 motorcycles under 175 cm3 and 3-wheeled vehicles of the disabled\n- A2 motorcycles 175 cm3 or more</string>
-    <string name="text_tip_content_11">- Danger sign (yellow triangle)\n- Forbidden sign (red circle)\n- Command sign (blue circle)\n- Directional sign (blue square or rectangle)\n- Additional sign (square, black and white rectangle): The effect is on the auxiliary sign when there is an auxiliary sign</string>
-    <string name="text_tip_content_12">- 60km/h: For double or one-way roads with 2 or more motor vehicle lanes\n- 50km/h: For 2-way or 1-way roads with 1 motor vehicle lane</string>
-    <string name="text_tip_content_13">- Special-use motorcycles, mopeds (including electric motorcycles) and similar vehicles on roads (except highways): 40km/h\n- Motor vehicles and special-use motorbikes on highways must comply with the maximum speed, the minimum speed and not exceed: 120km/h</string>
-    <string name="text_tip_content_14">- Increase 1 decrease 2 (decrease the number of choices with the word throttle)</string>
-    <string name="text_tip_content_15">- Including road motorized vehicles and rudimentary road vehicles.</string>
-    <string name="text_tip_content_16">Including road vehicles and special-use motorbikes</string>
-    <string name="text_tip_content_17">Including construction motorcycles, agricultural and forestry motorcycles and other special vehicles used for national defense and security purposes and participating in road traffic.</string>
-    <string name="text_tip_content_18">- Raise your hand vertically: All stop, except for vehicles already in the intersection where you are allowed to go\n- Cross your arms: Left and right; front and back stop\n- Right hand raised first: After, right stop, first turn right, left go in all directions, pedestrians cross the road behind the operator.</string>
-    <string name="text_tip_content_20">- Do not drive continuously for more than 4 hours.\n- Do not work for more than 10 hours a day for a driver.\n- Transport dealers are not allowed to change their pick-up and drop-off locations on their own.\n- Transport Dangerous goods must be licensed.</string>
-    <string name="text_tip_content_21">- Motorcycles going down a long slope need to use both the front and rear brakes to slow down.\n- Make a low speed turn.</string>
-    <string name="text_tip_content_22">- Order of priority without roundabout: Vehicles enter the fork, first intersection - priority vehicle - priority road - road of the same level in the order of empty right - turn right - go straight - turn left.\n- Intersection Roundabouts of the same level: If you have not entered the roundabout, the right vehicle shall be given priority; has entered the roundabout to give priority to vehicles coming from the left.\n- Vehicles going downhill must give way to vehicles going uphill</string>
     <string name="answer_driving_unique_1_1">Watch for signs to see where turning is allowed; carefully observe the terrain where you choose to turn; select the appropriate turning trajectory; turning the vehicle at a low speed; regularly signal to people; If you make a U-turn in a dangerous place, turn the front of the vehicle to the dangerous direction and bring the rear of the vehicle to the safe direction.</string>
     <string name="answer_driving_unique_1_2">Watch for signs to see where turning is allowed; carefully observe the terrain where you choose to turn; selection of the vehicle\'s turning trajectory; turning the vehicle at full speed; regularly signal to people and vehicles around to know; If turning the vehicle in a dangerous place, turn the rear of the vehicle to the dangerous side and the front of the vehicle to the safe side.</string>
     <string name="answer_driving_unique_2_1">Do not try to enter the narrow road; vehicles going on the side of the mountain should stop first to give way; When stopping to give way, you must park neatly.</string>
@@ -247,15 +406,50 @@
     <string name="answer_driving_unique_10_1">Stand up straight on the handlebars then bend your knees and elbows slightly, walking slowly so you don\'t bounce too hard.</string>
     <string name="answer_driving_unique_10_2">Sit back, accelerate to pass quickly through the bumpy road.</string>
     <string name="answer_driving_unique_10_3">Sit sideways to the left or right to balance through the bumpy road.</string>
-    <string name="text_explain_answer_driving_unique_1">Always bring the front end of the vehicle to a dangerous place for better visibility. Answer 2 is wrong because \"putting the rear of the car in a dangerous direction\". The correct answer is: 1.</string>
-    <string name="text_explain_answer_driving_unique_2">Answer 3 is wrong because avoiding each other at night must not open the headlights, dazzling the opposite person. Answer 4 is correct.</string>
-    <string name="text_explain_answer_driving_unique_3">Must slow down and downshift. Answer 2 is wrong because it is accelerating and not in low gear. Correct answer: 1</string>
-    <string name="text_explain_answer_driving_unique_4">Answer 3 is correct. Using only the front or rear brakes is an unsafe behavior that can easily cause a dangerous accident.</string>
-    <string name="text_explain_answer_driving_unique_5">Answer 3 is correct. Using only the front or rear brakes is an unsafe behavior that can easily cause a dangerous accident.</string>
-    <string name="text_explain_answer_driving_unique_6">To ensure safety, all of the above must be applied, correct answer: 4.</string>
-    <string name="text_explain_answer_driving_unique_7">The throttle on a motorcycle does not have the effect of controlling the vehicle in reverse. To control the car moving forward, control the engine power from there so that we can go as fast and slow as we want. Answer 4 is correct.</string>
-    <string name="text_explain_answer_driving_unique_8">The rearview mirror is used to safely see behind both the left and right sides before changing direction. Always remember to look in the rearview mirror before turning to ensure your safety. Answer 3 is correct.</string>
-    <string name="text_explain_answer_driving_unique_9">Accelerate slowly to ensure you keep the speed of the motorcycle within your control. Reduce throttle quickly to ensure stopping when encountering obstacles or need to brake to ensure safety. Answer 3 is correct.</string>
-    <string name="text_explain_answer_driving_unique_10">When traveling on rough and bumpy roads, if the driver sits still on the car to go as usual, the car bouncing due to the bumpy road can make the driver tired quickly and it is very difficult to control the vehicle. Answer 1 is correct.</string>
+    <!-- ========================================Mẹo thi lý thuyết ========================================-->
+
+    <string name="text_tip_1">Licensing</string>
+    <string name="text_tip_2">Alcohol concentration</string>
+    <string name="text_tip_3">Minimum safe distance</string>
+    <string name="text_tip_4">Ask about age (T)</string>
+    <string name="text_tip_5">On highways, in tunnels, roundabouts, ramps, where visibility is limited</string>
+    <string name="text_tip_6">There is no signal at the intersection</string>
+    <string name="text_tip_7">Prohibition sign</string>
+    <string name="text_tip_8">First, second, best, three ways, four directions</string>
+    <string name="text_tip_9">Order of priority with priority vehicles: Fire - Su - An - Thuong</string>
+    <string name="text_tip_10">Driving license classes</string>
+    <string name="text_tip_11">Signage subgroups: including</string>
+    <string name="text_tip_12">Top speed in densely populated areas</string>
+    <string name="text_tip_13">Maximum speed outside of densely populated areas (except highways)</string>
+    <string name="text_tip_14">Increase number, decrease number</string>
+    <string name="text_tip_15">Road transport</string>
+    <string name="text_tip_16">Vehicles participating in road traffic</string>
+    <string name="text_tip_17">Specialized motorbikes</string>
+    <string name="text_tip_18">Traffic controller\'s signal</string>
+    <string name="text_tip_20">Transport service</string>
+    <string name="text_tip_21">Driving technique</string>
+    <string name="text_tip_22">Other shading rules</string>
+    <!--=================Tip Content====================-->
+    <string name="text_tip_content_1">- Roads prohibited from stopping, parking and banning are issued by the Provincial People\'s Committee</string>
+    <string name="text_tip_content_2">Drivers of motorcycles, cars, or tractors on the road with alcohol in their blood or breath: Prohibited</string>
+    <string name="text_tip_content_3">- 35m if circulating speed(V) = 60(km/h)\n- 55m if V:60 - 80\n- 70m if V:80 - 100\n- 100m if V: 100 - 120\n- Below 60km/h: Be proactive and ensure the distance.</string>
+    <string name="text_tip_content_4">- Motorcycle: 16 years old (under 50 cm3)\n- Motorcycle + B1 + B2: 18 years old</string>
+    <string name="text_tip_content_5">- Do not turn, do not reverse, do not overtake\n- Do not cross a narrow bridge with only one lane.\n- No U-turn is allowed in the pedestrian crossing.\n- Prohibited Backing up in no-stop areas and where roads intersect.</string>
+    <string name="text_tip_content_6">- There is a roundabout: Yield to the left\n- There is no roundabout to give way to the right</string>
+    <string name="text_tip_content_7">Prohibit cars (Including: 3-wheel motorcycles, Lam cars, passenger cars) -> Prohibit trucks -> Prohibit tractors -> Prohibit trailers, semi-trailers</string>
+    <string name="text_tip_content_8">- First place: the car that gets to the line first will go first.\n- Second place: the priority vehicle gets to go first. Order of priority vehicles: Fire-Suffering-Injury (Fire - Military - Police - Ambulance - Dike protection - Convoy of hearses).\n- Three roads: vehicles on main road, priority road.\ n- Four directions: order of direction: empty right - turn right - go straight - turn left.</string>
+    <string name="text_tip_content_9">- Fire: Fire truck\n- Incident: Military vehicle\n- Security: Police vehicle\n- Injury: Ambulance\n- Dike protection vehicle, vehicle for emergency duty\n- Convoy of hearses</string>
+    <string name="text_tip_content_10">- A1 motorcycles under 175 cm3 and 3-wheeled vehicles of the disabled\n- A2 motorcycles 175 cm3 or more</string>
+    <string name="text_tip_content_11">- Danger sign (yellow triangle)\n- Forbidden sign (red circle)\n- Command sign (blue circle)\n- Directional sign (blue square or rectangle)\n- Additional sign (square, black and white rectangle): The effect is on the auxiliary sign when there is an auxiliary sign</string>
+    <string name="text_tip_content_12">- 60km/h: For double or one-way roads with 2 or more motor vehicle lanes\n- 50km/h: For 2-way or 1-way roads with 1 motor vehicle lane</string>
+    <string name="text_tip_content_13">- Special-use motorcycles, mopeds (including electric motorcycles) and similar vehicles on roads (except highways): 40km/h\n- Motor vehicles and special-use motorbikes on highways must comply with the maximum speed, the minimum speed and not exceed: 120km/h</string>
+    <string name="text_tip_content_14">- Increase 1 decrease 2 (decrease the number of choices with the word throttle)</string>
+    <string name="text_tip_content_15">- Including road motorized vehicles and rudimentary road vehicles.</string>
+    <string name="text_tip_content_16">Including road vehicles and special-use motorbikes</string>
+    <string name="text_tip_content_17">Including construction motorcycles, agricultural and forestry motorcycles and other special vehicles used for national defense and security purposes and participating in road traffic.</string>
+    <string name="text_tip_content_18">- Raise your hand vertically: All stop, except for vehicles already in the intersection where you are allowed to go\n- Cross your arms: Left and right; front and back stop\n- Right hand raised first: After, right stop, first turn right, left go in all directions, pedestrians cross the road behind the operator.</string>
+    <string name="text_tip_content_20">- Do not drive continuously for more than 4 hours.\n- Do not work for more than 10 hours a day for a driver.\n- Transport dealers are not allowed to change their pick-up and drop-off locations on their own.\n- Transport Dangerous goods must be licensed.</string>
+    <string name="text_tip_content_21">- Motorcycles going down a long slope need to use both the front and rear brakes to slow down.\n- Make a low speed turn.</string>
+    <string name="text_tip_content_22">- Order of priority without roundabout: Vehicles enter the fork, first intersection - priority vehicle - priority road - road of the same level in the order of empty right - turn right - go straight - turn left.\n- Intersection Roundabouts of the same level: If you have not entered the roundabout, the right vehicle shall be given priority; has entered the roundabout to give priority to vehicles coming from the left.\n- Vehicles going downhill must give way to vehicles going uphill</string>
 
 </resources>

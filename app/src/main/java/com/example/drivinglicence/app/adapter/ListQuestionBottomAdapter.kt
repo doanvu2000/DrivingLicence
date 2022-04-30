@@ -10,7 +10,8 @@ class ListQuestionBottomAdapter :
     BaseRecyclerViewAdapter<Question, ItemListQuestionBottomBinding>() {
     var currentPos: Int = 0
     override fun bindData(binding: ItemListQuestionBottomBinding, item: Question, position: Int) {
-        binding.textCount.text = "${item.questionId}"
+//        binding.textCount.text = "${item.questionId}"
+        binding.textCount.text = "${position+1}"
         if (item.isChooseAnswer == true) {
             binding.imageChoose.visibility = View.VISIBLE
         }

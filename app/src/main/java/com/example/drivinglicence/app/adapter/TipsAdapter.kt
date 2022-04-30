@@ -18,24 +18,7 @@ class TipsAdapter : BaseRecyclerViewAdapter<ItemLearning, ItemTipsBinding>() {
                 binding.textContent.visibility = View.VISIBLE
                 binding.actionShow.setImageResource(R.drawable.icon_up_blue)
             } else {
-                binding.textContent.animate()
-                    .alpha(0f)
-                    .setListener(object : Animator.AnimatorListener {
-                        override fun onAnimationStart(p0: Animator?) {
-
-                        }
-
-                        override fun onAnimationEnd(p0: Animator?) {
-                            binding.textContent.visibility = View.GONE
-                        }
-
-                        override fun onAnimationCancel(p0: Animator?) {
-                        }
-
-                        override fun onAnimationRepeat(p0: Animator?) {
-                        }
-                    })
-                    .duration = 600
+                binding.textContent.visibility = View.GONE
                 binding.actionShow.setImageResource(R.drawable.icon_down_blue)
             }
         }

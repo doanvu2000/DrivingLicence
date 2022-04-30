@@ -36,7 +36,12 @@ class LessonCountDownFragment(
     override fun initListener() {
         answerCountDownAdapter.setOnClickItemRecyclerView { answer, position ->
             /**set question is selected answer*/
-            shareViewModel.listQuestion[answer.questionId - 1].isChooseAnswer = true
+            shareViewModel.listQuestion.map { question ->
+                if (question.questionId == answer.questionId){
+                    question.isChooseAnswer = true
+                }
+            }
+//            shareViewModel.listQuestion[answer.questionId - 1].isChooseAnswer = true // dang co van de
             if (answer.isCorrect) {
                 shareViewModel.mapResult[answer.questionId] = true
                 //biến để check xem question đã được chọn câu hỏi chưa, đã chọn =>thay layout ở bottom sheet

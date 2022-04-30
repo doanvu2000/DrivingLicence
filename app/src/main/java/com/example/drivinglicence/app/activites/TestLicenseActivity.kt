@@ -33,9 +33,13 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
     override fun initView() {
         setupToolBar()
         RecyclerUtils.setGridManager(this, binding.rcvExams, examAdapter)
-        val isSecond = LocalCache.getInstance().getBoolean(IS_SECOND) ?: false
-        if (!isSecond) {
-            showAlertMessage()
+        try {
+            val isSecond = LocalCache.getInstance().getBoolean(IS_SECOND) ?: false
+            if (!isSecond) {
+                showAlertMessage()
+            }
+        } catch (ex: Exception) {
+            println(ex.message)
         }
     }
 
@@ -63,7 +67,7 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
 //                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
 //            }
             listQuestion = viewModel.getListQuestionImportant(this)
-            for (i in 1..6) {
+            for (i in 1..35) {
                 listAnswer.add(viewModel.mapAnswerImportant[i] ?: mutableListOf())
             }
             showInformationLicense()
@@ -83,7 +87,7 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
     }
 
     override fun initData() {
-        for (i in 1..20) {
+        for (i in 1..15) {
             examAdapter.addData(i)
         }
     }

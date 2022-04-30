@@ -37,7 +37,7 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
             val bundle = Bundle()
             when (position) {
                 0 -> {
-                    /**60 câu hỏi điểm liệt*/
+                    /**35 câu hỏi điểm liệt*/
                     bundle.putInt(FLAG,1)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
@@ -73,8 +73,8 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
     override fun initData() {
         val list = arrayListOf(
             ItemLearning(
-                getString(R.string.text_60_question_important),
-                getString(R.string.text_60_question_important),
+                getString(R.string.text_35_question_important),
+                getString(R.string.text_35_question_important),
                 R.drawable.warning
             ),
             ItemLearning(

@@ -18,6 +18,7 @@ import com.example.drivinglicence.pref.showDevelopMessage
 import com.example.drivinglicence.pref.showMessage
 import com.example.drivinglicence.utils.getListQuestionImportant
 import com.example.drivinglicence.utils.initList
+import com.example.drivinglicence.utils.showDialogDevelopment
 
 class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
     private val actionAdapter by lazy {
@@ -98,8 +99,8 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
                 }
                 getString(R.string.text_search_law) -> {
                     /**Tra cứu luật*/
-                    openActivity(SearchLawActivity::class.java, false)
-//                    openActivity(TestViewPagerActivity::class.java, false)
+                    showDialogDevelopment(this)
+//                    openActivity(SearchLawActivity::class.java, false)
                 }
                 else -> {
                     showDevelopMessage()
