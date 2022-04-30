@@ -160,10 +160,20 @@
     <string name="answer_culture_and_ethics_5_3">Lấn sang làn đường bên trái cố gắng vượt lên xe khác.</string>
     <string name="answer_culture_and_ethics_5_4">Tất cả các ý kiến nêu trên.</string>
 
+    <!-- ========================================Câu hỏi Kỹ thuật lái xe ========================================-->
+    <string name="question_driving_unique_1">Khi quay đầu xe, người lái xe cần phải quan sát và thực hiện các thao tác nào để đảm bảo an toàn giao thông?</string>
+    <string name="question_driving_unique_2">Khi tránh nhau trên đường hẹp, người lái xe cần phải chú ý những điểm nào để đảm bảo an toàn giao thông?</string>
+    <string name="question_driving_unique_3">Khi điều khiển xe trên đường vòng người lái xe cần phải làm gì để đảm bảo an toàn?</string>
+    <string name="question_driving_unique_4">Để đạt được hiệu quả phanh cao nhất, người lái xe mô tô phải sử dụng các kỹ năng như thế nào dưới đây?</string>
+    <string name="question_driving_unique_5">Những thói quen nào dưới đây khi điều khiển xe mô tô tay ga tham gia giao thông dễ gây tai nạn nguy hiểm.</string>
+    <string name="question_driving_unique_6">Khi điều khiển xe mô tô quay đầu người lái xe cần thực hiện như thế nào để đảm bảo an toàn?</string>
+    <string name="question_driving_unique_7">Tay ga trên xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?</string>
+    <string name="question_driving_unique_8">Gương chiếu hậu của xe mô tô hai bánh, có tác dụng gì trong các trường hợp dưới đây?</string>
+    <string name="question_driving_unique_10">Kỹ thuật cơ bản để giữ thăng bằng khi điều khiển xe mô tô đi trên đường gồ ghề như thế nào trong các trường hợp dưới đây?</string>
+    <string name="question_driving_unique_9">Để đảm bảo an toàn khi tham gia giao thông, người lái xe mô tô hai bánh cần điều khiển tay ga như thế nào trong các trường hợp dưới đây?</string>
+    <!-- ========================================Câu trả lời Kỹ thuật lái xe ========================================-->
 
     <!-- ========================================Mẹo thi lý thuyết ========================================-->
-
-
     <string name="text_tip_1">Cấp phép</string>
     <string name="text_tip_2">Nồng độ cồn</string>
     <string name="text_tip_3">Khoảng cách an toàn tối thiểu</string>
@@ -207,5 +217,48 @@
     <string name="text_tip_content_21">- Xe mô tô xuống dốc dài cần sử dụng cả phanh trước và phanh sau để giảm tốc độ.\n- Thực hiện quay đầu xe với tốc độ thấp.</string>
     <string name="text_tip_content_20">- Không lái xe liên tục quá 4 giờ.\n- Không làm việc 1 ngày của lái xe quá 10 giờ.\n- Người kinh doanh vận tải không được tự ý thay đổi vị trí đón trả khách.\n- Vận chuyển hàng nguy hiểm phải có giáy phép.</string>
     <string name="text_tip_content_22">- Thứ tự ưu tiên không vòng xuyến: Xe vào ngã ba, ngã tư trước - xe ưu tiên - đường ưu tiên - đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái.\n- Giao nhau cùng cấp có vòng xuyến: Chưa vào vòng xuyến thì ưu tiên xe bên phải; đã vào vòng xuyến ưu tiên xe từ bên trái tới.\n- Xe xuống dốc phải nhường đường cho xe đang lên dốc</string>
+    <string name="answer_driving_unique_1_2">Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe; quay đầu xe với tốc độ tối đa; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đuôi xe về phía nguy hiểm và đầu xe về phía an toàn.</string>
+    <string name="answer_driving_unique_1_1">Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe cho thích hợp; quay đầu xe với tốc độ thấp; thường xuyên báo tín hiệu để người; nếu quay đầu xe ở nơi nguy hiểm thì đưa đầu xe về phía nguy hiểm đưa đuôi xe về phía an toàn.</string>
+    <string name="answer_driving_unique_2_1">Không nên đi cố vào đường hẹp; xe đi ở phía sườn núi nên dừng lại trước để nhường đường; khi dừng xe nhường đường phải đỗ ngay ngắn.</string>
+    <string name="answer_driving_unique_2_2">Trong khi tránh nhau không nên đổi số; khi tránh nhau ban đêm, phải tắt đèn pha bật đèn cốt.</string>
+    <string name="answer_driving_unique_2_3">Khi tránh nhau ban đêm, phải thường xuyên bật đèn pha tắt đèn cốt.</string>
+    <string name="answer_driving_unique_2_4">Cả ý 1 và ý 2.</string>
+    <string name="answer_driving_unique_3_1">Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng.</string>
+    <string name="answer_driving_unique_3_2">Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; tăng tốc để nhanh chóng qua đường vòng và giảm tốc độ sau khi qua đường vòng.</string>
+    <string name="answer_driving_unique_4_1">Sử dụng phanh trước</string>
+    <string name="answer_driving_unique_4_2">Sử dụng phanh sau.</string>
+    <string name="answer_driving_unique_4_3">Giảm hết ga; sử dụng đồng thời cả phanh sau và phanh trước.</string>
+    <string name="answer_driving_unique_5_1">Sử dụng còi.</string>
+    <string name="answer_driving_unique_5_2">Phanh đồng thời cả phanh trước và phanh sau.</string>
+    <string name="answer_driving_unique_5_3">Chỉ sử dụng phanh trước hoặc chỉ sử dụng phanh sau.</string>
+    <string name="answer_driving_unique_6_1">Bật tín hiệu báo rẽ trước khi quay đầu, từ từ giảm tốc độ đến mức có thể dừng lại.</string>
+    <string name="answer_driving_unique_6_2">Chỉ quay đầu xe tại những nơi được phép quay đầu.</string>
+    <string name="answer_driving_unique_6_3">Quan sát an toàn các phương tiện tới từ phía trước, phía sau, hai bên đồng thời nhường đường cho xe từ bên phải và phía trước đi tới.</string>
+    <string name="answer_driving_unique_6_4">Tất cả các ý nêu trên</string>
+    <string name="answer_driving_unique_7_1">Để điều khiển xe chạy về phía trước.</string>
+    <string name="answer_driving_unique_7_2">Để điều tiết công suất động cơ qua đó điều khiển tốc độ của xe.</string>
+    <string name="answer_driving_unique_7_3">Để điều khiển xe chạy lùi.</string>
+    <string name="answer_driving_unique_7_4">Cả ý 1 và ý 2.</string>
+    <string name="answer_driving_unique_8_1">Để quan sát an toàn phía bên trái khi chuẩn bị rẽ trái.</string>
+    <string name="answer_driving_unique_8_2">Để quan sát an toàn phía bên phải khi chuẩn bị rẽ phải.</string>
+    <string name="answer_driving_unique_8_3">Để quan sát an toàn phía sau cả bên trái và phên phải trước khi chuyển hướng.</string>
+    <string name="answer_driving_unique_8_4">Để quan sát an toàn phía trước cả bên trái và bên phải trước khi chuyển hướng.</string>
+    <string name="answer_driving_unique_9_1">Tăng ga thật nhanh, giảm ga từ từ.</string>
+    <string name="answer_driving_unique_9_2">Tăng ga thật nhanh, giảm ga thật nhanh.</string>
+    <string name="answer_driving_unique_9_3">Tăng ga từ từ, giảm ga thật nhanh.</string>
+    <string name="answer_driving_unique_9_4">Tăng ga từ từ, giảm ga từ từ.</string>
+    <string name="answer_driving_unique_10_1">Đứng thẳng trên giá gác chân lái sau đó hơi gập đầu gối và khuỷu tay, đi chậm để không nẩy quá mạnh.</string>
+    <string name="answer_driving_unique_10_2">Ngồi lùi lại phía sau, tăng ga vượt nhanh qua đoạn đường xóc.</string>
+    <string name="answer_driving_unique_10_3">Ngồi lệch sang bên trái hoặc bên phải để lấy thăng bằng qua đoạn đường gồ ghề.</string>
+    <string name="text_explain_answer_driving_unique_1">Luôn luôn phải đưa đầu xe về nơi nguy hiểm để có thể quan sát được tốt hơn. Đáp án 2 sai vì \"đưa đuôi xe về phía nguy hiểm\". Đáp án đúng là: 1.</string>
+    <string name="text_explain_answer_driving_unique_2">Đáp án 3 sai vì tránh nhau ban đêm không được mở đèn pha, gây chói mắt người đối diện. Đáp án 4 đúng.</string>
+    <string name="text_explain_answer_driving_unique_3">Phải giảm tốc độ và về số thấp. Đáp án 2 sai vì tăng tốc và không về số thấp. Đáp án đúng: 1</string>
+    <string name="text_explain_answer_driving_unique_4">Đáp án 3 đúng. Việc sử dụng chỉ phanh trước hoặc phanh sau là hành vi thiếu an toàn dễ gây tai nạn nguy hiểm.</string>
+    <string name="text_explain_answer_driving_unique_5">Đáp án 3 đúng. Việc sử dụng chỉ phanh trước hoặc phanh sau là hành vi thiếu an toàn dễ gây tai nạn nguy hiểm.</string>
+    <string name="text_explain_answer_driving_unique_6">Để đảm bảo an toàn phải áp dụng tất cả các ý trên, đáp án đúng: 4.</string>
+    <string name="text_explain_answer_driving_unique_7">Tay ga trên xe máy không có tác dụng điều khiển xe chạy lùi. Để điều khiển xe chạy về phía trước, điều khiển công suất động cơ từ đó giúp ta có thể chạy nhanh chậm theo ý muốn. Đáp án 4 đúng.</string>
+    <string name="text_explain_answer_driving_unique_8">Gương chiếu hậu có tác dụng để quan sát an toàn phía sau cả bên trái và bên phải trước khi chuyển hướng. Luôn nhớ quan sát gương chiếu hậu trước khi rẽ để đảm bảo an toàn bạn nhé. Đáp án 3 đúng.</string>
+    <string name="text_explain_answer_driving_unique_9">Tăng ga từ từ để đảm bảo bạn kiểm soát tốc độ xe máy trong tầm kiểm soát của bạn. Giảm ga thật nhanh để đảm bảo quá trình dừng xe khi gặp chướng ngại vật hoặc cần phanh xe để đảm bảo an toàn. Đáp án 3 đúng.</string>
+    <string name="text_explain_answer_driving_unique_10">Khi đi trên đường gồ ghề, đường xóc, nếu người lái ngồi yên trên xe để đi như bình thường thì xe nẩy lên do đường xóc có thể làm cho người lái chóng mệt mỏi và rất khó điều khiển xe. Đáp án 1 đúng.</string>
 
 </resources>

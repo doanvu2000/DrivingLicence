@@ -1,6 +1,7 @@
 package com.example.drivinglicence.app.fragment
 
 import android.annotation.SuppressLint
+import android.text.Html
 import android.util.Log
 import android.view.View
 import com.example.drivinglicence.R
@@ -53,10 +54,15 @@ class LessonFragment(
         val listAnswer: MutableList<Answer>? = arguments?.getParcelableArrayList(ANSWERS)
         question?.let {
             if (it.isImportant) {
-                binding.textQuestionContent.text =
+                binding.textQuestionContent.text = Html.fromHtml(
                     question.content + " " + getString(R.string.text_question_important)
+                )
             } else {
                 binding.textQuestionContent.text = question.content
+            }
+            it.image?.let { thumb ->
+                binding.imageQuestion.visibility = View.VISIBLE
+                binding.imageQuestion.setImageResource(thumb)
             }
         }
         answerAdapter.addData(listAnswer ?: mutableListOf())

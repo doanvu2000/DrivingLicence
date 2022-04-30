@@ -134,8 +134,7 @@ fun initList(context: Context) {
     )
 
     listAnswerConceptAndRule = mutableListOf(
-        listConceptAndRule1, listConceptAndRule2,
-        listConceptAndRule3
+        listConceptAndRule1, listConceptAndRule2, listConceptAndRule3
     )
 
     /**Văn hóa và đạo đức lái xe*/
@@ -190,11 +189,123 @@ fun initList(context: Context) {
     )
 
     listAnswerCultureAndEthic = mutableListOf(
-        listCultureAndEthic1,
-        listCultureAndEthic2,
-        listCultureAndEthic3,
-        listCultureAndEthic4,
+        listCultureAndEthic1, listCultureAndEthic2, listCultureAndEthic3, listCultureAndEthic4,
         listCultureAndEthic5
+    )
+
+    /**Kỹ thuật lái xe*/
+    listDrivingUnique1 = mutableListOf(
+        Answer(
+            1, context.getString(R.string.answer_driving_unique_1_1), true, 1,
+            context.getString(R.string.text_explain_answer_driving_unique_1)
+        ),
+        Answer(2, context.getString(R.string.answer_driving_unique_1_2), false, 1)
+    )
+    listDrivingUnique2 = mutableListOf(
+        Answer(
+            3, context.getString(R.string.answer_driving_unique_2_1), false, 2,
+        ),
+        Answer(4, context.getString(R.string.answer_driving_unique_2_2), false, 2),
+        Answer(5, context.getString(R.string.answer_driving_unique_2_3), false, 2),
+        Answer(
+            6, context.getString(R.string.answer_driving_unique_2_4), true, 2,
+            context.getString(R.string.text_explain_answer_driving_unique_2)
+        )
+    )
+    listDrivingUnique3 = mutableListOf(
+        Answer(
+            7, context.getString(R.string.answer_driving_unique_3_1), true, 3,
+            context.getString(R.string.text_explain_answer_driving_unique_3)
+        ),
+        Answer(8, context.getString(R.string.answer_driving_unique_3_2), false, 3)
+    )
+    listDrivingUnique4 = mutableListOf(
+        Answer(
+            9, context.getString(R.string.answer_driving_unique_4_1),
+            false, 4
+        ),
+        Answer(10, context.getString(R.string.answer_driving_unique_4_2), false, 4),
+        Answer(
+            11, context.getString(R.string.answer_driving_unique_4_3), true, 4,
+            context.getString(R.string.text_explain_answer_driving_unique_4)
+        )
+    )
+    listDrivingUnique5 = mutableListOf(
+        Answer(
+            12, context.getString(R.string.answer_driving_unique_5_1),
+            false, 5
+        ),
+        Answer(13, context.getString(R.string.answer_driving_unique_5_2), false, 5),
+        Answer(
+            14, context.getString(R.string.answer_driving_unique_5_3), true, 5,
+            context.getString(R.string.text_explain_answer_driving_unique_5)
+        )
+    )
+    listDrivingUnique6 = mutableListOf(
+        Answer(
+            15, context.getString(R.string.answer_driving_unique_6_1), false, 6,
+        ),
+        Answer(16, context.getString(R.string.answer_driving_unique_6_2), false, 6),
+        Answer(17, context.getString(R.string.answer_driving_unique_6_3), false, 6),
+        Answer(
+            18, context.getString(R.string.answer_driving_unique_6_4), true, 6,
+            context.getString(R.string.text_explain_answer_driving_unique_6)
+        )
+    )
+    listDrivingUnique7 = mutableListOf(
+        Answer(
+            19, context.getString(R.string.answer_driving_unique_7_1), false, 7,
+        ),
+        Answer(20, context.getString(R.string.answer_driving_unique_7_2), false, 7),
+        Answer(21, context.getString(R.string.answer_driving_unique_7_3), false, 7),
+        Answer(
+            22, context.getString(R.string.answer_driving_unique_7_4), true, 7,
+            context.getString(R.string.text_explain_answer_driving_unique_7)
+        )
+    )
+    listDrivingUnique8 = mutableListOf(
+        Answer(
+            19, context.getString(R.string.answer_driving_unique_8_1), false, 8,
+        ),
+        Answer(20, context.getString(R.string.answer_driving_unique_8_2), false, 8),
+        Answer(
+            21, context.getString(R.string.answer_driving_unique_8_3), true, 8,
+            context.getString(R.string.text_explain_answer_driving_unique_8)
+        ),
+        Answer(
+            22, context.getString(R.string.answer_driving_unique_8_4), false, 8
+        )
+    )
+
+    listDrivingUnique9 = mutableListOf(
+        Answer(
+            23, context.getString(R.string.answer_driving_unique_9_1), false, 9,
+        ),
+        Answer(24, context.getString(R.string.answer_driving_unique_9_2), false, 9),
+        Answer(
+            25, context.getString(R.string.answer_driving_unique_9_3), true, 9,
+            context.getString(R.string.text_explain_answer_driving_unique_9)
+        ),
+        Answer(
+            26, context.getString(R.string.answer_driving_unique_9_4), false, 9
+        )
+    )
+    listDrivingUnique10 = mutableListOf(
+        Answer(
+            27, context.getString(R.string.answer_driving_unique_10_1),
+            false, 5
+        ),
+        Answer(28, context.getString(R.string.answer_driving_unique_10_2), false, 5),
+        Answer(
+            29, context.getString(R.string.answer_driving_unique_10_3), true, 5,
+            context.getString(R.string.text_explain_answer_driving_unique_10)
+        )
+    )
+
+    listAnswerDrivingUnique = mutableListOf(
+        listDrivingUnique1, listDrivingUnique2, listDrivingUnique3, listDrivingUnique4,
+        listDrivingUnique5, listDrivingUnique6, listDrivingUnique7, listDrivingUnique8,
+        listDrivingUnique9, listDrivingUnique10
     )
 }
 
@@ -215,6 +326,19 @@ var listCultureAndEthic5 = mutableListOf<Answer>()
 
 /**Kỹ thuật lái xe*/ //12
 
+var listAnswerDrivingUnique = mutableListOf<MutableList<Answer>>()
+var listDrivingUnique1 = mutableListOf<Answer>()
+var listDrivingUnique2 = mutableListOf<Answer>()
+var listDrivingUnique3 = mutableListOf<Answer>()
+var listDrivingUnique4 = mutableListOf<Answer>()
+var listDrivingUnique5 = mutableListOf<Answer>()
+var listDrivingUnique6 = mutableListOf<Answer>()
+var listDrivingUnique7 = mutableListOf<Answer>()
+var listDrivingUnique8 = mutableListOf<Answer>()
+var listDrivingUnique9 = mutableListOf<Answer>()
+var listDrivingUnique10 = mutableListOf<Answer>()
+var listDrivingUnique11 = mutableListOf<Answer>()
+var listDrivingUnique12 = mutableListOf<Answer>()
 /**Biển báo đường bộ*/ //65
 
 /**Sa hình*/ //35

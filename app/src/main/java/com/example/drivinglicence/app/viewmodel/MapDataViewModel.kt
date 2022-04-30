@@ -2,11 +2,13 @@ package com.example.drivinglicence.app.viewmodel
 
 import android.content.Context
 import android.util.Log
+import com.example.drivinglicence.R
 import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.component.viewmodel.BaseViewModel
 import com.example.drivinglicence.utils.listAnswerConceptAndRule
 import com.example.drivinglicence.utils.listAnswerCultureAndEthic
+import com.example.drivinglicence.utils.listAnswerDrivingUnique
 import com.example.drivinglicence.utils.listAnswerImportant
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.flow
@@ -22,6 +24,7 @@ class MapDataViewModel : BaseViewModel() {
     var mapAnswerImportant = HashMap<Int, MutableList<Answer>>()
     var mapAnswerConceptsAndRules = HashMap<Int, MutableList<Answer>>()
     var mapAnswerCulturesAndEthics = HashMap<Int, MutableList<Answer>>()
+    var mapAnswerDrivingUnique = HashMap<Int, MutableList<Answer>>()
 
     /** 60 question important 1 -> 60 */
     fun getAnswerWithQuestionImportant() {
@@ -98,6 +101,32 @@ class MapDataViewModel : BaseViewModel() {
             }
         }
         getAnswerWithQuestionCulturesAndEthics()
+        return list
+    }
+
+    /** 12 question driving unique 1 -> 12 */
+    private fun getAnswerWithQuestionDrivingUnique() {
+        for (i in 1..10) {
+            mapAnswerDrivingUnique[i] = listAnswerDrivingUnique[i - 1]
+        }
+    }
+
+    fun getListQuestionDrivingUnique(context: Context): MutableList<Question> {
+        val list = mutableListOf<Question>()
+        for (i in 1..10) {
+            val id =
+                context.resources.getIdentifier(
+                    "question_driving_unique_$i",
+                    "string",
+                    context.packageName
+                )
+            if (id > 0) {
+                list.add(
+                    Question(i, null, context.getString(id), null, false)
+                )
+            }
+        }
+        getAnswerWithQuestionDrivingUnique()
         return list
     }
 

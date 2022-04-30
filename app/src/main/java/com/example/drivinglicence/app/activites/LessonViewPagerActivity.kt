@@ -140,6 +140,21 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
             }
             4 -> {
                 binding.toolbar.setTitle(getString(R.string.text_driving_technique))
+                /**12 câu kỹ thuật lái xe*/
+                listQuestion = viewModel.getListQuestionDrivingUnique(this)
+                for (i in 1..10) {
+                    listAnswer.add(viewModel.mapAnswerDrivingUnique[i] ?: mutableListOf())
+                }
+                for (i in 1..10) {
+                    val question = listQuestion[i - 1]
+                    val answers = listAnswer[i - 1] as ArrayList<Answer>
+                    mListFragment.add(LessonFragment().apply {
+                        val bundle = Bundle()
+                        bundle.putParcelable(QUESTION, question)
+                        bundle.putParcelableArrayList(ANSWERS, answers)
+                        arguments = bundle
+                    })
+                }
             }
             5 -> {
                 binding.toolbar.setTitle(getString(R.string.text_road_signs))

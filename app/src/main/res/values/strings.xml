@@ -156,6 +156,18 @@
     <string name="answer_culture_and_ethics_5_3">Cross into the left lane and try to overtake another vehicle.</string>
     <string name="answer_culture_and_ethics_5_4">All of the above comments.</string>
 
+    <!-- ========================================Câu hỏi Kỹ thuật lái xe ========================================-->
+    <string name="question_driving_unique_1">When turning the vehicle, the driver needs to observe and perform what operations to ensure traffic safety?</string>
+    <string name="question_driving_unique_2">When avoiding each other on narrow roads, what points should drivers pay attention to to ensure traffic safety?</string>
+    <string name="question_driving_unique_3">When driving on a roundabout, what should the driver do to ensure safety?</string>
+    <string name="question_driving_unique_4">To achieve the highest braking efficiency, how should motorcyclists use the following skills?</string>
+    <string name="question_driving_unique_5">Which of the following habits when operating a scooter in traffic can easily cause dangerous accidents.</string>
+    <string name="question_driving_unique_6">When driving a motorcycle, what should the driver do to ensure safety?</string>
+    <string name="question_driving_unique_7">What is the effect of the throttle on a two-wheeled motorcycle in the following cases?</string>
+    <string name="question_driving_unique_8">The rearview mirror of a two-wheeled motorcycle has what effect in the following cases?</string>
+    <string name="question_driving_unique_9">To ensure safety when participating in traffic, how should a two-wheeler motorcycle driver need to control the throttle in the following cases?</string>
+    <string name="question_driving_unique_10">What is the basic technique to keep balance when driving a motorcycle on rough roads in the following cases?</string>
+    <!-- ========================================Câu trả lời Kỹ thuật lái xe ========================================-->
 
     <!-- ========================================Mẹo thi lý thuyết ========================================-->
 
@@ -202,5 +214,48 @@
     <string name="text_tip_content_20">- Do not drive continuously for more than 4 hours.\n- Do not work for more than 10 hours a day for a driver.\n- Transport dealers are not allowed to change their pick-up and drop-off locations on their own.\n- Transport Dangerous goods must be licensed.</string>
     <string name="text_tip_content_21">- Motorcycles going down a long slope need to use both the front and rear brakes to slow down.\n- Make a low speed turn.</string>
     <string name="text_tip_content_22">- Order of priority without roundabout: Vehicles enter the fork, first intersection - priority vehicle - priority road - road of the same level in the order of empty right - turn right - go straight - turn left.\n- Intersection Roundabouts of the same level: If you have not entered the roundabout, the right vehicle shall be given priority; has entered the roundabout to give priority to vehicles coming from the left.\n- Vehicles going downhill must give way to vehicles going uphill</string>
+    <string name="answer_driving_unique_1_1">Watch for signs to see where turning is allowed; carefully observe the terrain where you choose to turn; select the appropriate turning trajectory; turning the vehicle at a low speed; regularly signal to people; If you make a U-turn in a dangerous place, turn the front of the vehicle to the dangerous direction and bring the rear of the vehicle to the safe direction.</string>
+    <string name="answer_driving_unique_1_2">Watch for signs to see where turning is allowed; carefully observe the terrain where you choose to turn; selection of the vehicle\'s turning trajectory; turning the vehicle at full speed; regularly signal to people and vehicles around to know; If turning the vehicle in a dangerous place, turn the rear of the vehicle to the dangerous side and the front of the vehicle to the safe side.</string>
+    <string name="answer_driving_unique_2_1">Do not try to enter the narrow road; vehicles going on the side of the mountain should stop first to give way; When stopping to give way, you must park neatly.</string>
+    <string name="answer_driving_unique_2_2">While avoiding each other should not change numbers; When avoiding each other at night, turn off the headlights and turn on the low beams.</string>
+    <string name="answer_driving_unique_2_3">When avoiding each other at night, you must regularly turn on the headlights and turn off the low beams.</string>
+    <string name="answer_driving_unique_2_4">Both point 1 and point 2.</string>
+    <string name="answer_driving_unique_3_1">Carefully observe obstacles and signal with horns and lights; Reduce the speed to the required level, downshift, and perform a turn at a speed that matches the radius of curvature of the roundabout.</string>
+    <string name="answer_driving_unique_3_2">Carefully observe obstacles and signal with horns and lights; Accelerate to quickly cross the detour and slow down after the detour.</string>
+    <string name="answer_driving_unique_4_1">Use the front brake</string>
+    <string name="answer_driving_unique_4_2">Use the rear brake.</string>
+    <string name="answer_driving_unique_4_3">Reduce gas completely; Use both rear and front brakes at the same time.</string>
+    <string name="answer_driving_unique_5_1">Use whistle.</string>
+    <string name="answer_driving_unique_5_2">Braking both front and rear brakes at the same time.</string>
+    <string name="answer_driving_unique_5_3">Use only the front brake or only the rear brake.</string>
+    <string name="answer_driving_unique_6_1">Turn on your turn signal before turning, and slowly slow down to a stop.</string>
+    <string name="answer_driving_unique_6_2">Make a U-turn only at places where you are allowed to make a U-turn.</string>
+    <string name="answer_driving_unique_6_3">Safely observe vehicles coming from the front, rear, and sides, and at the same time give way to vehicles coming from the right and in front.</string>
+    <string name="answer_driving_unique_6_4">All of the above ideas</string>
+    <string name="answer_driving_unique_7_1">To control the car to move forward.</string>
+    <string name="answer_driving_unique_7_2">To regulate engine power thereby controlling vehicle speed.</string>
+    <string name="answer_driving_unique_7_3">To control the vehicle in reverse.</string>
+    <string name="answer_driving_unique_7_4">Both point 1 and point 2.</string>
+    <string name="answer_driving_unique_8_1">To safely observe the left side when preparing to turn left.</string>
+    <string name="answer_driving_unique_8_2">To safely observe the right side when preparing to turn right.</string>
+    <string name="answer_driving_unique_8_3">To safely look behind both the left and right side before turning.</string>
+    <string name="answer_driving_unique_8_4">To safely look ahead both left and right before turning.</string>
+    <string name="answer_driving_unique_9_1">Accelerate quickly, reduce throttle slowly.</string>
+    <string name="answer_driving_unique_9_2">Accelerate quickly, decelerate quickly.</string>
+    <string name="answer_driving_unique_9_3">Accelerate slowly, decelerate quickly.</string>
+    <string name="answer_driving_unique_9_4">Increase throttle slowly, reduce throttle slowly.</string>
+    <string name="answer_driving_unique_10_1">Stand up straight on the handlebars then bend your knees and elbows slightly, walking slowly so you don\'t bounce too hard.</string>
+    <string name="answer_driving_unique_10_2">Sit back, accelerate to pass quickly through the bumpy road.</string>
+    <string name="answer_driving_unique_10_3">Sit sideways to the left or right to balance through the bumpy road.</string>
+    <string name="text_explain_answer_driving_unique_1">Always bring the front end of the vehicle to a dangerous place for better visibility. Answer 2 is wrong because \"putting the rear of the car in a dangerous direction\". The correct answer is: 1.</string>
+    <string name="text_explain_answer_driving_unique_2">Answer 3 is wrong because avoiding each other at night must not open the headlights, dazzling the opposite person. Answer 4 is correct.</string>
+    <string name="text_explain_answer_driving_unique_3">Must slow down and downshift. Answer 2 is wrong because it is accelerating and not in low gear. Correct answer: 1</string>
+    <string name="text_explain_answer_driving_unique_4">Answer 3 is correct. Using only the front or rear brakes is an unsafe behavior that can easily cause a dangerous accident.</string>
+    <string name="text_explain_answer_driving_unique_5">Answer 3 is correct. Using only the front or rear brakes is an unsafe behavior that can easily cause a dangerous accident.</string>
+    <string name="text_explain_answer_driving_unique_6">To ensure safety, all of the above must be applied, correct answer: 4.</string>
+    <string name="text_explain_answer_driving_unique_7">The throttle on a motorcycle does not have the effect of controlling the vehicle in reverse. To control the car moving forward, control the engine power from there so that we can go as fast and slow as we want. Answer 4 is correct.</string>
+    <string name="text_explain_answer_driving_unique_8">The rearview mirror is used to safely see behind both the left and right sides before changing direction. Always remember to look in the rearview mirror before turning to ensure your safety. Answer 3 is correct.</string>
+    <string name="text_explain_answer_driving_unique_9">Accelerate slowly to ensure you keep the speed of the motorcycle within your control. Reduce throttle quickly to ensure stopping when encountering obstacles or need to brake to ensure safety. Answer 3 is correct.</string>
+    <string name="text_explain_answer_driving_unique_10">When traveling on rough and bumpy roads, if the driver sits still on the car to go as usual, the car bouncing due to the bumpy road can make the driver tired quickly and it is very difficult to control the vehicle. Answer 1 is correct.</string>
 
 </resources>

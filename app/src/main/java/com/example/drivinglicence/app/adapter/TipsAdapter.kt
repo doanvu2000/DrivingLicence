@@ -1,7 +1,6 @@
 package com.example.drivinglicence.app.adapter
 
 import android.animation.Animator
-import android.content.Context
 import android.view.View
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.entity.ItemLearning
