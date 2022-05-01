@@ -16,8 +16,7 @@ import com.example.drivinglicence.databinding.ActivityMainBinding
 import com.example.drivinglicence.pref.LocalCache
 import com.example.drivinglicence.pref.showDevelopMessage
 import com.example.drivinglicence.pref.showMessage
-import com.example.drivinglicence.utils.getListQuestionImportant
-import com.example.drivinglicence.utils.initList
+import com.example.drivinglicence.utils.initAllList
 import com.example.drivinglicence.utils.showDialogDevelopment
 
 class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
@@ -74,8 +73,7 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
         val item5 = ItemAction(getString(R.string.text_search_law), R.drawable.law)
         listAction = arrayListOf(item1, item2, item3, item4, item5)
         actionAdapter.addData(listAction)
-        initList(this)
-        val importantListQuestion = getListQuestionImportant(this)
+        initAllList(this)
     }
 
     override fun initListener() {

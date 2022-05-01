@@ -79,7 +79,7 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
             ),
             ItemLearning(
                 getString(R.string.text_concepts_and_rules),
-                getString(R.string.text_about_83),
+                getString(R.string.text_about_30),
                 R.drawable.writing
             ),
             ItemLearning(
@@ -93,12 +93,12 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
             ),
             ItemLearning(
                 getString(R.string.text_road_signs),
-                getString(R.string.text_about_65),
+                getString(R.string.text_about_20),
                 R.drawable.forbidden
             ),
             ItemLearning(
                 getString(R.string.text_sat_figure),
-                getString(R.string.text_about_35),
+                getString(R.string.text_about_20),
                 R.drawable.conversation
             )
         )

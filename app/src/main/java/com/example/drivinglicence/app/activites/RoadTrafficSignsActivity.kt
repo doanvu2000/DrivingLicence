@@ -2,7 +2,6 @@ package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
 import android.os.Bundle
-import android.os.Parcelable
 import androidx.core.content.ContextCompat
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.RoadTrafficSignAdapter
@@ -11,7 +10,6 @@ import com.example.drivinglicence.app.viewmodel.RoadTrafficViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.databinding.ActivityRoadTrafficSignsBinding
 import com.example.drivinglicence.utils.LIST_ROAD_TRAFFIC
-import java.util.ArrayList
 
 class RoadTrafficSignsActivity :
     BaseVMActivity<ActivityRoadTrafficSignsBinding, RoadTrafficViewModel>() {

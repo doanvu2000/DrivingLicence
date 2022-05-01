@@ -49,4 +49,8 @@ class LoadingDialog : BaseDialogFragment<LoadingDialogBinding>() {
         }
         super.dismissAllowingStateLoss()
     }
+
+    fun setMessage(msg: String) {
+        binding?.textMessage?.text = msg
+    }
 }

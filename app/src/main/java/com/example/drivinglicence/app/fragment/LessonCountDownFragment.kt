@@ -1,11 +1,9 @@
 package com.example.drivinglicence.app.fragment
 
 import android.annotation.SuppressLint
-import android.text.Html
 import android.util.Log
 import android.view.View
 import androidx.fragment.app.viewModels
-import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.AnswerCountDownAdapter
 import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.Question
@@ -17,8 +15,7 @@ import com.example.drivinglicence.databinding.FragmentLessonBinding
 import com.example.drivinglicence.utils.ANSWERS
 import com.example.drivinglicence.utils.QUESTION
 
-class LessonCountDownFragment(
-) :
+class LessonCountDownFragment :
     BaseFragment<FragmentLessonBinding, DataViewModel>() {
 
     private val shareViewModel: MapDataViewModel by viewModels(ownerProducer = { requireActivity() })
@@ -37,11 +34,10 @@ class LessonCountDownFragment(
         answerCountDownAdapter.setOnClickItemRecyclerView { answer, position ->
             /**set question is selected answer*/
             shareViewModel.listQuestion.map { question ->
-                if (question.questionId == answer.questionId){
+                if (question.questionId == answer.questionId) {
                     question.isChooseAnswer = true
                 }
             }
-//            shareViewModel.listQuestion[answer.questionId - 1].isChooseAnswer = true // dang co van de
             if (answer.isCorrect) {
                 shareViewModel.mapResult[answer.questionId] = true
                 //biến để check xem question đã được chọn câu hỏi chưa, đã chọn =>thay layout ở bottom sheet
@@ -72,14 +68,15 @@ class LessonCountDownFragment(
 
         val question: Question? = arguments?.getParcelable(QUESTION)
         val listAnswer: MutableList<Answer>? = arguments?.getParcelableArrayList(ANSWERS)
+        Log.d("TAG", "initData: $question")
         question?.let {
-            if (it.isImportant) {
-                binding.textQuestionContent.text =
-                    Html.fromHtml(question.content + getString(R.string.text_question_important))
-            } else {
-                binding.textQuestionContent.text = question.content
+            binding.textQuestionContent.text = it.content
+            it.image?.let { source ->
+                binding.imageQuestion.visibility = View.VISIBLE
+                binding.imageQuestion.setImageResource(source)
             }
         }
+
         answerCountDownAdapter.addData(listAnswer ?: mutableListOf())
     }
 

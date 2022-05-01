@@ -13,10 +13,6 @@ class ViewPagerAdapter(fragmentManager: FragmentManager) :
         fragments.addAll(fragment)
     }
 
-    fun getCurrentFragment(position: Int): Fragment {
-        return fragments[position]
-    }
-
     override fun getCount(): Int {
         return fragments.size
     }

@@ -2,8 +2,9 @@ package com.example.drivinglicence.app.activites
 
 import android.graphics.Color
 import android.os.Bundle
-import android.os.Parcelable
-import android.util.Log
+import android.os.Handler
+import android.os.Looper
+import android.view.View
 import androidx.core.content.ContextCompat
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.ExamAdapter
@@ -11,7 +12,6 @@ import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.ListAnswers
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.app.viewmodel.MapDataViewModel
-import com.example.drivinglicence.component.activity.BaseCoreActivity
 import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.component.dialog.AlertMessageDialog
 import com.example.drivinglicence.component.dialog.InformationLessonBottomSheet
@@ -19,17 +19,17 @@ import com.example.drivinglicence.component.navigator.openActivity
 import com.example.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.example.drivinglicence.databinding.ActivityTestLicenseBinding
 import com.example.drivinglicence.pref.LocalCache
-import com.example.drivinglicence.pref.showMessage
-import com.example.drivinglicence.utils.*
-import java.util.ArrayList
+import com.example.drivinglicence.utils.IS_SECOND
+import com.example.drivinglicence.utils.LIST_ANSWERS
+import com.example.drivinglicence.utils.QUESTIONS
 
 class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataViewModel>() {
-    val examAdapter by lazy {
+    private val examAdapter by lazy {
         ExamAdapter()
     }
     private var listQuestion: MutableList<Question> = mutableListOf()
     private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
-
+    private var isFirstClickExam = true
     override fun initView() {
         setupToolBar()
         RecyclerUtils.setGridManager(this, binding.rcvExams, examAdapter)
@@ -57,47 +57,52 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
             showAlertMessage()
         }
         examAdapter.setOnClickItemRecyclerView { position, _ ->
-
-            listQuestion = getQuestionTest(this, position)
-            listAnswer = getAnswerTest(this, position)
-
-            /**Fake data*/
-//            listQuestion = viewModel.getListQuestionCulturesAndEthics(this)
-//            for (i in 1..5) {
-//                listAnswer.add(viewModel.mapAnswerCulturesAndEthics[i] ?: mutableListOf())
-//            }
-            listQuestion = viewModel.getListQuestionImportant(this)
-            for (i in 1..35) {
-                listAnswer.add(viewModel.mapAnswerImportant[i] ?: mutableListOf())
-            }
+            listQuestion = viewModel.getQuestionTest(position)
+            listQuestion = listQuestion.shuffled() as MutableList<Question>
+            listAnswer = viewModel.getAnswerTest(listQuestion)
             showInformationLicense()
         }
+        binding.btnCreateExam.setOnClickListener(this)
     }
 
     private fun showInformationLicense() {
-        InformationLessonBottomSheet().also { dialog ->
-            dialog.show(supportFragmentManager, "")
-            dialog.startTestClickListener = {
-                val bundle = Bundle()
-                bundle.putParcelableArrayList(QUESTIONS, listQuestion as ArrayList)
-                bundle.putParcelable(LIST_ANSWERS, ListAnswers(listAnswer))
-                openActivity(CountDownTestActivity::class.java, bundle)
+        if (isFirstClickExam) {
+            InformationLessonBottomSheet().also { dialog ->
+                dialog.show(supportFragmentManager, "")
+                dialog.startTestClickListener = {
+                    openCountDown()
+                    isFirstClickExam = false
+                }
             }
+        } else {
+            openCountDown()
         }
     }
 
+    private fun openCountDown() {
+        val bundle = Bundle()
+        bundle.putParcelableArrayList(QUESTIONS, listQuestion as ArrayList)
+        bundle.putParcelable(LIST_ANSWERS, ListAnswers(listAnswer))
+        openActivity(CountDownTestActivity::class.java, bundle)
+    }
+
     override fun initData() {
-        for (i in 1..15) {
+        for (i in 1..5) {
             examAdapter.addData(i)
         }
+        viewModel.getAllData(this)
+        loadingDialog.show(this, "")
+        val handler = Handler(Looper.getMainLooper())
+        handler.postDelayed({
+            loadingDialog.dismiss()
+        }, 1500)
     }
 
     private fun showAlertMessage() {
         AlertMessageDialog(this).also { alert ->
             alert.show(
-                "Hướng dẫn làm bài thi",
-                "Mỗi đề thi đều có câu hỏi điểm liệt, nếu thí sinh chỉ cần trả lời sai câu hỏi điểm liệt coi như bị rớt. Đề thi bằng lái hạng A1 gồm 25 câu hỏi làm bài trong 19 phút. \n\n Để vượt qua bài thi, thí sinh cần trả lời đúng 21/25 câu hỏi và không sai câu điểm liệt nào",
-                "ĐÃ HIỂU",
+                getString(R.string.text_tutorial_exam), getString(R.string.text_information_exam),
+                getString(R.string.text_confirm),
                 cancelAble = false,
                 onClickSubmit = {
                     putIsFirst()
@@ -109,5 +114,20 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
 
     private fun putIsFirst() {
         LocalCache.getInstance().put(IS_SECOND, true)
+    }
+
+    override fun onSingleClick(v: View) {
+        when (v.id) {
+            R.id.btn_create_exam -> {
+                loadingDialog.show(this, "")
+                loadingDialog.setMessage(getString(R.string.text_creating_random_exam))
+                val handler = Handler(Looper.getMainLooper())
+                handler.postDelayed({
+                    examAdapter.addData(examAdapter.dataList.size + 1)
+                    loadingDialog.dismiss()
+                }, 700)
+
+            }
+        }
     }
 }

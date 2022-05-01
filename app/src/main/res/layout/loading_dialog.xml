@@ -10,13 +10,14 @@
 
     <com.example.drivinglicence.component.widgets.loading.LoadingAnimView
         android:id="@+id/loadingView"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5.76dp"
-        android:text="Loading.."
-        android:textSize="10.56dp" />
+        android:text="@string/text_init_data"
+        android:textSize="18sp" />
 </LinearLayout>

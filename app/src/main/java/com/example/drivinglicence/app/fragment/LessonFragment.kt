@@ -2,7 +2,6 @@ package com.example.drivinglicence.app.fragment
 
 import android.annotation.SuppressLint
 import android.text.Html
-import android.util.Log
 import android.view.View
 import com.example.drivinglicence.R
 import com.example.drivinglicence.app.adapter.AnswerAdapter
@@ -48,6 +47,7 @@ class LessonFragment(
         }
     }
 
+    @Suppress("DEPRECATION")
     @SuppressLint("SetTextI18n")
     override fun initData() {
         val question: Question? = arguments?.getParcelable(QUESTION)

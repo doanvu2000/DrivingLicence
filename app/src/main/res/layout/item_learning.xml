@@ -29,7 +29,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:gravity="center|left"
                 android:orientation="vertical">
@@ -37,7 +37,7 @@
                 <TextView
                     android:id="@+id/text_name_item_learning"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="5dp"
                     android:textAllCaps="true"
@@ -49,7 +49,7 @@
                 <TextView
                     android:id="@+id/text_count_question"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:padding="5dp"
                     android:textSize="16sp"

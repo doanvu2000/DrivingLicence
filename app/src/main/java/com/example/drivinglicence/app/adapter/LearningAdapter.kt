@@ -6,7 +6,6 @@ import com.example.drivinglicence.databinding.ItemLearningBinding
 import com.squareup.picasso.Picasso
 
 class LearningAdapter : BaseRecyclerViewAdapter<ItemLearning, ItemLearningBinding>() {
-    var onCLickItem: ((position: Int) -> Unit)? = null
     override fun bindData(binding: ItemLearningBinding, item: ItemLearning, position: Int) {
         binding.textNameItemLearning.text = item.title
         binding.textCountQuestion.text = item.description

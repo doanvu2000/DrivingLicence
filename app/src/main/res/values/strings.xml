@@ -17,16 +17,30 @@
     <string name="text_question_important"><![CDATA[<font color="#FFA900"> (Important question)</font>]]></string>
     <string name="text_35_question_important">35 questions important</string>
     <string name="text_concepts_and_rules">Concepts and rules</string>
-    <string name="text_about_83">Includes 83 questions (18 questions important)</string>
+    <string name="text_about_30">Includes 30 questions (16 questions important)</string>
     <string name="text_culture_and_ethic">Driving culture and ethics</string>
     <string name="text_about_5">Includes 5 questions</string>
-    <string name="text_about_65">Includes 65 questions</string>
+    <string name="text_about_20">Includes 20 questions</string>
     <string name="text_about_35">Includes 35 questions</string>
     <string name="text_driving_technique">Driving technique</string>
     <string name="text_about_12">Includes 12 questions (2 questions important)</string>
     <string name="text_sat_figure">Sat figure</string>
     <string name="text_exam_number">Exam question </string>
     <string name="text_start_exam">Start taking the test</string>
+    <string name="text_init_data">Creating exam</string>
+    <string name="text_creating_random_exam">Creating random exam.</string>
+    <string name="text_tutorial_exam">Tutorial for exam</string>
+    <string name="text_quantity_time">25 questions/19 minutes</string>
+    <string name="text_information_exam">Each exam has a question of paralysis, if the candidate only needs to answer the wrong question, the score will be considered as a failure. The A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, candidates need to answer 21/25 questions correctly and not get any wrong points.</string>
+    <string name="text_confirm_exit">Are you sure you want to exit the thread you are working on?</string>
+    <string name="text_time_remaining">Time remaining</string>
+    <string name="text_quantity_answer_correct">Number of correct answers</string>
+    <string name="text_quantity_answer_incorrect">Number of incorrect answers</string>
+    <string name="text_total_quantity_question">Total number of questions</string>
+    <string name="text_quantity_question_need_correct">Number of questions to be correct</string>
+    <string name="text_time_doing">Time to do homework</string>
+    <string name="text_19_minutes">19 m</string>
+    <string name="text_question_not_choose">Number of unanswered questions</string>
     <string name="text_content_information_A1_license">
         Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
     </string>
@@ -36,7 +50,6 @@
     <string name="text_end">End test</string>
     <string name="text_pass_exam">Congratulations on passing this test!</string>
     <string name="text_failed_exam">Sorry you didn\'t pass!</string>
-
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 35 câu điểm liệt-->
     <string name="text_explain_answer_important_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:
@@ -84,7 +97,7 @@
     <string name="text_explain_answer_important_33">Must give way to vehicles on the road. There must be a signal to get in and give way to vehicles running on the road. If there is an speeding lane, you must run in that lane first. Answer 1 is correct.</string>
     <string name="text_explain_answer_important_34">People sitting on motorbikes and mopeds are required to wear helmets and straps when participating in traffic. Every time you sit on the car, you must wear a helmet even if you are close. There are many tragic accidents that happen due to subjectively not wearing a helmet due to close proximity, just leaving the house, the accident, you guys be careful. Answer 1 is correct.</string>
     <string name="text_explain_answer_important_35">Drivers of two-wheeled motorbikes and mopeds are not allowed to ride in a horizontal line; ride on the roadway for pedestrians and other vehicles; use umbrellas, cell phones, audio devices (except hearing aids). Answer 2 is correct.</string>
-    <!--83 câu khái niệm và quy tắc-->
+    <!--30 câu khái niệm và quy tắc-->
     <string name="text_explain_answer_concept_and_rule_1">Sentence 1 is wrong because the curb is understood as the edge on both sides of the road. The roadside has the effect of protecting the road surface, this part of the road is usually for people. Not for traffic.\nQuestion 3 is incorrect because the part of the road for motor vehicles is the part of the road used for road motor vehicles and special-use motorcycles\nQuestion 2 is correct because the driveway is the portion of the roadway used for all vehicular traffic.\nTip: The curb is not intended for vehicular traffic.</string>
     <string name="text_explain_answer_concept_and_rule_2">A lane is a part of a longitudinally divided portion of the roadway, which is wide enough for a vehicle to run safely. Sentence 2 is correct.</string>
     <string name="text_explain_answer_concept_and_rule_3">Sentence 1 is incorrect because it is divided vertically but lacks enough width for the car to run safely</string>
@@ -99,7 +112,6 @@
     <string name="text_explain_answer_concept_and_rule_12">The traffic controller is the person who guides, controls, divides the flow, etc. to help the traffic flow smoothly and safely. Answer 2 is correct.</string>
     <string name="text_explain_answer_concept_and_rule_13">To stop a vehicle is to stand still temporarily and for a necessary period of time. Correct answer: 2.</string>
     <string name="text_explain_answer_concept_and_rule_14">Parking is stationary and has no time limit. Correct answer: 2.</string>
-
     <!--5 câu hỏi Văn hóa và đạo đức lái xe-->
     <string name="text_explain_answer_culture_and_ethic_5">All of the above behaviors show a lack of culture when participating in traffic.\nCorrect answer: 4.</string>
     <string name="text_explain_answer_culture_and_ethic_1">Tip: Have enough width for the vehicle to run safely.</string>
@@ -117,8 +129,49 @@
     <string name="text_explain_answer_driving_unique_8">The rearview mirror is used to safely see behind both the left and right sides before changing direction. Always remember to look in the rearview mirror before turning to ensure your safety. Answer 3 is correct.</string>
     <string name="text_explain_answer_driving_unique_9">Accelerate slowly to ensure you keep the speed of the motorcycle within your control. Reduce throttle quickly to ensure stopping when encountering obstacles or need to brake to ensure safety. Answer 3 is correct.</string>
     <string name="text_explain_answer_driving_unique_10">When traveling on rough and bumpy roads, if the driver sits still on the car to go as usual, the car bouncing due to the bumpy road can make the driver tired quickly and it is very difficult to control the vehicle. Answer 1 is correct.</string>
+    <!--Biển báo đường bô-->
+    <string name="text_explain_answer_road_sign_1">Sign 1 "No motorcycles", no motorbikes are allowed\nSignal 2 "No cars" do not ban motorbikes (not motorbikes).\nBoth signs allow motorbikes to enter. Answer 3 is correct.</string>
+    <string name="text_explain_answer_road_sign_2">Sign 1 is forbidding 2-wheelers from entering.\nTraffic signs 2 is forbidding cars.\nSection 3 is forbidding tractors.\nCorrect answer: 1. (Sign 1)</string>
+    <string name="text_explain_answer_road_sign_3">Sign 1 is forbidden to enter two-wheelers.\nTraffic signs 2 is forbidding cars.\nSection 3 is forbidding tractors.\nAnswer 3 is correct: Traffic signs 2 and sign 3.</string>
+    <string name="text_explain_answer_road_sign_4">Sign 1 "No turning left" does not prohibit turning.\nSignal 2 "No turning left" is prohibited.\nAnswer 2 is correct: Sign 2.</string>
+    <string name="text_explain_answer_road_sign_5">Sign 1 "No turning left" does not prohibit turning.\nSignal 2 "No turning left" is prohibited.\nAnswer 1 is correct: Sign 1.</string>
+    <string name="text_explain_answer_road_sign_6">Sign 1 "No turning left" does not prohibit turning.\nSignal 2 "No turning left" is prohibited.\nAnswer 2 is correct: Sign 2.</string>
+    <string name="text_explain_answer_road_sign_7">Sign 1 "Do not turn right".\nSign 2 "Prohibit turning right and turning vehicles".\nSignal 3 "Do not allow cars to turn right and turn around".\nAnswer 1 is correct: Signs 1 and 2. Note that this sentence will confusing</string>
+    <string name="text_explain_answer_road_sign_8">Sign 1 "No left turn is prohibited".\nSignal 2 "No left turn or turn is prohibited".\nSignal 3 "No left turn or turn is prohibited".\nAnswer 1 is correct: Signs 1 and 2.</string>
+    <string name="text_explain_answer_road_sign_9">Sign 1 "No left turn" does not prohibit turning.\nSignal 2 "Rounding area". Left turn is allowed, so this answer is correct.\nAnswer 2 is correct.</string>
+    <string name="text_explain_answer_road_sign_10">Sign 1 "No left turn" does not prohibit turning.\nSignal 2 "Rounding area". The sign of the turning area is a sign indicating the area where the vehicle is allowed to turn.\nAnswer 3 is correct.</string>
+    <string name="text_explain_answer_road_sign_11">Sign 1: 123a "No left turn" but no U-turn is prohibited. You should be allowed to make a U-turn.\nSignal 2. R.301e placed in front of the intersection can only turn left at the intersection, the intersection is behind the traffic signs surface, so you cannot make a U-turn.\nAnswer 1 is correct.</string>
+    <string name="text_explain_answer_road_sign_12">Sign 1: "Forbidden road".\nSign 2: "Prohibit going in the opposite direction".\nSignal 3: "No parking".\nAnswer 2 is correct.</string>
+    <string name="text_explain_answer_road_sign_13">Sign 1: "Forbidden road".\nSign 2: "Prohibit going in the opposite direction".\nSignal 3: "No parking".\nAnswer 3 is correct.</string>
+    <string name="text_explain_answer_road_sign_14">Sign 1: "Forbidden road" does not prohibit priority vehicles.\nSign 2: R.122 "Stop" applies to priority vehicles.\nSignal 3: P.102 "Prohibit going in the opposite direction" does not apply to vehicles priority.\nAnswer 2 is correct.</string>
+    <string name="text_explain_answer_road_sign_15">Sign 1: "Forbidden road" does not prohibit priority vehicles.\nSign 2: R.122 "Stop" applies to priority vehicles.\nAnswer 1 is correct.</string>
+    <string name="text_explain_answer_road_sign_16">Sign 1 is banning 3-wheeled vehicles (motorcycles).\nSection 2 prohibits 3-wheel motorized vehicles (motorcycles).\nSection 3 prohibits 3-wheel vehicles without a motor.\nAnswer 4 is correct.</string>
+    <string name="text_explain_answer_road_sign_17">Sign 1 is banning 3-wheeled vehicles (motorcycles).\nSection 2 prohibits 3-wheel motorized vehicles (motorcycles).\nSection 3 prohibits 3-wheel vehicles without a motor.\nAnswer 3 is correct.</string>
+    <string name="text_explain_answer_road_sign_18">Speed signs darken when participating in traffic at night between 10pm and 5pm.\nAnswer 1 is correct.</string>
+    <string name="text_explain_answer_road_sign_19">Auxiliary traffic signs is a variable S.501 "Range of the variable" determines the length of the main traffic signs from the place where the sign is located.</string>
+    <string name="text_explain_answer_road_sign_20">The main traffic signs is "Forbidden Road", if there is a secondary sign, the ban will be applied according to the secondary sign. So traffic signs 1 and 3 do not apply to motorcycles is the correct answer.</string>
+    <!--Sa hình-->
+    <string name="text_explain_sat_figure_1">Answer: 2.\nExplanation: In order:\n1.No vehicles enter the intersection.\n2. No priority vehicle.\n3. Following the priority road: Trucks and motorbikes located on the priority road should go first. In which, trucks going straight should go first, the rest are motorbikes. Similarly: the auto rickshaw and the passenger car are on the same road without priority, however, the auto-rickshaw goes straight ahead, and the car turns left to go last.</string>
+    <string name="text_explain_sat_figure_2">Answer: 3.\nExplanation: In order:\n1.No vehicles have entered the intersection\n2.No priority vehicles.\n3.No priority road signs.\n4.So the vehicles At the same level: The car on the right is empty, so the motorbike goes first, after the motorbike has gone, the car on the right is empty, so the motorbike goes next, and finally the truck.</string>
+    <string name="text_explain_sat_figure_3">Answer: 2.\nExplanation: motorcycles encounter the STOP sign, so they stop to give way.</string>
+    <string name="text_explain_sat_figure_4">Answer: 1.\nExplanation: In order\n1.The auto-rickshaw has entered the intersection, so it should go first.\n2.Ambulance is the priority vehicle, so it should go next.\n3.Finally, the passenger car</string>
+    <string name="text_explain_sat_figure_5">Answer: 2.\nExplanation: the ambulance is the priority vehicle and should go first.</string>
+    <string name="text_explain_sat_figure_6">Answer: 1.\nExplain: cars and buses with green lights should be allowed to go.</string>
+    <string name="text_explain_sat_figure_7">Answer: 3.\nExplanation: cars and trucks with green lights should be allowed to go.</string>
+    <string name="text_explain_sat_figure_8">Answer: 1.\nExplanation: The bus went in the wrong direction (it should have turned left). Truck runs red light. Motorcycle going in the wrong direction (should have turned left)</string>
+    <string name="text_explain_sat_figure_9">Answer: 3.\nExplanation: At the intersection of the same level, there is no sign to follow the roundabout, give way to the vehicle on the right. The right side of the motorcycle does not get in the way of other vehicles, so there is no need to yield. Motorcycle ahead. After the motorcycle has gone, the truck on the right will not get in the way, so it will continue. Stay like that until the end.</string>
+    <string name="text_explain_sat_figure_10">Answer: 1.\nExplanation: Observe the auxiliary sign below the stop and park prohibition sign, it is a picture of a truck. Meaning: it is forbidden for trucks to stop and park here.</string>
+    <string name="text_explain_sat_figure_11">Answer: 2.\Explanation: cars located on the priority road should go first.</string>
+    <string name="text_explain_sat_figure_12">Answer: 1.\Note: Direction No. 2 prohibits motorbikes, so motorbikes can enter.</string>
+    <string name="text_explain_sat_figure_13">Answer: 1.\nExplanation: The auxiliary sign placed under the no stopping and parking sign means: It is forbidden to stop and park in front of and behind this sign.</string>
+    <string name="text_explain_sat_figure_14">Answer: 3.\nExplanation: The truck is parked in the opposite direction. Motorcycles parked on the pedestrian crossing. Car ran over the stop line.</string>
+    <string name="text_explain_sat_figure_15">Answer: 2.\nExplanation: There are signs prohibiting cars from pulling trailers. Besides, according to regulations, cars are not allowed to pull motorbikes.</string>
+    <string name="text_explain_sat_figure_16">Answer: 2.</string>
+    <string name="text_explain_sat_figure_17">Answer: 4.\nExplanation: Vehicles of the same level, the car on the right is empty, go first.</string>
+    <string name="text_explain_sat_figure_18">Answer: 1.</string>
+    <string name="text_explain_sat_figure_19">Answer: 3.\nExplanation: The car crossed the solid line, so it was a violation.</string>
+    <string name="text_explain_sat_figure_20">Answer: 3.\nExplanation: When the traffic conductor raises his hand vertically, all vehicles must stop, except the vehicle that has entered the intersection.</string>
     <!--======================================== End giải thích đáp án ========================================-->
-
     <!-- ========================================Câu hỏi điểm liệt (35) ========================================-->
     <string name="question_important_1">Which of the following acts are prohibited?</string>
     <string name="question_important_2">Is the act of racing motor vehicles and special-use motorcycles not up to the standards of technical safety and environmental protection in road traffic?</string>
@@ -155,10 +208,7 @@
     <string name="question_important_33">What should a driver do when driving on a highway?</string>
     <string name="question_important_34">When must people on two-wheeled motorbikes or mopeds wear properly fitted helmets?</string>
     <string name="question_important_35">Drivers of two-wheeled motorcycles and mopeds may ride in a horizontal line; ride on the roadway for pedestrians and other vehicles; use umbrellas, cell phones, audio devices (except hearing aids)?</string>
-
-
     <!-- ========================================Câu trả lời câu hỏi điểm liệt ========================================-->
-
     <string name="answer_important_1_1">Parking on the street.</string>
     <string name="answer_important_1_2">Use the bike on the highway at high speed.</string>
     <string name="answer_important_1_3">Damage (intentionally) target stake, spherical mirror, median line.</string>
@@ -246,7 +296,7 @@
     <string name="answer_important_25_4">Unauthorized</string>
     <string name="answer_important_26_1">Used.</string>
     <string name="answer_important_26_2">Only the back seat can be used.</string>
-    <string name="answer_important_26_3">Can not use; Out of order; It disfunction.</string>
+    <string name="answer_important_26_3">Can not use; Out of order; It dis function.</string>
     <string name="answer_important_26_4">Used if a raincoat is not available.</string>
     <string name="answer_important_27_1">Only allowed if both are wearing helmets.</string>
     <string name="answer_important_27_2">Unauthorized.</string>
@@ -277,7 +327,6 @@
     <string name="answer_important_35_2">Unauthorized.</string>
     <string name="answer_important_35_3">Allowed depending on specific circumstances and conditions.</string>
     <!-- ========================================Câu hỏi khái niệm và quy tắc ========================================-->
-
     <string name="question_concepts_and_rules_1">What is the portion of the roadway used for vehicular traffic?</string>
     <string name="question_concepts_and_rules_2">What is a lane?</string>
     <string name="question_concepts_and_rules_3">In the concepts below, how is \"separator\" understood correctly?</string>
@@ -293,7 +342,6 @@
     <string name="question_concepts_and_rules_13">In the following concepts, how is the concept of "stopping" understood correctly?</string>
     <string name="question_concepts_and_rules_14">How is the concept of "parking" understood to be the correct traffic rules?</string>
     <!-- ========================================Câu trả lời khái niệm và quy tắc ========================================-->
-
     <string name="answer_concepts_and_rules_1_1">Sidewalks and curbs.</string>
     <string name="answer_concepts_and_rules_1_2">Part of the driveway.</string>
     <string name="answer_concepts_and_rules_1_3">Motor vehicle section.</string>
@@ -336,13 +384,11 @@
     <string name="answer_concepts_and_rules_14_1">A stationary state of a vehicle for a limited period of time necessary to allow people to get on and off that vehicle, load or unload goods or perform other work.</string>
     <string name="answer_concepts_and_rules_14_2">Is the stationary state of the vehicle with no time limit.</string>
     <!-- ========================================Câu hỏi Văn hóa và đạo đức lái xe ========================================-->
-
     <string name="question_culture_and_ethics_1">How is the correct concept of traffic culture understood?</string>
     <string name="question_culture_and_ethics_2">In the following behaviors, how should motorists with traffic culture behave?</string>
     <string name="question_culture_and_ethics_3">In the behaviors below, how should a car driver with traffic culture behave?</string>
     <string name="question_culture_and_ethics_4">When a traffic accident occurs and someone is seriously injured, what should the driver and people present at the scene of the accident do?</string>
     <string name="question_culture_and_ethics_5">On the road there is a traffic jam, which of the following behaviors is a lack of culture when participating in traffic?</string>
-
     <!-- ========================================Câu trả lời Văn hóa và đạo đức lái xe ========================================-->
     <string name="answer_culture_and_ethics_1_1">Being the understanding and strict observance of traffic laws; sense of responsibility to the community when participating in traffic.</string>
     <string name="answer_culture_and_ethics_1_2">Is a cultured behavior, with love for people in unfortunate situations when participating in traffic.</string>
@@ -360,10 +406,9 @@
     <string name="answer_culture_and_ethics_5_2">Walk up the sidewalk, make use of every space to quickly get out of the traffic jam.</string>
     <string name="answer_culture_and_ethics_5_3">Cross into the left lane and try to overtake another vehicle.</string>
     <string name="answer_culture_and_ethics_5_4">All of the above comments.</string>
-
     <!-- ========================================Câu hỏi Kỹ thuật lái xe ========================================-->
     <string name="question_driving_unique_1">When turning the vehicle, the driver needs to observe and perform what operations to ensure traffic safety?</string>
-    <string name="question_driving_unique_2">When avoiding each other on narrow roads, what points should drivers pay attention to to ensure traffic safety?</string>
+    <string name="question_driving_unique_2">When avoiding each other on narrow roads, what points should drivers pay attention to ensure traffic safety?</string>
     <string name="question_driving_unique_3">When driving on a roundabout, what should the driver do to ensure safety?</string>
     <string name="question_driving_unique_4">To achieve the highest braking efficiency, how should motorcyclists use the following skills?</string>
     <string name="question_driving_unique_5">Which of the following habits when operating a scooter in traffic can easily cause dangerous accidents.</string>
@@ -406,8 +451,176 @@
     <string name="answer_driving_unique_10_1">Stand up straight on the handlebars then bend your knees and elbows slightly, walking slowly so you don\'t bounce too hard.</string>
     <string name="answer_driving_unique_10_2">Sit back, accelerate to pass quickly through the bumpy road.</string>
     <string name="answer_driving_unique_10_3">Sit sideways to the left or right to balance through the bumpy road.</string>
+    <!-- ========================================Câu hỏi biến báo đường bộ========================================-->
+    <string name="question_road_sign_1">Which Traffic signs below are motorcycles allowed to enter?</string>
+    <string name="question_road_sign_2">Which sign signifies that two-wheelers are prohibited from entering?</string>
+    <string name="question_road_sign_3">When encountering which sign, two-wheeled motorbikes can enter?</string>
+    <string name="question_road_sign_4">Which sign prohibits turning?</string>
+    <string name="question_road_sign_5">Which sign prohibits cars from turning left?</string>
+    <string name="question_road_sign_6">When encountering which sign the car can turn left?</string>
+    <string name="question_road_sign_7">Which sign prohibits road vehicles from turning right?</string>
+    <string name="question_road_sign_8">Which sign prohibits road vehicles from turning left?</string>
+    <string name="question_road_sign_9">Which sign allows left turn?</string>
+    <string name="question_road_sign_10">Which sign is not prohibited to turn around?</string>
+    <string name="question_road_sign_11">Which sign is the car allowed to turn but not turn left?</string>
+    <string name="question_road_sign_12">Which traffic signs is the forbidden traffic signs to go in the opposite direction?</string>
+    <string name="question_road_sign_13">Which of the following traffic signs are not allowed to enter?</string>
+    <string name="question_road_sign_14">When encountering a traffic signs, the priority vehicle according to the law still has to stop?</string>
+    <string name="question_road_sign_15">Which sign prohibits all types of motorized and rudimentary vehicles from traveling on the road, except for priority vehicles according to the law (if the road is still operable)?</string>
+    <string name="question_road_sign_16">See which sign cyclo are allowed to enter?</string>
+    <string name="question_road_sign_17">See which sign auto rickshaws, motor cyclo are allowed to enter?</string>
+    <string name="question_road_sign_18">What does this sign mean?</string>
+    <string name="question_road_sign_19">The length of the road is 500 m from this place, is the driver allowed to honk?</string>
+    <string name="question_road_sign_20">What traffic signs can two-wheeled motorbikes enter?</string>
+    <!-- ========================================Câu trả lời biến báo đường bộ========================================-->
+    <string name="answer_road_sign_1_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_1_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_1_3">Both Traffic signs.</string>
+    <string name="answer_road_sign_2_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_2_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_2_3">Traffic signs 3.</string>
+    <string name="answer_road_sign_3_1">No Traffic signs.</string>
+    <string name="answer_road_sign_3_2">Traffic signs 1 and Traffic signs 2.</string>
+    <string name="answer_road_sign_3_3">Traffic signs 2 and Traffic signs 3.</string>
+    <string name="answer_road_sign_3_4">All three Traffic signs.</string>
+    <string name="answer_road_sign_4_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_4_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_4_3">No Traffic signs.</string>
+    <string name="answer_road_sign_4_4">Both Traffic signs.</string>
+    <string name="answer_road_sign_5_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_5_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_5_3">Both Traffic signs.</string>
+    <string name="answer_road_sign_6_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_6_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_6_3">No Traffic signs.</string>
+    <string name="answer_road_sign_7_1">Traffic signs 1 and Traffic signs 2.</string>
+    <string name="answer_road_sign_7_2">Traffic signs 1 and Traffic signs 3.</string>
+    <string name="answer_road_sign_7_3">Traffic signs 2 and Traffic signs 3.</string>
+    <string name="answer_road_sign_7_4">All three Traffic signs.</string>
+    <string name="answer_road_sign_8_1">Traffic signs 1 and Traffic signs 2.</string>
+    <string name="answer_road_sign_8_2">Traffic signs 1 and Traffic signs 3.</string>
+    <string name="answer_road_sign_8_3">Traffic signs 2 and Traffic signs 3.</string>
+    <string name="answer_road_sign_8_4">All three Traffic signs.</string>
+    <string name="answer_road_sign_9_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_9_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_9_3">No Traffic signs.</string>
+    <string name="answer_road_sign_10_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_10_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_10_3">Both Traffic signs.</string>
+    <string name="answer_road_sign_11_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_11_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_11_3">Both Traffic signs.</string>
+    <string name="answer_road_sign_12_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_13_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_14_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_15_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_16_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_17_1">Traffic signs 1.</string>
+    <string name="answer_road_sign_12_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_13_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_14_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_15_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_16_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_17_2">Traffic signs 2.</string>
+    <string name="answer_road_sign_16_3">Traffic signs 3.</string>
+    <string name="answer_road_sign_17_3">Traffic signs 3.</string>
+    <string name="answer_road_sign_12_3">All three Traffic signs.</string>
+    <string name="answer_road_sign_14_3">All three Traffic signs.</string>
+    <string name="answer_road_sign_13_3">Traffic signs 1 and Traffic signs 2.</string>
+    <string name="answer_road_sign_16_4">Traffic signs 1 and Traffic signs 2.</string>
+    <string name="answer_road_sign_20_1">Traffic signs 1 and Traffic signs 2.</string>
+    <string name="answer_road_sign_15_3">Both Traffic signs.</string>
+    <string name="answer_road_sign_18_1">The maximum speed allowed at night for vehicles is 70 km/h.</string>
+    <string name="answer_road_sign_18_2">The minimum speed allowed at night for vehicles is 70 km/h.</string>
+    <string name="answer_road_sign_19_1">Licensed.</string>
+    <string name="answer_road_sign_19_2">Not authorized.</string>
+    <string name="answer_road_sign_20_2">Traffic signs 1 and Traffic signs 3.</string>
+    <string name="answer_road_sign_20_3">Traffic signs 2 and Traffic signs 3.</string>
+    <!-- ========================================Câu hỏi sa hình========================================-->
+    <string name="question_sat_figure_1">What is the order of vehicles to go according to traffic rules?</string>
+    <string name="question_sat_figure_2">What is the order of vehicles to go according to traffic rules?</string>
+    <string name="question_sat_figure_3">In this case, which vehicle has the right to go first?</string>
+    <string name="question_sat_figure_4">What is the order of vehicles to go according to traffic rules?</string>
+    <string name="question_sat_figure_5">Which vehicle has the right to go first in this case?</string>
+    <string name="question_sat_figure_6">According to the light signal, which vehicle is allowed to go?</string>
+    <string name="question_sat_figure_7">According to the light signal, which vehicle is allowed to go according to the traffic rules?</string>
+    <string name="question_sat_figure_8">The cars follow the arrow, which vehicle violates the traffic rules?</string>
+    <string name="question_sat_figure_9">What is the order of vehicles to go according to traffic rules?</string>
+    <string name="question_sat_figure_10">In this case, which car is parked in violation of traffic rules?</string>
+    <string name="question_sat_figure_11">Which vehicle is allowed to go first?</string>
+    <string name="question_sat_figure_12">According to the arrow, which direction can the motorcycle go?</string>
+    <string name="question_sat_figure_13">Which car is parked in violation of traffic rules?</string>
+    <string name="question_sat_figure_14">Which car is parked in violation of traffic rules?</string>
+    <string name="question_sat_figure_15">Are three-wheeled motorized trucks like this one in compliance with traffic rules?</string>
+    <string name="question_sat_figure_16">Which vehicle has the right to go first in this case?</string>
+    <string name="question_sat_figure_17">What is the order of vehicles to go according to traffic rules?</string>
+    <string name="question_sat_figure_18">Which vehicle has the right to go first in this case?</string>
+    <string name="question_sat_figure_19">Which vehicle violates traffic rules?</string>
+    <string name="question_sat_figure_20">How do the cars go according to the traffic rules?</string>
+    <!-- ========================================Câu trả lời sa hình========================================-->
+    <string name="answer_sat_figure_1_1">Trucks, rickshaws, cars, motorbikes.</string>
+    <string name="answer_sat_figure_1_2">Trucks, motorcycles, auto rickshaws, cars.</string>
+    <string name="answer_sat_figure_1_3">Bicycles, trucks, cars, motorbikes.</string>
+    <string name="answer_sat_figure_1_4">Bicycles, trucks, cars, motorbikes.</string>
+    <string name="answer_sat_figure_2_1">Trucks, rickshaws, motorbikes.</string>
+    <string name="answer_sat_figure_2_2">Bicycles, trucks, motorbikes.</string>
+    <string name="answer_sat_figure_2_3">Motorcycles, rickshaws, trucks.</string>
+    <string name="answer_sat_figure_2_4">Bicycles, motorbikes, trucks.</string>
+    <string name="answer_sat_figure_3_1">Motorcycle.</string>
+    <string name="answer_sat_figure_3_2">Car</string>
+    <string name="answer_sat_figure_4_1">Auto-rickshaws, ambulances, cars.</string>
+    <string name="answer_sat_figure_4_2">Ambulances, cars, autos.</string>
+    <string name="answer_sat_figure_4_3">Cars, autos, ambulances.</string>
+    <string name="answer_sat_figure_5_1">Motorcycle.</string>
+    <string name="answer_sat_figure_5_2">Ambulance</string>
+    <string name="answer_sat_figure_6_1">Cars and passenger cars.</string>
+    <string name="answer_sat_figure_6_2">Motorcycles</string>
+    <string name="answer_sat_figure_7_1">Passenger car, motorbike.</string>
+    <string name="answer_sat_figure_7_2">Trucks, motorcycles.</string>
+    <string name="answer_sat_figure_7_3">Cars, trucks.</string>
+    <string name="answer_sat_figure_8_1">Passenger cars, trucks, motorbikes.</string>
+    <string name="answer_sat_figure_8_2">Trucks, cars, motorcycles.</string>
+    <string name="answer_sat_figure_8_3">Passenger cars, cars, motorbikes.</string>
+    <string name="answer_sat_figure_9_1">Passenger cars, trucks, motorcycles, cars.</string>
+    <string name="answer_sat_figure_9_2">Cars, passenger cars, trucks, motorcycles.</string>
+    <string name="answer_sat_figure_9_3">Motorcycles, trucks, passenger cars, cars.</string>
+    <string name="answer_sat_figure_9_4">Motorcycles, trucks, cars, passenger cars.</string>
+    <string name="answer_sat_figure_10_1">Truck.</string>
+    <string name="answer_sat_figure_10_2">Cars and motorcycles.</string>
+    <string name="answer_sat_figure_10_3">All three cars.</string>
+    <string name="answer_sat_figure_10_4">Cars and trucks.</string>
+    <string name="answer_sat_figure_11_1">Truck.</string>
+    <string name="answer_sat_figure_11_2">Car.</string>
+    <string name="answer_sat_figure_11_3">Blue car.</string>
+    <string name="answer_sat_figure_12_1">All three directions.</string>
+    <string name="answer_sat_figure_12_2">Direction 1 and 3.</string>
+    <string name="answer_sat_figure_12_3">Direction only 1.</string>
+    <string name="answer_sat_figure_13_1">Both cars.</string>
+    <string name="answer_sat_figure_13_2">No vehicle was in violation.</string>
+    <string name="answer_sat_figure_13_3">Only motorbikes are in violation.</string>
+    <string name="answer_sat_figure_13_4">Violating trucks only.</string>
+    <string name="answer_sat_figure_14_1">Motorcycle.</string>
+    <string name="answer_sat_figure_14_2">Truck.</string>
+    <string name="answer_sat_figure_14_3">All three cars.</string>
+    <string name="answer_sat_figure_14_4">Motorcycles and trucks.</string>
+    <string name="answer_sat_figure_15_1">It\'s correct.</string>
+    <string name="answer_sat_figure_15_2">Incorrect.</string>
+    <string name="answer_sat_figure_16_1">Blue car.</string>
+    <string name="answer_sat_figure_16_2">Cyclo.</string>
+    <string name="answer_sat_figure_17_1">Bicycles, motorbikes, cars, bicycles.</string>
+    <string name="answer_sat_figure_17_2">Cars, bicycles, motorcycles, auto rickshaws.</string>
+    <string name="answer_sat_figure_17_3">Bicycles, cars, motorbikes + bicycles.</string>
+    <string name="answer_sat_figure_17_4">Motorcycles + bicycles, motorbikes, cars.</string>
+    <string name="answer_sat_figure_18_1">Motorcycle.</string>
+    <string name="answer_sat_figure_18_2">Car.</string>
+    <string name="answer_sat_figure_19_1">Coach.</string>
+    <string name="answer_sat_figure_19_2">Motorcycle.</string>
+    <string name="answer_sat_figure_19_3">Car.</string>
+    <string name="answer_sat_figure_19_4">Cars and motorcycles.</string>
+    <string name="answer_sat_figure_20_1">Vehicles on the driver\'s right and left hand side are allowed to go straight.</string>
+    <string name="answer_sat_figure_20_2">Allow vehicles in all directions to turn right.</string>
+    <string name="answer_sat_figure_20_3">All vehicles must stop in front of the intersection, except those already in the intersection that are allowed to continue.</string>
     <!-- ========================================Mẹo thi lý thuyết ========================================-->
-
     <string name="text_tip_1">Licensing</string>
     <string name="text_tip_2">Alcohol concentration</string>
     <string name="text_tip_3">Minimum safe distance</string>
@@ -432,7 +645,7 @@
     <!--=================Tip Content====================-->
     <string name="text_tip_content_1">- Roads prohibited from stopping, parking and banning are issued by the Provincial People\'s Committee</string>
     <string name="text_tip_content_2">Drivers of motorcycles, cars, or tractors on the road with alcohol in their blood or breath: Prohibited</string>
-    <string name="text_tip_content_3">- 35m if circulating speed(V) = 60(km/h)\n- 55m if V:60 - 80\n- 70m if V:80 - 100\n- 100m if V: 100 - 120\n- Below 60km/h: Be proactive and ensure the distance.</string>
+    <string name="text_tip_content_3">– 35m if circulating speed(V) = 60(km/h)\n- 55m if V:60 - 80\n- 70m if V:80 - 100\n- 100m if V: 100 - 120\n- Below 60km/h: Be proactive and ensure the distance.</string>
     <string name="text_tip_content_4">- Motorcycle: 16 years old (under 50 cm3)\n- Motorcycle + B1 + B2: 18 years old</string>
     <string name="text_tip_content_5">- Do not turn, do not reverse, do not overtake\n- Do not cross a narrow bridge with only one lane.\n- No U-turn is allowed in the pedestrian crossing.\n- Prohibited Backing up in no-stop areas and where roads intersect.</string>
     <string name="text_tip_content_6">- There is a roundabout: Yield to the left\n- There is no roundabout to give way to the right</string>
@@ -451,5 +664,4 @@
     <string name="text_tip_content_20">- Do not drive continuously for more than 4 hours.\n- Do not work for more than 10 hours a day for a driver.\n- Transport dealers are not allowed to change their pick-up and drop-off locations on their own.\n- Transport Dangerous goods must be licensed.</string>
     <string name="text_tip_content_21">- Motorcycles going down a long slope need to use both the front and rear brakes to slow down.\n- Make a low speed turn.</string>
     <string name="text_tip_content_22">- Order of priority without roundabout: Vehicles enter the fork, first intersection - priority vehicle - priority road - road of the same level in the order of empty right - turn right - go straight - turn left.\n- Intersection Roundabouts of the same level: If you have not entered the roundabout, the right vehicle shall be given priority; has entered the roundabout to give priority to vehicles coming from the left.\n- Vehicles going downhill must give way to vehicles going uphill</string>
-
 </resources>

@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -18,7 +17,7 @@ import com.example.drivinglicence.app.fragment.LessonCountDownFragment
 import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.component.dialog.AlertMessageDialog
-import com.example.drivinglicence.component.dialog.ListQuestionBottomDialog
+import com.example.drivinglicence.component.dialog.ListQuestionCountDownBottomDialog
 import com.example.drivinglicence.databinding.ActivityLessonViewPagerBinding
 import com.example.drivinglicence.utils.*
 import kotlin.math.roundToInt
@@ -32,7 +31,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
 
     var timeCount: Long = 0
     var isFinish = false
-    var timer = object : CountDownTimer(1000 * 10 * 60, 1000) {
+    var timer = object : CountDownTimer(1000 * 19 * 60, 1000) {
         override fun onTick(millisUntilFinished: Long) {
             val ms = millisUntilFinished / 1000
             timeCount = ms
@@ -73,8 +72,9 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 timer.cancel()
                 dialog.setBackgroundButtonSubmit(R.drawable.round_button_yellow_light)
                 dialog.show(
-                    "Bạn có chắc chắn muốn kết thúc đề thi hiện tại?",
-                    "Thời gian còn lại: ${formatTime(timeCount)},\n Số câu chưa làm: $notChoose",
+                    getString(R.string.text_confirm_exit),
+                    getString(R.string.text_time_remaining) + ": ${formatTime(timeCount)},\n"
+                            + getString(R.string.text_question_not_choose) + ": $notChoose",
                     onClickSubmit = {
                         isFinish = true
                         timer.cancel()
@@ -142,15 +142,39 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
 
     private fun handlerFinish() {
         /**Thống kê câu sai và đúng, kiểm tra trượt hay đỗ*/
+        val listQuestionCorrect = mutableListOf<Int>()
+        val listQuestionWrong = mutableListOf<Int>()
         var isPass = true
         var count = 0
         for (index in 0 until listAnswer.size) {
             listAnswer[index].map { answer ->
                 answer.apply {
                     if (isChoose == true && isCorrect) {
+                        listQuestionCorrect.add(index + 1)
                         count++
                     }
                 }
+            }
+        }
+        var msgCorrect = ""
+        for (item in 0 until listQuestionCorrect.size) {
+            msgCorrect += if (item != listQuestionCorrect.size - 1) {
+                "${listQuestionCorrect[item]}, "
+            } else {
+                "${listQuestionCorrect[item]}"
+            }
+        }
+        for (i in 1..25) {
+            if (!listQuestionCorrect.contains(i)) {
+                listQuestionWrong.add(i)
+            }
+        }
+        var msgInCorrect = ""
+        for (item in 0 until listQuestionWrong.size) {
+            msgInCorrect += if (item != listQuestionWrong.size - 1) {
+                "${listQuestionWrong[item]}, "
+            } else {
+                "${listQuestionWrong[item]}"
             }
         }
         for (item in listQuestion) {
@@ -161,12 +185,12 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             }
         }
         //count < 21
-        if (count < listQuestion.size - 2) {
+        if (count < 21) {
             isPass = false
         }
         AlertMessageDialog(this).also { alert ->
             val buttonText = getString(R.string.text_confirm)
-            var title = ""
+            val title: String
             when (isPass) {
                 true -> { // pass
                     title = getString(R.string.text_pass_exam)
@@ -178,7 +202,11 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 }
             }
 
-            alert.show(title, "Số câu đúng: $count", buttonText, cancelAble = false,
+            alert.show(title,
+                getString(R.string.text_quantity_answer_correct) + ": $msgCorrect\n"
+                        + getString(R.string.text_quantity_answer_incorrect) + ": $msgInCorrect",
+                buttonText,
+                cancelAble = false,
                 onClickSubmit = {
                     alert.hide()
                     onBackPressed()
@@ -233,9 +261,8 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
         viewModel.listQuestion.map {
             map[it.questionId] = it.isChooseAnswer ?: false
         }
-        Log.d("TAG", "showBottomDialog: $map")
         bundle.putInt(POSITION, binding.textCurrentQuestion.text.toString().toInt() - 1)
-        ListQuestionBottomDialog().also { dialog ->
+        ListQuestionCountDownBottomDialog().also { dialog ->
             dialog.arguments = bundle
             dialog.show(supportFragmentManager, "")
             dialog.onClickItem = { pos ->
@@ -264,8 +291,8 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             super.onBackPressed()
         } else {
             AlertMessageDialog(this).also { alert ->
-                alert.show("Bạn có chắc muốn thoát khỏi đề đang làm?",
-                    "Thời gian còn lại: ${formatTime(timeCount)}",
+                alert.show(getString(R.string.text_confirm_exit),
+                    getString(R.string.text_time_remaining) + ": ${formatTime(timeCount)}",
                     onClickSubmit = {
                         super.onBackPressed()
                     })

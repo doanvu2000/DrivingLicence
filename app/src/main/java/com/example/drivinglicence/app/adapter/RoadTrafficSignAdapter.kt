@@ -11,14 +11,6 @@ class RoadTrafficSignAdapter(fragmentManager: FragmentManager) :
     private val mListFragment = mutableListOf<Fragment>()
     private val mListTitle = mutableListOf<String>()
 
-    fun addFragment(fragment: Fragment) {
-        mListFragment.add(fragment)
-    }
-
-    fun addTitle(title: String) {
-        mListTitle.add(title)
-    }
-
     fun addFragment(fragmentList: MutableList<Fragment>) {
         mListFragment.addAll(fragmentList)
     }

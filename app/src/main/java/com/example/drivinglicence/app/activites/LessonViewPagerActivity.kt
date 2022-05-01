@@ -68,17 +68,16 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
     private var listQuestion: MutableList<Question> = mutableListOf()
     private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
     override fun initData() {
-        val flag = intent.extras?.getInt(FLAG) ?: 1
         /**
          * 1: 35 Câu hỏi điểm liệt
-         * 2: 83 Câu hỏi khái niệm và quy tắc
+         * 2: 30 Câu hỏi khái niệm và quy tắc
          * 3: 5 câu hỏi văn hóa và đạo đức lái xe
          * 4: 12 câu hỏi kĩ thuật lái xe
-         * 5: 65 câu hỏi biển báo đường bộ
-         * 6: 35 câu hỏi sa hình
+         * 5: 20 câu hỏi biển báo đường bộ
+         * 6: 20 câu hỏi sa hình
          * */
         //danh sach cau tra loi cua 3 cau hoi
-        when (flag) {
+        when (intent.extras?.getInt(FLAG) ?: 1) {
             1 -> {
                 binding.toolbar.setTitle(getString(R.string.text_35_question_important))
                 /**35 Câu hỏi điểm liệt*/
@@ -99,7 +98,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
             }
             2 -> {
                 binding.toolbar.setTitle(getString(R.string.text_concepts_and_rules))
-                /**83 Câu hỏi khái niệm và quy tắc*/
+                /**30 Câu hỏi khái niệm và quy tắc*/
                 listQuestion = viewModel.getListQuestionConceptsAndRules(this)
                 listQuestion = listQuestion.shuffled() as MutableList<Question>
                 for (i in 1..30) {
@@ -155,9 +154,39 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
             }
             5 -> {
                 binding.toolbar.setTitle(getString(R.string.text_road_signs))
+                /**20 câu biển báo đường bộ*/
+                listQuestion = viewModel.getListQuestionRoadSign(this)
+                for (i in 1..20) {
+                    listAnswer.add(viewModel.mapAnswerRoadSign[i + 110] ?: mutableListOf())
+                }
+                for (i in 1..20) {
+                    val question = listQuestion[i - 1]
+                    val answers = listAnswer[i - 1] as ArrayList<Answer>
+                    mListFragment.add(LessonFragment().apply {
+                        val bundle = Bundle()
+                        bundle.putParcelable(QUESTION, question)
+                        bundle.putParcelableArrayList(ANSWERS, answers)
+                        arguments = bundle
+                    })
+                }
             }
             6 -> {
                 binding.toolbar.setTitle(getString(R.string.text_sat_figure))
+                /**20 câu sa hình*/
+                listQuestion = viewModel.getListQuestionSatFigure(this)
+                for (i in 1..20) {
+                    listAnswer.add(viewModel.mapAnswerSatFigure[i + 140] ?: mutableListOf())
+                }
+                for (i in 1..20) {
+                    val question = listQuestion[i - 1]
+                    val answers = listAnswer[i - 1] as ArrayList<Answer>
+                    mListFragment.add(LessonFragment().apply {
+                        val bundle = Bundle()
+                        bundle.putParcelable(QUESTION, question)
+                        bundle.putParcelableArrayList(ANSWERS, answers)
+                        arguments = bundle
+                    })
+                }
             }
         }
         viewpagerAdapter.addFragment(mListFragment)
