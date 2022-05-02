@@ -35,19 +35,19 @@ class LessonCountDownFragment :
             /**set question is selected answer*/
             shareViewModel.listQuestion.map { question ->
                 if (question.questionId == answer.questionId) {
+                    //biến để check xem question đã được chọn câu hỏi chưa, đã chọn => thay layout ở bottom sheet
                     question.isChooseAnswer = true
+                }
+            }
+            for(item in shareViewModel.listAnswer){
+                for(i in item){
+                    if (i.answerId == answer.answerId && i.questionId == answer.questionId){
+                        i.isChoose = true
+                    }
                 }
             }
             if (answer.isCorrect) {
                 shareViewModel.mapResult[answer.questionId] = true
-                //biến để check xem question đã được chọn câu hỏi chưa, đã chọn =>thay layout ở bottom sheet
-                shareViewModel.listAnswer.map { answers ->
-                    answers.map {
-                        if (it.answerId == answer.answerId) {
-                            it.isChoose = true
-                        }
-                    }
-                }
                 answer.isChoose = true
             } else {
                 shareViewModel.mapResult[answer.questionId] = false
@@ -62,13 +62,10 @@ class LessonCountDownFragment :
         }
     }
 
-
     @SuppressLint("SetTextI18n")
     override fun initData() {
-
         val question: Question? = arguments?.getParcelable(QUESTION)
-        val listAnswer: MutableList<Answer>? = arguments?.getParcelableArrayList(ANSWERS)
-        Log.d("TAG", "initData: $question")
+        var listAnswer: MutableList<Answer>? = question?.let { shareViewModel.getAnswer(it) }
         question?.let {
             binding.textQuestionContent.text = it.content
             it.image?.let { source ->
@@ -76,7 +73,6 @@ class LessonCountDownFragment :
                 binding.imageQuestion.setImageResource(source)
             }
         }
-
         answerCountDownAdapter.addData(listAnswer ?: mutableListOf())
     }
 

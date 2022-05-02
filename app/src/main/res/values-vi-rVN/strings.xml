@@ -41,6 +41,7 @@
     <string name="text_time_doing">Thời gian làm bài</string>
     <string name="text_19_minutes">19 phút</string>
     <string name="text_question_not_choose">Số câu chưa làm</string>
+    <string name="text_sometime_error">Các câu hay sai</string>
     <string name="text_content_information_A1_license">
         Đề thi bằng lái hạng A1 gồm 25 câu hỏi làm bài trong thời gian 19 phút.\n\nĐể vượt qua bài thi, bạn cần trả lời đúng 21/25 câu hỏi và không sai câu điểm liệt nào.
     </string>
@@ -48,8 +49,8 @@
         Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
     </string>
     <string name="text_end">Kết thúc</string>
-    <string name="text_pass_exam">Chúc mừng bạn đã vượt qua đề thi này!</string>
-    <string name="text_failed_exam">Rất tiếc bạn chưa đỗ!</string>
+    <string name="text_pass_exam">Chúc mừng bạn vượt qua đề thi!</string>
+    <string name="text_failed_exam">Rất tiếc bạn đã trượt!</string>
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 35 câu điểm liệt-->
     <string name="text_explain_answer_important_1">Rõ ràng là đáp án 3 sai mà. Làm hỏng tài sản của nhà nước mà. Nếu vi phạm bạn sẽ bị phạt với 1 số tiền không nhỏ. Cụ thể:

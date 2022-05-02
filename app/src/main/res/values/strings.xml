@@ -41,6 +41,7 @@
     <string name="text_time_doing">Time to do homework</string>
     <string name="text_19_minutes">19 m</string>
     <string name="text_question_not_choose">Number of unanswered questions</string>
+    <string name="text_sometime_error">Questions are often wrongly</string>
     <string name="text_content_information_A1_license">
         Class A1 driver\'s license exam consists of 25 questions to work on in 19 minutes.\n\nTo pass the test, you need to answer 21/25 questions correctly and not get any wrong points.
     </string>
@@ -49,7 +50,7 @@
     </string>
     <string name="text_end">End test</string>
     <string name="text_pass_exam">Congratulations on passing this test!</string>
-    <string name="text_failed_exam">Sorry you didn\'t pass!</string>
+    <string name="text_failed_exam">Sorry you are failed!</string>
     <!-- ======================================== Giải thích đáp án ========================================-->
     <!-- 35 câu điểm liệt-->
     <string name="text_explain_answer_important_1">Obviously answer 3 is wrong. Damage to state property. If you violate, you will be fined with a large amount of money. Specifically:

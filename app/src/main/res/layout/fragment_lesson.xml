@@ -78,15 +78,16 @@
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/layout_explain_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical"
-                android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@id/layout_ex">
 
                 <TextView
+                    tools:text="abc"
                     android:textColor="@color/black"
                     android:id="@+id/text_explain_answer"
                     android:layout_width="match_parent"

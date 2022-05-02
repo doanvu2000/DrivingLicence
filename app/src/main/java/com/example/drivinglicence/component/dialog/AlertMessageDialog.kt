@@ -47,9 +47,9 @@ class AlertMessageDialog(val context: Context) {
         if (!title.isNullOrBlank()) {
             binding.dialogTitle.text = title
             binding.dialogTitle.visibility = View.VISIBLE
-            binding.viewGuideline.visibility = View.VISIBLE
+//            binding.viewGuideline.visibility = View.VISIBLE
         } else {
-            binding.viewGuideline.visibility = View.GONE
+//            binding.viewGuideline.visibility = View.GONE
             binding.dialogTitle.visibility = View.GONE
         }
         if (!message.isNullOrBlank()) binding.dialogMsg.text = message
@@ -87,9 +87,9 @@ class AlertMessageDialog(val context: Context) {
         if (!title.isNullOrBlank()) {
             binding.dialogTitle.text = title
             binding.dialogTitle.visibility = View.VISIBLE
-            binding.viewGuideline.visibility = View.VISIBLE
+//            binding.viewGuideline.visibility = View.VISIBLE
         } else {
-            binding.viewGuideline.visibility = View.GONE
+//            binding.viewGuideline.visibility = View.GONE
             binding.dialogTitle.visibility = View.GONE
         }
 
@@ -125,5 +125,9 @@ class AlertMessageDialog(val context: Context) {
 
     fun setColorTitle(color: Int) {
         binding.dialogTitle.setTextColor(color)
+    }
+
+    fun setIconImageAlert(source: Int) {
+        binding.imageAlert.setImageResource(source)
     }
 }

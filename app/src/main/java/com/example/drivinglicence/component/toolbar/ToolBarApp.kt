@@ -112,9 +112,14 @@ class ToolBarApp : LinearLayout {
             binding.textTitle.setTextColor(color)
         }
     }
+
     fun setActionColor(color: Int) {
         if (color != 0) {
             binding.textAction.setTextColor(color)
         }
+    }
+
+    fun hideAction() {
+        binding.textAction.visibility = View.GONE
     }
 }

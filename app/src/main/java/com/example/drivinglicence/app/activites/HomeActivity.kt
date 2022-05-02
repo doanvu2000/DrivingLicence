@@ -43,14 +43,15 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
     private fun initSlide() {
         val listImageSlide =
             arrayListOf(
-                R.drawable.exam,
-                R.drawable.book,
-                R.drawable.star,
-                R.drawable.law,
-                R.drawable.stop
+                R.drawable.slide1,
+                R.drawable.slide2,
+                R.drawable.slide4,
+                R.drawable.slide5,
+                R.drawable.slide6
             )
         for (item in listImageSlide) {
             val imageView = ImageView(this)
+            imageView.scaleType = ImageView.ScaleType.FIT_XY
             imageView.setImageResource(item)
             binding.slide.addView(imageView)
         }
@@ -68,10 +69,11 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
         listAction = ArrayList()
         val item1 = ItemAction(getString(R.string.text_exam), R.drawable.exam)
         val item2 = ItemAction(getString(R.string.text_learning_theory), R.drawable.book)
-        val item3 = ItemAction(getString(R.string.text_road_signs), R.drawable.stop)
+        val item3 = ItemAction(getString(R.string.text_road_signs), R.drawable.stop2)
         val item4 = ItemAction(getString(R.string.text_tips), R.drawable.star)
         val item5 = ItemAction(getString(R.string.text_search_law), R.drawable.law)
-        listAction = arrayListOf(item1, item2, item3, item4, item5)
+        val item6 = ItemAction(getString(R.string.text_sometime_error), R.drawable.computer)
+        listAction = arrayListOf(item1, item2, item3, item4, item5,item6)
         actionAdapter.addData(listAction)
         initAllList(this)
     }
@@ -97,11 +99,10 @@ class HomeActivity : BaseCoreActivity<ActivityMainBinding>() {
                 }
                 getString(R.string.text_search_law) -> {
                     /**Tra cứu luật*/
-                    showDialogDevelopment(this)
-//                    openActivity(SearchLawActivity::class.java, false)
+                    openActivity(SearchLawActivity::class.java, false)
                 }
                 else -> {
-                    showDevelopMessage()
+                    showDialogDevelopment(this)
                 }
             }
         }

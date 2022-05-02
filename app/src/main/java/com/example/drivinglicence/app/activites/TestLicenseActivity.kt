@@ -58,7 +58,7 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
         }
         examAdapter.setOnClickItemRecyclerView { position, _ ->
             listQuestion = viewModel.getQuestionTest(position)
-            listQuestion = listQuestion.shuffled() as MutableList<Question>
+//            listQuestion = listQuestion.shuffled() as MutableList<Question>
             listAnswer = viewModel.getAnswerTest(listQuestion)
             showInformationLicense()
         }
@@ -81,6 +81,11 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
 
     private fun openCountDown() {
         val bundle = Bundle()
+        listAnswer.map {
+            it.map { it1 ->
+                it1.flag = 1
+            }
+        }
         bundle.putParcelableArrayList(QUESTIONS, listQuestion as ArrayList)
         bundle.putParcelable(LIST_ANSWERS, ListAnswers(listAnswer))
         openActivity(CountDownTestActivity::class.java, bundle)
@@ -100,6 +105,7 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
 
     private fun showAlertMessage() {
         AlertMessageDialog(this).also { alert ->
+            alert.setIconImageAlert(R.drawable.information)
             alert.show(
                 getString(R.string.text_tutorial_exam), getString(R.string.text_information_exam),
                 getString(R.string.text_confirm),
@@ -129,5 +135,9 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
 
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
     }
 }

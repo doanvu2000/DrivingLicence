@@ -619,7 +619,7 @@ fun initListCultureAndEthic(context: Context) {
         ),
         Answer(
             3, context.getString(R.string.answer_culture_and_ethics_1_3), true,
-            1, answerExplain = context.getString(R.string.text_explain_answer_culture_and_ethic_1)
+            81, answerExplain = context.getString(R.string.text_explain_answer_culture_and_ethic_1)
         ),
     )
     val listCultureAndEthic2 = mutableListOf(

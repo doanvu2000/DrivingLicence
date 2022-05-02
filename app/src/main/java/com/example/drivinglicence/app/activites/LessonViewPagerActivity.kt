@@ -238,4 +238,9 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
             }
         }
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        viewpagerAdapter.clearFragment()
+    }
 }

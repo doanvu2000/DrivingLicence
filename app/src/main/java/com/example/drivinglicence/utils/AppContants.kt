@@ -13,6 +13,8 @@ const val LICENSE = "LICENSE"
 const val POSITION = "POSITION"
 const val LIST_ANSWERS = "LIST_ANSWERS"
 const val LIST_ROAD_TRAFFIC = "LIST_ROAD_TRAFFIC"
+const val URL_LAW = "https://inslaw.vn/luat-giao-thong-duong-bo/"
+
 fun showDialogDevelopment(context: Context) {
     AlertMessageDialog(context).also {
         it.hideCancelButton()

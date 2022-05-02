@@ -116,7 +116,7 @@ class MapDataViewModel : BaseViewModel() {
                 )
             if (id > 0) {
                 list.add(
-                    Question(i, null, context.getString(id), null, false)
+                    Question(i+80, null, context.getString(id), null, false)
                 )
             }
         }
@@ -142,7 +142,7 @@ class MapDataViewModel : BaseViewModel() {
                 )
             if (id > 0) {
                 list.add(
-                    Question(i, null, context.getString(id), null, false)
+                    Question(i+90, null, context.getString(id), null, false)
                 )
             }
         }
@@ -253,7 +253,7 @@ class MapDataViewModel : BaseViewModel() {
                 mapQuestion[position] = list
             }
             else -> {
-                if (mapQuestion[position] == null){
+                if (mapQuestion[position] == null) {
                     getRandomQuestionExam(position)
                 }
             }
@@ -426,6 +426,10 @@ class MapDataViewModel : BaseViewModel() {
             mapping[item.questionId]?.let { listAnswer.add(it) }
         }
         return listAnswer
+    }
+
+    fun getAnswer(question: Question): MutableList<Answer> {
+        return mapping[question.questionId] as MutableList<Answer>
     }
 
     fun getAllData(context: Context) {

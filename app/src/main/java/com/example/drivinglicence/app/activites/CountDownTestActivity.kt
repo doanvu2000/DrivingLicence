@@ -14,6 +14,7 @@ import com.example.drivinglicence.app.entity.Answer
 import com.example.drivinglicence.app.entity.ListAnswers
 import com.example.drivinglicence.app.entity.Question
 import com.example.drivinglicence.app.fragment.LessonCountDownFragment
+import com.example.drivinglicence.app.fragment.LessonResultFragment
 import com.example.drivinglicence.app.viewmodel.MapDataViewModel
 import com.example.drivinglicence.component.activity.BaseVMActivity
 import com.example.drivinglicence.component.dialog.AlertMessageDialog
@@ -27,7 +28,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
     private val viewpagerAdapter by lazy {
         ViewPagerAdapter(supportFragmentManager)
     }
-    private val mListFragment: MutableList<Fragment> = mutableListOf()
+    private var mListFragment: MutableList<Fragment> = mutableListOf()
 
     var timeCount: Long = 0
     var isFinish = false
@@ -57,6 +58,9 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
         binding.toolbar.setAction(getString(R.string.text_end))
         binding.toolbar.setActionColor(Color.WHITE)
         timer.start()
+        mListFragment.clear()
+        viewModel.listQuestion.clear()
+        viewModel.listAnswer.clear()
     }
 
 
@@ -70,6 +74,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             listQuestion.map { item -> if (item.isChooseAnswer == true) notChoose-- }
             AlertMessageDialog(this).also { dialog ->
                 timer.cancel()
+                dialog.setIconImageAlert(R.drawable.alert_warning)
                 dialog.setBackgroundButtonSubmit(R.drawable.round_button_yellow_light)
                 dialog.show(
                     getString(R.string.text_confirm_exit),
@@ -146,24 +151,22 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
         val listQuestionWrong = mutableListOf<Int>()
         var isPass = true
         var count = 0
-        for (index in 0 until listAnswer.size) {
-            listAnswer[index].map { answer ->
-                answer.apply {
-                    if (isChoose == true && isCorrect) {
-                        listQuestionCorrect.add(index + 1)
-                        count++
+        viewModel.mapResult.map { entry ->
+            if (entry.value) {
+                count++
+                for (i in 0 until listQuestion.size) {
+                    if (listQuestion[i].questionId == entry.key) {
+                        listQuestionCorrect.add(i + 1)
+                        break
                     }
+                }
+            } else {
+                if (entry.key <= 35) {
+                    isPass = false
                 }
             }
         }
-        var msgCorrect = ""
-        for (item in 0 until listQuestionCorrect.size) {
-            msgCorrect += if (item != listQuestionCorrect.size - 1) {
-                "${listQuestionCorrect[item]}, "
-            } else {
-                "${listQuestionCorrect[item]}"
-            }
-        }
+        var msgCorrect = "$count"
         for (i in 1..25) {
             if (!listQuestionCorrect.contains(i)) {
                 listQuestionWrong.add(i)
@@ -177,13 +180,6 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 "${listQuestionWrong[item]}"
             }
         }
-        for (item in listQuestion) {
-            if ((item.isImportant && viewModel.mapResult[item.questionId] == false)
-                || (item.isImportant && item.isChooseAnswer == false)
-            ) {
-                isPass = false
-            }
-        }
         //count < 21
         if (count < 21) {
             isPass = false
@@ -195,10 +191,12 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 true -> { // pass
                     title = getString(R.string.text_pass_exam)
                     alert.setColorTitle(ContextCompat.getColor(this, R.color.green))
+                    alert.setIconImageAlert(R.drawable.success)
                 }
                 else -> { // failed
                     title = getString(R.string.text_failed_exam)
                     alert.setColorTitle(ContextCompat.getColor(this, R.color.red))
+                    alert.setIconImageAlert(R.drawable.failed)
                 }
             }
 
@@ -209,19 +207,44 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 cancelAble = false,
                 onClickSubmit = {
                     alert.hide()
-                    onBackPressed()
+                    /**Update Result to view pager*/
+                    showResult()
+//                    onBackPressed()
                 }
             )
             alert.hideCancelButton()
         }
     }
 
+    private fun showResult() {
+        viewModel.listQuestion
+        viewModel.listAnswer
+        mListFragment.clear()
+        viewpagerAdapter.clearFragment()
+        binding.toolbar.setTitle("0 : 0")
+        binding.toolbar.hideAction()
+        for (i in 0 until viewModel.listAnswer.size) {
+            val question = viewModel.listQuestion[i]
+            val answers = viewModel.listAnswer[i] as ArrayList<Answer>
+            mListFragment.add(LessonResultFragment().apply {
+                val bundle = Bundle()
+                bundle.putParcelable(QUESTION, question)
+                bundle.putParcelableArrayList(ANSWERS, answers)
+                arguments = bundle
+            })
+        }
+        viewpagerAdapter.addFragment(mListFragment)
+        viewpagerAdapter.notifyDataSetChanged()
+    }
+
     private var listQuestion: MutableList<Question> = mutableListOf()
     private var listAnswer: MutableList<MutableList<Answer>> = mutableListOf()
     override fun initData() {
+        viewModel.getAllData(this)
         listQuestion = intent.extras?.getParcelableArrayList(QUESTIONS) ?: mutableListOf()
-        listAnswer =
-            intent.extras?.getParcelable<ListAnswers>(LIST_ANSWERS)?.listAnswers ?: mutableListOf()
+        listQuestion.map {
+            listAnswer.add(viewModel.mapping[it.questionId] ?: mutableListOf())
+        }
         viewModel.listQuestion = listQuestion
         viewModel.listAnswer = listAnswer
         for (i in 1..listAnswer.size) {
@@ -282,22 +305,31 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 }
                 binding.textCurrentQuestion.text = "${pos + 1}"
                 binding.viewPager.currentItem = pos
+                viewpagerAdapter.setFragment(
+                    pos,
+                    LessonCountDownFragment(),
+                    viewModel.listQuestion[pos]
+                )
             }
         }
     }
 
     override fun onBackPressed() {
         if (timeCount == 0L || isFinish) {
+            viewModel.listQuestion.clear()
+            viewModel.listAnswer.clear()
             super.onBackPressed()
         } else {
             AlertMessageDialog(this).also { alert ->
+                alert.setIconImageAlert(R.drawable.alert_warning)
                 alert.show(getString(R.string.text_confirm_exit),
                     getString(R.string.text_time_remaining) + ": ${formatTime(timeCount)}",
                     onClickSubmit = {
+                        viewModel.listQuestion.clear()
+                        viewModel.listAnswer.clear()
                         super.onBackPressed()
                     })
             }
         }
-
     }
 }

@@ -14,8 +14,7 @@ import com.example.drivinglicence.databinding.FragmentLessonBinding
 import com.example.drivinglicence.utils.ANSWERS
 import com.example.drivinglicence.utils.QUESTION
 
-class LessonFragment(
-) :
+class LessonFragment :
     BaseFragment<FragmentLessonBinding, DataViewModel>() {
 
 

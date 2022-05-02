@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/driving"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/driving"
         android:supportsRtl="true"
         android:theme="@style/Theme.DrivingLicense">
 
@@ -17,9 +17,6 @@
             android:exported="false" />
         <activity
             android:name=".app.activites.LessonViewPagerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".app.activites.ExecuteActivity"
             android:exported="false" />
         <activity
             android:name=".app.activites.SearchLawActivity"
