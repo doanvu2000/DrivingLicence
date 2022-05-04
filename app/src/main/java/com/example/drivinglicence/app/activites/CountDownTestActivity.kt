@@ -91,15 +91,18 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 when (position) {
                     0 -> {
                         binding.btnBackQuestion.visibility = View.GONE
+                        binding.btnFinish.visibility = View.GONE
                     }
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
-                        binding.btnFinish.visibility = View.VISIBLE
+                        if (!isFinish)
+                            binding.btnFinish.visibility = View.VISIBLE
                     }
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.VISIBLE
+                        binding.btnFinish.visibility = View.GONE
                     }
                 }
                 binding.textCurrentQuestion.text = "${position + 1}"
@@ -241,6 +244,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
         }
         viewpagerAdapter.addFragment(mListFragment)
         viewpagerAdapter.notifyDataSetChanged()
+        binding.btnFinish.visibility = View.GONE
     }
 
     private var listQuestion: MutableList<Question> = mutableListOf()
@@ -302,14 +306,18 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 when (pos) {
                     0 -> {
                         binding.btnBackQuestion.visibility = View.GONE
+                        binding.btnFinish.visibility = View.GONE
                     }
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
+                        if (!isFinish)
+                            binding.btnFinish.visibility = View.VISIBLE
                     }
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.VISIBLE
+                        binding.btnFinish.visibility = View.GONE
                     }
                 }
                 binding.textCurrentQuestion.text = "${pos + 1}"
