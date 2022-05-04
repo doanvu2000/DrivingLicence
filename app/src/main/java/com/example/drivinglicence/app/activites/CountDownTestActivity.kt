@@ -70,32 +70,13 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             timer.cancel()
         }
         binding.toolbar.onActionClickListener = {
-            var notChoose = listQuestion.size
-            listQuestion.map { item -> if (item.isChooseAnswer == true) notChoose-- }
-            AlertMessageDialog(this).also { dialog ->
-                timer.cancel()
-                dialog.setIconImageAlert(R.drawable.alert_warning)
-                dialog.setBackgroundButtonSubmit(R.drawable.round_button_yellow_light)
-                dialog.show(
-                    getString(R.string.text_confirm_exit),
-                    getString(R.string.text_time_remaining) + ": ${formatTime(timeCount)},\n"
-                            + getString(R.string.text_question_not_choose) + ": $notChoose",
-                    onClickSubmit = {
-                        isFinish = true
-                        timer.cancel()
-                        handlerFinish()
-                    },
-                    onClickCancel = {
-                        setTimer(timeCount)
-                    },
-                    cancelAble = false
-                )
-            }
+            showDialogFinish()
         }
         binding.btnBackQuestion.setOnClickListener(this)
         binding.btnForwardQuestion.setOnClickListener(this)
         binding.btnViewBottom.setOnClickListener(this)
         binding.layoutShowBottom.setOnClickListener(this)
+        binding.btnFinish.setOnClickListener(this)
         binding.viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(
                 position: Int,
@@ -114,6 +95,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
+                        binding.btnFinish.visibility = View.VISIBLE
                     }
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
@@ -126,6 +108,30 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             override fun onPageScrollStateChanged(state: Int) {
             }
         })
+    }
+
+    private fun showDialogFinish() {
+        var notChoose = listQuestion.size
+        listQuestion.map { item -> if (item.isChooseAnswer == true) notChoose-- }
+        AlertMessageDialog(this).also { dialog ->
+            timer.cancel()
+            dialog.setIconImageAlert(R.drawable.alert_warning)
+            dialog.setBackgroundButtonSubmit(R.drawable.round_button_yellow_light)
+            dialog.show(
+                getString(R.string.text_confirm_exit),
+                getString(R.string.text_time_remaining) + ": ${formatTime(timeCount)},\n"
+                        + getString(R.string.text_question_not_choose) + ": $notChoose",
+                onClickSubmit = {
+                    isFinish = true
+                    timer.cancel()
+                    handlerFinish()
+                },
+                onClickCancel = {
+                    setTimer(timeCount)
+                },
+                cancelAble = false
+            )
+        }
     }
 
     private fun setTimer(time: Long) {
@@ -272,6 +278,9 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             }
             R.id.btn_view_bottom, R.id.layout_show_bottom -> {
                 showBottomDialog()
+            }
+            R.id.btnFinish -> {
+                showDialogFinish()
             }
         }
     }
