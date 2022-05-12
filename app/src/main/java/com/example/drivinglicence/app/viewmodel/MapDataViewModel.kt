@@ -116,7 +116,7 @@ class MapDataViewModel : BaseViewModel() {
                 )
             if (id > 0) {
                 list.add(
-                    Question(i+80, null, context.getString(id), null, false)
+                    Question(i + 80, null, context.getString(id), null, false)
                 )
             }
         }
@@ -142,7 +142,7 @@ class MapDataViewModel : BaseViewModel() {
                 )
             if (id > 0) {
                 list.add(
-                    Question(i+90, null, context.getString(id), null, false)
+                    Question(i + 90, null, context.getString(id), null, false)
                 )
             }
         }
@@ -446,5 +446,10 @@ class MapDataViewModel : BaseViewModel() {
         mapping.putAll(mapAnswerDrivingUnique)
         mapping.putAll(mapAnswerRoadSign)
         mapping.putAll(mapAnswerSatFigure)
+    }
+
+    fun getData(context: Context) {
+        val dataViewModel = DataViewModel()
+        dataViewModel.getAllData(context)
     }
 }
