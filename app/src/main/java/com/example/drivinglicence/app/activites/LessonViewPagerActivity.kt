@@ -243,4 +243,17 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
         super.onBackPressed()
         viewpagerAdapter.clearFragment()
     }
+
+    override fun onResume() {
+        super.onResume()
+        viewModel.getAllData(this)
+        println("SCREEN_APP resume LessonViewPagerActivity")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        viewpagerAdapter.clearFragment()
+        viewModel.clearSection()
+        println("SCREEN_APP destroy LessonViewPagerActivity")
+    }
 }

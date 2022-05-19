@@ -5,6 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.example.drivinglicence.app.entity.Question
 
 class SQLiteHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
     SQLiteOpenHelper(context, DATABASE_NAME, factory, DATABASE_VERSION) {
@@ -41,6 +42,33 @@ class SQLiteHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         const val TRAFFIC_LAW_ID = "trafficLawId"
         const val TRAFFIC_LAW_URL = "trafficLawUrl"
 
+        //Table exam
+        const val TABLE_NAME_EXAMS = "exams"
+        const val EXAM_ID = "exam_id"
+        const val EXAM_NAME = "name"
+        const val EXAM_TYPE = "type"
+
+        //Table question
+        const val TABLE_NAME_QUESTION = "question"
+        const val QUESTION_ID = "question_id"
+        const val CONTENT = "content"
+        const val ISIMPORTANT = "isImportant"
+        const val IMAGE = "image"
+
+        //Table answer
+        const val TABLE_NAME_ANSWER = "answer"
+        const val ANSWER_ID = "answerId"
+        const val IS_CORRECT = "isCorrect"
+        const val EXPLAIN_ANSWER = "explain_answer"
+
+        //Table submitAnswer
+        const val TABLE_NAME_SUBMITANSWER = "submitanswer"
+        const val SUBMITANSWER_ID = "submitanswerId"
+
+        //Table Result
+        const val TABLE_NAME_RESULT = "result"
+        const val RESULT_ID = "resultId"
+        const val COUNT_CORRECT = "countCorrect"
 
     }
 
@@ -120,7 +148,39 @@ class SQLiteHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
 
     fun getDescriptionLicense(): Cursor? {
         val db = this.readableDatabase
+        val check = insertSubmitAnswer(1, 1, 1)
         return db.rawQuery("SELECT * FROM " + TABLE_NAME_DESCRIPTION_LICENSE, null)
+    }
+
+    private fun insertSubmitAnswer(resultId: Int, questionId: Int, answerId: Int): Boolean {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(RESULT_ID, resultId)
+            put(QUESTION_ID, questionId)
+            put(ANSWER_ID, answerId)
+            put(CONTENT, 0)
+            put(ISIMPORTANT, 0)
+            put(IMAGE, 0)
+            put(IS_CORRECT, 0)
+            put(EXPLAIN_ANSWER, 0)
+            put(EXAM_NAME, 0)
+            put(EXAM_TYPE, 0)
+            put(COUNT_CORRECT, 0)
+        }
+        getResult()
+        val newRowId = db?.insert(TABLE_NAME_SUBMITANSWER, null, values)
+        return newRowId!! > 0
+    }
+
+    fun getResult(): Cursor? {
+        val db = this.readableDatabase
+        val check = insertSubmitAnswer(1, 1, 1)
+        return db.rawQuery(
+            "SELECT * FROM " + TABLE_NAME_RESULT + "INNER JOIN " + TABLE_NAME_EXAMS
+                    + "INNER JOIN " + TABLE_NAME_QUESTION
+                    + "INNER JOIN " + TABLE_NAME_EXAMS
+                    + "INNER JOIN " + TABLE_NAME_ANSWER, null
+        )
     }
 
 }

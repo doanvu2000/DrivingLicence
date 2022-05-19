@@ -95,7 +95,6 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
         for (i in 1..5) {
             examAdapter.addData(i)
         }
-        viewModel.getAllData(this)
         loadingDialog.show(this, "")
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
@@ -139,5 +138,11 @@ class TestLicenseActivity : BaseVMActivity<ActivityTestLicenseBinding, MapDataVi
 
     override fun onResume() {
         super.onResume()
+        viewModel.getAllData(this)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModel.clearSection()
     }
 }

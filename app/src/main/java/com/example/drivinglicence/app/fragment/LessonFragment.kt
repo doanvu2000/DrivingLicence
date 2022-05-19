@@ -70,4 +70,9 @@ class LessonFragment :
     override fun onSingleClick(v: View) {
     }
 
+    override fun onPause() {
+        super.onPause()
+        answerAdapter.dataList.map { it.flag = 1 }
+    }
+
 }

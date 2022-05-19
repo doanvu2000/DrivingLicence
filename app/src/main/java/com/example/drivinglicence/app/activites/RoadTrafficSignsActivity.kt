@@ -32,6 +32,9 @@ class RoadTrafficSignsActivity :
         )
         val list1 = viewModel.getRoadTrafficBan()
         val list2 = viewModel.getRoadTrafficCommand()
+        val list3 = viewModel.getRoadTrafficInstruction()
+        val list4 = viewModel.getRoadTrafficWarning()
+        val list5 = viewModel.getRoadTrafficSub()
         roadTrafficSignAdapter.addFragment(
             mutableListOf(
                 RoadTrafficBanFragment().apply {
@@ -46,17 +49,17 @@ class RoadTrafficSignsActivity :
                 },
                 RoadTrafficBanFragment().apply {
                     val bundle = Bundle()
-                    bundle.putParcelableArrayList(LIST_ROAD_TRAFFIC, list2.shuffled() as ArrayList)
+                    bundle.putParcelableArrayList(LIST_ROAD_TRAFFIC, list3.shuffled() as ArrayList)
                     arguments = bundle
                 },
                 RoadTrafficBanFragment().apply {
                     val bundle = Bundle()
-                    bundle.putParcelableArrayList(LIST_ROAD_TRAFFIC, list1.shuffled() as ArrayList)
+                    bundle.putParcelableArrayList(LIST_ROAD_TRAFFIC, list4.shuffled() as ArrayList)
                     arguments = bundle
                 },
                 RoadTrafficBanFragment().apply {
                     val bundle = Bundle()
-                    bundle.putParcelableArrayList(LIST_ROAD_TRAFFIC, list2.shuffled() as ArrayList)
+                    bundle.putParcelableArrayList(LIST_ROAD_TRAFFIC, list5.shuffled() as ArrayList)
                     arguments = bundle
                 }
             )

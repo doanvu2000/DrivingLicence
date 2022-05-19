@@ -452,4 +452,24 @@ class MapDataViewModel : BaseViewModel() {
         val dataViewModel = DataViewModel()
         dataViewModel.getAllData(context)
     }
+
+    fun clearSection() {
+        mapResult.clear()
+        listQuestion.clear()
+        listAnswer.clear()
+        mapAnswerImportant.clear()
+        mapAnswerConceptsAndRules.clear()
+        mapAnswerCulturesAndEthics.clear()
+        mapAnswerDrivingUnique.clear()
+        mapAnswerRoadSign.clear()
+        mapAnswerSatFigure.clear()
+        mapping.clear()
+        mapQuestion.clear()
+        listImportant = mutableListOf()
+        listConceptAndRule = mutableListOf()
+        listCulturesAndEthic = mutableListOf()
+        listDrivingUnique = mutableListOf()
+        listRoadSign = mutableListOf()
+        listSatFigure = mutableListOf()
+    }
 }

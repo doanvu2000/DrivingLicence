@@ -349,4 +349,9 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             }
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModel.clearSection()
+    }
 }
