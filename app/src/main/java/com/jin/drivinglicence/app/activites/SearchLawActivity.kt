@@ -29,9 +29,9 @@ class SearchLawActivity : BaseCoreActivity<ActivitySearchLawBinding>() {
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun initData() {
-        loadingDialog.show(this,"")
+        loadingDialog.show(this, "")
         loadingDialog.setMessage("Loading...")
-        binding.webView.webViewClient = object : WebViewClient(){
+        binding.webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 loadingDialog.dismiss()

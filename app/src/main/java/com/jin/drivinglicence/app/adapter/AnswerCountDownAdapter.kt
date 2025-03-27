@@ -30,6 +30,7 @@ class AnswerCountDownAdapter : BaseRecyclerViewAdapter<Answer, ItemAnswerBinding
                 binding.textAnswerCount.setBackgroundResource(R.drawable.bg_round_count)
                 binding.imageStatus.visibility = View.GONE
             }
+
             2 -> {
                 binding.textAnswerCount.setTextColor(Color.WHITE)
                 binding.textAnswerCount.setBackgroundResource(R.drawable.bg_round_count_orange)

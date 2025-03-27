@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieDrawable
 
-class LoadingAnimView: LottieAnimationView {
+class LoadingAnimView : LottieAnimationView {
     constructor(context: Context?) : super(context) {
         init()
     }

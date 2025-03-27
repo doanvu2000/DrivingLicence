@@ -15,7 +15,11 @@ import com.jin.drivinglicence.app.viewmodel.MapDataViewModel
 import com.jin.drivinglicence.component.activity.BaseVMActivity
 import com.jin.drivinglicence.component.dialog.ListQuestionBottomDialog
 import com.jin.drivinglicence.databinding.ActivityLessonViewPagerBinding
-import com.jin.drivinglicence.utils.*
+import com.jin.drivinglicence.utils.ANSWERS
+import com.jin.drivinglicence.utils.FLAG
+import com.jin.drivinglicence.utils.POSITION
+import com.jin.drivinglicence.utils.QUESTION
+import com.jin.drivinglicence.utils.QUESTIONS
 
 class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, MapDataViewModel>() {
     private val viewpagerAdapter by lazy {
@@ -48,10 +52,12 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     0 -> {
                         binding.btnBackQuestion.visibility = View.GONE
                     }
+
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
                     }
+
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.VISIBLE
@@ -96,6 +102,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     })
                 }
             }
+
             2 -> {
                 binding.toolbar.setTitle(getString(R.string.text_concepts_and_rules))
                 /**30 Câu hỏi khái niệm và quy tắc*/
@@ -116,6 +123,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     })
                 }
             }
+
             3 -> {
                 binding.toolbar.setTitle(getString(R.string.text_culture_and_ethic))
                 /**5 câu Văn hóa và đạo đức lái xe*/
@@ -134,6 +142,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     })
                 }
             }
+
             4 -> {
                 binding.toolbar.setTitle(getString(R.string.text_driving_technique))
                 /**12 câu kỹ thuật lái xe*/
@@ -152,6 +161,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     })
                 }
             }
+
             5 -> {
                 binding.toolbar.setTitle(getString(R.string.text_road_signs))
                 /**20 câu biển báo đường bộ*/
@@ -170,6 +180,7 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     })
                 }
             }
+
             6 -> {
                 binding.toolbar.setTitle(getString(R.string.text_sat_figure))
                 /**20 câu sa hình*/
@@ -200,9 +211,11 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
             R.id.btnBackQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem - 1
             }
+
             R.id.btnForwardQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem + 1
             }
+
             R.id.btn_view_bottom, R.id.layout_show_bottom -> {
                 showBottomDialog()
             }
@@ -224,10 +237,12 @@ class LessonViewPagerActivity : BaseVMActivity<ActivityLessonViewPagerBinding, M
                     0 -> {
                         binding.btnBackQuestion.visibility = View.GONE
                     }
+
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
                     }
+
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.VISIBLE

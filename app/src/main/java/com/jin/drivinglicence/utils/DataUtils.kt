@@ -3,8 +3,6 @@ package com.jin.drivinglicence.utils
 import android.content.Context
 import com.jin.drivinglicence.R
 import com.jin.drivinglicence.app.entity.Answer
-import com.jin.drivinglicence.app.entity.Question
-
 
 
 /**-------------------------Ccâu hỏi lý thuyết-------------------------*/

@@ -311,46 +311,46 @@ class RoadTrafficViewModel : BaseViewModel() {
                 "Để thông báo chiều dài đoạn đường nguy hiểm hoặc cấm hoặc hạn chế bên dưới một số biển báo nguy hiểm, biển báo cấm hoặc hạn chế, chẳng hạn như: Nhiều chỗ ngoặt nguy hiểm liên tiếp; Dốc xuống nguy hiểm...",
                 R.drawable.bienphu501
             ),
-    ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 502 \"Khoảng cách đến đối tượng báo hiệu\"",
                 "Bên dưới các loại biển báo nguy hiểm, biển báo cấm, biển hiệu lệnh và chỉ dẫn, thông báo khoảng cách thực tế từ vị trí đặt biển đến đối tượng báo hiệu ở phía trước.",
                 R.drawable.bienphu502
             ),
-    ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 504 \"Làn đường\"",
                 "Biển số 504 được đặt bên trên làn đường và dưới các biển báo cấm và biển hiệu lệnh hay bên dưới đèn tín hiệu để chỉ làn đường chịu hiệu lực của biển báo hay đèn tín hiệu.",
                 R.drawable.bienphu504
             ),
-    ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 505a \"Loại xe\"",
                 "Được đặt bên dưới các biển báo cấm và biển hiệu lệnh hay biển chỉ dẫn để chỉ loại xe chịu hiệu lực của biển báo cấm, biển hiệu lệnh hay biển chỉ dẫn. Tùy theo loại xe chịu hiệu lực mà bố trí hình vẽ cho phù hợp.",
                 R.drawable.bienphu505
             ),
-    ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 505b \"Loại xe hạn chế qua cầu\"",
                 "Được đặt bên dưới biển báo số 106a “Cấm ôtô tải” để chỉ các loại xe tải chịu hiệu lực của biển báo và trọng lượng lớn nhất cho phép (bao gồm trọng lượng xe và hàng) tương ứng với mỗi loại xe không phụ thuộc vào số lượng trục.",
                 R.drawable.bienphu505b
             ),
-   ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 505(c) \"Tải trọng trục hạn chế qua cầu\"",
                 "Được đặt bên dưới biển báo số 106a “Cấm ôtô tải” để chỉ các loại xe tải có tải  trọng  trục  lớn nhất cho phép tương ứng với mỗi loại  trục (trục đơn, trục kép, trục ba).",
                 R.drawable.bienphu505c
             ),
-   ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 506a \"Hướng đường ưu tiên\"",
                 "Biển số 506a  được đặt bên dưới biển chỉ dẫn số 401 trên đường ưu tiên để chỉ dẫn cho người lái xe trên đường này biết hướng đường ưu tiên ở ngã tư.",
                 R.drawable.bienphu506a
             ),
-   ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 507 \"Hướng rẽ\"",
                 "Được sử dụng độc lập để báo trước cho người tham gia giao thông biết chuẩn bị đến chỗ rẽ nguy hiểm và để chỉ hướng rẽ.\n",
                 R.drawable.bien507
             ),
-   ItemRoadTraffic(
+            ItemRoadTraffic(
                 "Biển số 509 \"Thuyết minh biển chính\"",
                 "Để bổ sung cho biển số 130 \"Cấm dừng, đỗ xe\", biển số 131 (a,b,c) \"Cấm đỗ xe\", phải đặt thêm biển số 509b \"Cấm đỗ xe\" bên dưới biển số 130, 131 (a,b,c)",
                 R.drawable.bien509b
             )
-            )
+        )
     }
 }

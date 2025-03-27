@@ -12,7 +12,6 @@ import com.jin.drivinglicence.app.viewmodel.MapDataViewModel
 import com.jin.drivinglicence.component.fragment.BaseFragment
 import com.jin.drivinglicence.component.widgets.recyclerview.RecyclerUtils
 import com.jin.drivinglicence.databinding.FragmentLessonBinding
-import com.jin.drivinglicence.utils.ANSWERS
 import com.jin.drivinglicence.utils.QUESTION
 
 class LessonCountDownFragment :
@@ -39,9 +38,9 @@ class LessonCountDownFragment :
                     question.isChooseAnswer = true
                 }
             }
-            for(item in shareViewModel.listAnswer){
-                for(i in item){
-                    if (i.answerId == answer.answerId && i.questionId == answer.questionId){
+            for (item in shareViewModel.listAnswer) {
+                for (i in item) {
+                    if (i.answerId == answer.answerId && i.questionId == answer.questionId) {
                         i.isChoose = true
                     }
                 }

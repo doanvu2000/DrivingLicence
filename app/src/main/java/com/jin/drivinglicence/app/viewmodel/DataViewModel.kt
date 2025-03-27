@@ -13,7 +13,7 @@ class DataViewModel : BaseViewModel() {
         val cursor = db.getAction()
         cursor!!.moveToFirst()
         var actionName: String
-        var actionImage : String
+        var actionImage: String
         val list = mutableListOf<ItemAction>()
         while (cursor.moveToNext()) {
             actionName = cursor.getString(cursor.getColumnIndex(SQLiteHelper.ACTION_NAME) ?: 0)
@@ -47,8 +47,8 @@ class DataViewModel : BaseViewModel() {
         val db = SQLiteHelper(context, null)
         val cursor = db.getTip()
         cursor!!.moveToFirst()
-        var tipName : String
-        var tipContent : String
+        var tipName: String
+        var tipContent: String
         val list = mutableListOf<ItemAction>()
         while (cursor.moveToNext()) {
             tipName = cursor.getString(cursor.getColumnIndex(SQLiteHelper.TIP_NAME) ?: 0)
@@ -63,7 +63,7 @@ class DataViewModel : BaseViewModel() {
         val db = SQLiteHelper(context, null)
         val cursor = db.getTrafficLaw()
         cursor!!.moveToFirst()
-        var trafficLawUrl : String
+        var trafficLawUrl: String
         val list = mutableListOf<ItemAction>()
         while (cursor.moveToNext()) {
             trafficLawUrl =
@@ -78,7 +78,7 @@ class DataViewModel : BaseViewModel() {
         val db = SQLiteHelper(context, null)
         val cursor = db.getDescriptionLicense()
         cursor!!.moveToFirst()
-        var licenseInformation : String
+        var licenseInformation: String
         val list = mutableListOf<ItemAction>()
         while (cursor.moveToNext()) {
             licenseInformation =

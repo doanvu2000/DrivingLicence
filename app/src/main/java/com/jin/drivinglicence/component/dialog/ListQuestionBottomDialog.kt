@@ -1,6 +1,5 @@
 package com.jin.drivinglicence.component.dialog
 
-import android.util.Log
 import com.jin.drivinglicence.R
 import com.jin.drivinglicence.app.adapter.ListQuestionBottomAdapter
 import com.jin.drivinglicence.app.entity.Question

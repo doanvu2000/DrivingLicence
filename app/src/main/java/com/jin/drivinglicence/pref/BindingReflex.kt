@@ -8,7 +8,7 @@ import androidx.viewbinding.ViewBinding
 import com.jin.drivinglicence.BuildConfig
 import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.ParameterizedType
-import java.util.*
+import java.util.Objects
 
 object BindingReflex {
 
@@ -31,7 +31,7 @@ object BindingReflex {
                     if (actualTypeArguments[i] is Class<*>) {
                         tClass = actualTypeArguments[i] as Class<Any>
                     }
-                    if (tClass!= null && ViewBinding::class.java.isAssignableFrom(tClass)) {
+                    if (tClass != null && ViewBinding::class.java.isAssignableFrom(tClass)) {
                         val inflate = tClass.getMethod("inflate", LayoutInflater::class.java)
                         return inflate.invoke(null, from) as V
                     }
@@ -52,7 +52,7 @@ object BindingReflex {
                 exception?.printStackTrace()
             }
         }
-        throw  exception ?: Throwable("Error binding")
+        throw exception ?: Throwable("Error binding")
     }
 
     /**

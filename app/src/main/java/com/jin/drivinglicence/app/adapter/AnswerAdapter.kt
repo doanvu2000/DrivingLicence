@@ -30,6 +30,7 @@ class AnswerAdapter : BaseRecyclerViewAdapter<Answer, ItemAnswerBinding>() {
                 binding.textAnswerCount.setBackgroundResource(R.drawable.bg_round_count)
                 binding.imageStatus.visibility = View.GONE
             }
+
             2 -> {
                 binding.textAnswerContent.setTextColor(Color.rgb(34, 139, 34))
                 binding.textAnswerCount.setTextColor(Color.WHITE)
@@ -37,6 +38,7 @@ class AnswerAdapter : BaseRecyclerViewAdapter<Answer, ItemAnswerBinding>() {
                 binding.imageStatus.visibility = View.VISIBLE
                 binding.imageStatus.setImageResource(R.drawable.icon_check)
             }
+
             3 -> {
                 binding.textAnswerContent.setTextColor(Color.rgb(255, 0, 0))
                 binding.textAnswerCount.setTextColor(Color.WHITE)

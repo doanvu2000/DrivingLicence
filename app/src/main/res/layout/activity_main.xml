@@ -34,10 +34,10 @@
         tools:listitem="@layout/item_action_home" />
 
     <ImageView
-        android:scaleType="fitXY"
         android:id="@+id/image_bottom"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:scaleType="fitXY"
         android:src="@drawable/slide3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

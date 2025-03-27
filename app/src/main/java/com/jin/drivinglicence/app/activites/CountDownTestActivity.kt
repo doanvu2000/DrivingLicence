@@ -11,7 +11,6 @@ import androidx.viewpager.widget.ViewPager
 import com.jin.drivinglicence.R
 import com.jin.drivinglicence.app.adapter.ViewPagerAdapter
 import com.jin.drivinglicence.app.entity.Answer
-import com.jin.drivinglicence.app.entity.ListAnswers
 import com.jin.drivinglicence.app.entity.Question
 import com.jin.drivinglicence.app.fragment.LessonCountDownFragment
 import com.jin.drivinglicence.app.fragment.LessonResultFragment
@@ -20,7 +19,10 @@ import com.jin.drivinglicence.component.activity.BaseVMActivity
 import com.jin.drivinglicence.component.dialog.AlertMessageDialog
 import com.jin.drivinglicence.component.dialog.ListQuestionCountDownBottomDialog
 import com.jin.drivinglicence.databinding.ActivityLessonViewPagerBinding
-import com.jin.drivinglicence.utils.*
+import com.jin.drivinglicence.utils.ANSWERS
+import com.jin.drivinglicence.utils.POSITION
+import com.jin.drivinglicence.utils.QUESTION
+import com.jin.drivinglicence.utils.QUESTIONS
 import kotlin.math.roundToInt
 
 class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, MapDataViewModel>() {
@@ -93,12 +95,14 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                         binding.btnBackQuestion.visibility = View.GONE
                         binding.btnFinish.visibility = View.GONE
                     }
+
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
                         if (!isFinish)
                             binding.btnFinish.visibility = View.VISIBLE
                     }
+
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.VISIBLE
@@ -202,6 +206,7 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                     alert.setColorTitle(ContextCompat.getColor(this, R.color.green))
                     alert.setIconImageAlert(R.drawable.success)
                 }
+
                 else -> { // failed
                     title = getString(R.string.text_failed_exam)
                     alert.setColorTitle(ContextCompat.getColor(this, R.color.red))
@@ -209,7 +214,8 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                 }
             }
 
-            alert.show(title,
+            alert.show(
+                title,
                 getString(R.string.text_quantity_answer_correct) + ": $msgCorrect\n"
                         + getString(R.string.text_quantity_answer_incorrect) + ": $msgInCorrect",
                 buttonText,
@@ -277,12 +283,15 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
             R.id.btnBackQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem - 1
             }
+
             R.id.btnForwardQuestion -> {
                 binding.viewPager.currentItem = binding.viewPager.currentItem + 1
             }
+
             R.id.btn_view_bottom, R.id.layout_show_bottom -> {
                 showBottomDialog()
             }
+
             R.id.btnFinish -> {
                 showDialogFinish()
             }
@@ -308,12 +317,14 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
                         binding.btnBackQuestion.visibility = View.GONE
                         binding.btnFinish.visibility = View.GONE
                     }
+
                     mListFragment.size - 1 -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.GONE
                         if (!isFinish)
                             binding.btnFinish.visibility = View.VISIBLE
                     }
+
                     else -> {
                         binding.btnBackQuestion.visibility = View.VISIBLE
                         binding.btnForwardQuestion.visibility = View.VISIBLE
@@ -339,7 +350,8 @@ class CountDownTestActivity : BaseVMActivity<ActivityLessonViewPagerBinding, Map
         } else {
             AlertMessageDialog(this).also { alert ->
                 alert.setIconImageAlert(R.drawable.alert_warning)
-                alert.show(getString(R.string.text_confirm_exit),
+                alert.show(
+                    getString(R.string.text_confirm_exit),
                     getString(R.string.text_time_remaining) + ": ${formatTime(timeCount)}",
                     onClickSubmit = {
                         viewModel.listQuestion.clear()

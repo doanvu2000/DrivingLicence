@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="fly_uikit_CommonDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFrame">@null</item>
@@ -14,7 +15,7 @@
     <declare-styleable name="ToolBarApp" localization="suggested">
         <attr name="title" format="string" localization="suggested" />
         <attr name="action" format="string" localization="suggested" />
-        <attr name="title_color" format="color"/>
+        <attr name="title_color" format="color" />
         <attr name="drawable_start" format="reference" />
         <attr name="drawable_end" format="reference" />
     </declare-styleable>

@@ -38,32 +38,37 @@ class LearningTheoryActivity : BaseCoreActivity<ActivityLearningTheoryBinding>()
             when (position) {
                 0 -> {
                     /**35 câu hỏi điểm liệt*/
-                    bundle.putInt(FLAG,1)
+                    bundle.putInt(FLAG, 1)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
+
                 1 -> {
                     /**Khái niệm và quy tắc*/
-                    bundle.putInt(FLAG,2)
+                    bundle.putInt(FLAG, 2)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
+
                 2 -> {
                     /**Văn hóa và đạo đức lái xe*/
-                    bundle.putInt(FLAG,3)
+                    bundle.putInt(FLAG, 3)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
+
                 3 -> {
                     /**Kĩ thuật lái xe*/
-                    bundle.putInt(FLAG,4)
+                    bundle.putInt(FLAG, 4)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
+
                 4 -> {
                     /**Biển báo đường bộ*/
-                    bundle.putInt(FLAG,5)
+                    bundle.putInt(FLAG, 5)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
+
                 5 -> {
                     /**Sa hình*/
-                    bundle.putInt(FLAG,6)
+                    bundle.putInt(FLAG, 6)
                     openActivity(LessonViewPagerActivity::class.java, bundle)
                 }
             }

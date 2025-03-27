@@ -1,7 +1,6 @@
 package com.jin.drivinglicence.app.fragment
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.viewModels
 import com.jin.drivinglicence.app.adapter.AnswerResultAdapter

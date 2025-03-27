@@ -22,8 +22,8 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/ptsansnarrowbold"
         android:gravity="center"
-        tools:text="@string/text_road_signs"
         android:textAllCaps="true"
         android:textSize="16dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/text_road_signs" />
 </LinearLayout>

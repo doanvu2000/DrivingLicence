@@ -5,7 +5,12 @@ import com.jin.drivinglicence.R
 import com.jin.drivinglicence.app.entity.Answer
 import com.jin.drivinglicence.app.entity.Question
 import com.jin.drivinglicence.component.viewmodel.BaseViewModel
-import com.jin.drivinglicence.utils.*
+import com.jin.drivinglicence.utils.listAnswerConceptAndRule
+import com.jin.drivinglicence.utils.listAnswerCultureAndEthic
+import com.jin.drivinglicence.utils.listAnswerDrivingUnique
+import com.jin.drivinglicence.utils.listAnswerImportant
+import com.jin.drivinglicence.utils.listAnswerRoadSign
+import com.jin.drivinglicence.utils.listAnswerSatFigure
 import kotlin.random.Random
 
 class MapDataViewModel : BaseViewModel() {
@@ -236,22 +241,27 @@ class MapDataViewModel : BaseViewModel() {
                 val list = getQuestionExam1()
                 mapQuestion[position] = list
             }
+
             2 -> {
                 val list = getQuestionExam2()
                 mapQuestion[position] = list
             }
+
             3 -> {
                 val list = getQuestionExam3()
                 mapQuestion[position] = list
             }
+
             4 -> {
                 val list = getQuestionExam4()
                 mapQuestion[position] = list
             }
+
             5 -> {
                 val list = getQuestionExam5()
                 mapQuestion[position] = list
             }
+
             else -> {
                 if (mapQuestion[position] == null) {
                     getRandomQuestionExam(position)

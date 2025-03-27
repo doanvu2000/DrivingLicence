@@ -3,8 +3,7 @@ package com.jin.drivinglicence.pref
 import android.content.Context
 import android.os.Parcelable
 import com.tencent.mmkv.MMKV
-import java.lang.Exception
-import java.util.*
+import java.util.Collections
 
 class LocalCache private constructor() {
 

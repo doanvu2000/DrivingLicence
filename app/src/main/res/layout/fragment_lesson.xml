@@ -78,17 +78,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:visibility="gone"
                 android:id="@+id/layout_explain_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="vertical"
+                android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@id/layout_ex">
 
                 <TextView
-                    tools:text="abc"
-                    android:textColor="@color/black"
                     android:id="@+id/text_explain_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,7 +94,9 @@
                     android:lineSpacingMultiplier="1.2"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"
-                    android:textSize="16sp" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="abc" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 

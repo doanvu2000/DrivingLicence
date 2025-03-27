@@ -6,8 +6,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.jin.drivinglicence.app.entity.Question
 import com.jin.drivinglicence.utils.QUESTION
-import com.jin.drivinglicence.utils.QUESTIONS
-import java.util.*
 
 @Suppress("DEPRECATION")
 class ViewPagerAdapter(fragmentManager: FragmentManager) :

@@ -18,6 +18,7 @@ class InformationLessonBottomSheet : BaseBottomSheetDialog<InformationLessonBott
                 binding.textContentBottomSheet.text =
                     getString(R.string.text_content_information_A1_license)
             }
+
             "A2" -> {
                 binding.textContentBottomSheet.text =
                     getString(R.string.text_content_information_A2_license)

@@ -31,11 +31,11 @@
         tools:listitem="@layout/item_answer" />
 
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/layout_ex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="5dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/layout_explain_answer"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -59,11 +59,11 @@
     </LinearLayout>
 
     <ScrollView
-        android:visibility="gone"
         android:id="@+id/layout_explain_answer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginVertical="10dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -73,13 +73,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/text_explain_answer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/round_button_green_light"
-                android:paddingVertical="5dp"
                 android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
                 android:text="abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac"
                 android:textSize="16sp" />
         </LinearLayout>

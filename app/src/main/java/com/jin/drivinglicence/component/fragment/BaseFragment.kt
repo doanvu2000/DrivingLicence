@@ -91,6 +91,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel> : Fragment(),
         } catch (e: Exception) {
         }
     }
+
     open fun idFragmentContainer(): Int = 0
 
     abstract fun initView()
