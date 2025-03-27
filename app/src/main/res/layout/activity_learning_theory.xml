@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".app.activites.LearningTheoryActivity">
 
-    <com.example.drivinglicence.component.toolbar.ToolBarApp
+    <com.jin.drivinglicence.component.toolbar.ToolBarApp
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

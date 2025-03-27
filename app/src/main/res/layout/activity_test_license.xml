@@ -7,7 +7,7 @@
     android:background="@color/grey_light"
     tools:context=".app.activites.TestLicenseActivity">
 
-    <com.example.drivinglicence.component.toolbar.ToolBarApp
+    <com.jin.drivinglicence.component.toolbar.ToolBarApp
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

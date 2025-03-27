@@ -5,16 +5,20 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 35
+    namespace 'com.jin.drivinglicence'
 
     defaultConfig {
-        applicationId "com.example.drivinglicence"
-        minSdk 21
-        targetSdk 31
+        applicationId "com.jin.drivinglicence"
+        minSdk 24
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        def formattedDate = new Date().format('MM.dd.yyyy_hh.mm')
+        archivesBaseName = "Driving_Licence_($versionName)"
     }
 
     buildTypes {
@@ -24,66 +28,41 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
 
-    //coroutines
-    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
-    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
-    api 'androidx.collection:collection-ktx:1.2.0'
-    api 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
-
-    //network
-    api 'com.squareup.retrofit2:retrofit:2.9.0'
-    api 'com.squareup.retrofit2:converter-gson:2.9.0'
-    api 'com.squareup.retrofit2:converter-scalars:2.9.0'
-    api(platform("com.squareup.okhttp3:okhttp-bom:4.9.1"))
-    api("com.squareup.okhttp3:okhttp")
-    api("com.squareup.okhttp3:logging-interceptor")
-
-    //necessary
-    api 'com.google.android.material:material:1.5.0'
-    api 'androidx.constraintlayout:constraintlayout:2.1.3'
-    api 'androidx.legacy:legacy-support-v4:1.0.0'
-    api 'androidx.core:core-ktx:1.7.0'
-    api 'androidx.appcompat:appcompat:1.4.1'
-    api "androidx.recyclerview:recyclerview:1.2.1"
-    api 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
-    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
-    api 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
-    api "androidx.fragment:fragment-ktx:1.4.0"
-
-    //permission
-    api 'pub.devrel:easypermissions:3.0.0'
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.lifecycle.livedata.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.lifecycle.extensions
+    implementation libs.lifecycle.runtime.ktx
+    implementation libs.fragment.ktx
 
     //MMKV
-    implementation 'com.tencent:mmkv-static:1.2.12'
+    implementation libs.mmkv.static
 
     //utils
-    api 'com.github.bumptech.glide:glide:4.12.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-    api 'androidx.multidex:multidex:2.0.0'
+    implementation libs.glide
+    annotationProcessor libs.compiler
 
-    implementation 'com.airbnb.android:lottie:3.7.2'
-    //Picasso
-    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation libs.lottie
 }
